@@ -13,8 +13,19 @@ public class CarpentryManager {
 
     public static void Initialize() {
         new SawResult(new ItemStack(MythriaItems.LOG, 1, 0), new ItemStack(MythriaItems.PLANK, 2, 0));
+        new SawResult(new ItemStack(MythriaItems.LOG, 1, 1), new ItemStack(MythriaItems.PLANK, 2, 1));
+        new SawResult(new ItemStack(MythriaItems.LOG, 1, 2), new ItemStack(MythriaItems.PLANK, 2, 2));
+        new SawResult(new ItemStack(MythriaItems.LOG, 1, 3), new ItemStack(MythriaItems.PLANK, 2, 3));
+        new SawResult(new ItemStack(MythriaItems.LOG, 1, 4), new ItemStack(MythriaItems.PLANK, 2, 4));
+        new SawResult(new ItemStack(MythriaItems.LOG, 1, 5), new ItemStack(MythriaItems.PLANK, 2, 5));
+
         new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG), 1, 0), new ItemStack(MythriaItems.PLANK, 16, 0));
-        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG2), 1, 0), new ItemStack(MythriaItems.PLANK, 16, 0));
+        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG), 1, 1), new ItemStack(MythriaItems.PLANK, 16, 1));
+        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG), 1, 2), new ItemStack(MythriaItems.PLANK, 16, 2));
+        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG), 1, 3), new ItemStack(MythriaItems.PLANK, 16, 3));
+
+        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG2), 1, 0), new ItemStack(MythriaItems.PLANK, 16, 4));
+        new SawResult(new ItemStack(ItemBlock.getItemFromBlock(Blocks.LOG2), 1, 1), new ItemStack(MythriaItems.PLANK, 16, 5));
     }
 
     public static SawResult getSawResult(ItemStack input) {

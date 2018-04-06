@@ -1,0 +1,6 @@
+{
+  "parent": "mythria:block/tin_ore",
+  "textures": {
+    "all": "mythria:blocks/ore/tin_ore"
+  }
+}

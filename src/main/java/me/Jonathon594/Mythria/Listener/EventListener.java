@@ -52,6 +52,7 @@ import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.ItemFishedEvent;
 import net.minecraftforge.event.entity.player.PlayerContainerEvent;
@@ -194,7 +195,7 @@ public class EventListener {
         if (event.phase.equals(Phase.START)) {
             DualSwingManager.onClientTick();
             PainManager.onClientTick();
-            AbilityManager.onClientTick();
+            BlessingManager.onClientTick();
         }
     }
 
@@ -255,6 +256,11 @@ public class EventListener {
         VanillaEntityManager.onEntityJoinWorld(event);
     }
 
+    @SubscribeEvent public static void onEntityTarget(LivingSetAttackTargetEvent event) {
+        if(event.getEntity().world.isRemote) return;
+        BlessingManager.onEntityTarget(event);
+    }
+
     @SubscribeEvent
     public static void onEntityPickupItem(final EntityItemPickupEvent event) {
         if (event.getEntityPlayer() != null) {
@@ -300,6 +306,10 @@ public class EventListener {
         AbilityManager.handleCombatSkills(event);
 
         if (event.getEntityLiving() instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) event.getEntityLiving();
+            final IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
+            BlessingManager.onLivingHurt(player, profile, event);
+
             if (event.getSource().equals(DamageSource.STARVE)) {
                 event.setCanceled(true);
                 return;
@@ -312,6 +322,7 @@ public class EventListener {
                 final EntityPlayer source = (EntityPlayer) trueSource;
                 final IProfile profile = source.getCapability(ProfileProvider.PROFILE_CAP, null);
                 AbilityManager.onLivingHurt(profile, event, source);
+                BlessingManager.onPlayerAttackEntity(profile, event, source);
             }
         }
     }
@@ -343,12 +354,13 @@ public class EventListener {
 
     @SubscribeEvent
     public static void onPlayerTick(final TickEvent.PlayerTickEvent event) {
-        SkillManager.onPlayerTick(event);
-        WallJumpManager.onPlayerTick(event);
+
 
         final EntityPlayer player = event.player;
         if (event.phase.equals(Phase.END)) {
             VesselModule.onPlayerTick(event);
+            SkillManager.onPlayerTick(event);
+            WallJumpManager.onPlayerTick(event);
         }
 
         if (player.world.isRemote)
@@ -356,6 +368,7 @@ public class EventListener {
 
         if (event.phase.equals(Phase.END)) {
             MythriaInventoryManager.onPlayerTickEvent(event);
+            BlessingManager.onPlayerTick(event);
 
             final ItemStack mh = player.getHeldItemMainhand();
             final ItemStack oh = player.getHeldItemOffhand();

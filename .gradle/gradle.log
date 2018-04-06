@@ -6,7 +6,8 @@ Etag download for http://files.minecraftforge.net/maven/net/minecraftforge/forge
 
 This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.
 
+:genIntellijRuns
 
-CONFIGURE SUCCESSFUL
+BUILD SUCCESSFUL
 
-Total time: 2.007 secs
+Total time: 1.177 secs

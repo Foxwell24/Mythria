@@ -94,6 +94,11 @@ public class Perk {
         return this;
     }
 
+    @Override
+    public String toString() {
+        return getName();
+    }
+
     public Perk addPlaceable(final Block... blocks) {
         for (final Block b : blocks)
             placable.add(b);

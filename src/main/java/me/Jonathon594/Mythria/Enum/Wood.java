@@ -3,7 +3,7 @@ package me.Jonathon594.Mythria.Enum;
 import me.Jonathon594.Mythria.Interface.IMetaLookup;
 
 public enum Wood implements IMetaLookup {
-    OAK, BIRCH, SPRUCE, JUNGLE, ACACIA, DARK_OAK;
+    OAK, SPRUCE, BIRCH, JUNGLE, ACACIA, DARK_OAK;
 
     @Override
     public String getID() {

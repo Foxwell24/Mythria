@@ -15,7 +15,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.text.TextComponentString;
-import org.w3c.dom.Attr;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,6 +25,12 @@ public class PerkManager {
     private static List<LifeSkill> lifeList = new ArrayList<>();
     private static List<CombatSkill> combatList = new ArrayList<>();
     private static List<MagicSkill> magicList = new ArrayList<>();
+
+    public static List<BlessingPerk> getBlessingList() {
+        return blessingList;
+    }
+
+    private static List<BlessingPerk> blessingList = new ArrayList<>();
     private static List<PersonallityTrait> personalityList = new ArrayList<>();
 
     public static void addCombatSkill(final CombatSkill combatSkill) {
@@ -88,6 +93,80 @@ public class PerkManager {
 
         p.addAttribute(pa);
         player.sendMessage(new TextComponentString(String.format(MythriaConst.PERK_OBTAINED, pa.getName())));
+    }
+
+    public static void CreateBlessings() {
+        // Felixia
+        // Blessings
+        new BlessingPerk("FelixiaNoWither", AttributeFlag.FELIXIA_NO_WITHER);
+        new BlessingPerk("FelixiaHealing", AttributeFlag.FELIXIA_HEALING);
+        new BlessingPerk("FelixiaIntimidation", AttributeFlag.FELIXIA_INTIMIDATION);
+
+        // Curses
+        new BlessingPerk("FelixiaBurn", AttributeFlag.FELIXIA_BURN);
+
+        // Eliana
+        // Blessings
+        new BlessingPerk("ElianaNoFall", AttributeFlag.ELIANA_NO_FALL);
+        new BlessingPerk("ElianaBreathing", AttributeFlag.ELIANA_BREATHING);
+        new BlessingPerk("ElianaFlight", AttributeFlag.ELIANA_FLIGHT);
+
+        // Curses
+        new BlessingPerk("ElianaSuffocate", AttributeFlag.ELIANA_SUFFOCATE);
+
+        // Selina
+        // Blessings
+        new BlessingPerk("SelinaFertility", AttributeFlag.SELINA_FERTILITY);
+        new BlessingPerk("SelinaProsperty", AttributeFlag.SELINA_PROSPERITY);
+        new BlessingPerk("SelinaImmortality", AttributeFlag.SELINA_IMMORTALITY);
+
+        // Curses
+        new BlessingPerk("SelinaInfertility", AttributeFlag.SELINA_INFERTILITY);
+
+        // Raika
+        // Blessings
+        new BlessingPerk("RaikaSpeed", AttributeFlag.RAIKA_SPEED);
+        new BlessingPerk("RaikaElectrocute", AttributeFlag.RAIKA_ELECTROCUTE);
+        new BlessingPerk("RaikaSmite", AttributeFlag.RAIKA_SMITE);
+
+        // Curses
+        new BlessingPerk("RaikaWrath", AttributeFlag.RAIKA_WRATH);
+
+        // Melinias
+        // Blessings
+        new BlessingPerk("MeliniasNoMobs", AttributeFlag.MELINIAS_NO_MOBS);
+        new BlessingPerk("MeliniasWaterBreathing", AttributeFlag.MELINIAS_WATER_BREATHING);
+        new BlessingPerk("MeliniasWaterJet", AttributeFlag.MELINIAS_WATER_JET);
+
+        // Curses
+        new BlessingPerk("MeliniasWaterCurse", AttributeFlag.MELINIAS_WATER_CURSE);
+
+        // Kasai
+        // Blessings
+        new BlessingPerk("KasaiNoMobs", AttributeFlag.KASAI_NO_MOBS);
+        new BlessingPerk("KasaiNoFire", AttributeFlag.KASAI_NO_FIRE);
+        new BlessingPerk("KasaiLavaJet", AttributeFlag.KASAI_LAVA_JET);
+
+        // Curses
+        new BlessingPerk("KasaiNetherCurse", AttributeFlag.KASAI_NETHER_CURSE);
+
+        // Asana
+        // Blessings
+        new BlessingPerk("AsanaNoMobs", AttributeFlag.ASANA_NO_MOBS);
+        new BlessingPerk("AsanaNoExplode", AttributeFlag.ASANA_NO_EXLODE);
+        new BlessingPerk("AsanaEarthCrumple", AttributeFlag.ASANA_EARTH_CRUMPLE);
+
+        // Curses
+        new BlessingPerk("AsanaEarthPoison", AttributeFlag.ASANA_EARTH_POISON);
+
+        // Melinias
+        // Blessings
+        new BlessingPerk("LilasiaNoMobs", AttributeFlag.LILASIA_NO_MOBS);
+        new BlessingPerk("LilasiaShadowHealing", AttributeFlag.LILASIA_SHADOW_HEALING);
+        new BlessingPerk("LilasiaReinforcements", AttributeFlag.LILASIA_REINFORCEMENTS);
+
+        // Curses
+        new BlessingPerk("LilasiaShadowCurse", AttributeFlag.LILASIA_SHADOW_CURSE);
     }
 
     public static void CreateCombats() {
@@ -673,6 +752,7 @@ public class PerkManager {
         list.addAll(combatList);
         list.addAll(magicList);
         list.addAll(personalityList);
+        list.addAll(blessingList);
         return list;
     }
 
@@ -729,5 +809,9 @@ public class PerkManager {
 
     public static List<PersonallityTrait> getPersonalityList() {
         return personalityList;
+    }
+
+    public static void addBlessingPerk(BlessingPerk blessingPerk) {
+        blessingList.add(blessingPerk);
     }
 }

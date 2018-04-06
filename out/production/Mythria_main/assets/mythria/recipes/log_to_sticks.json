@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S"
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "mythria:log",
+        "data": 0
+      },
+      {
+        "item": "mythria:log",
+        "data": 1
+      },
+      {
+        "item": "mythria:log",
+        "data": 2
+      },
+      {
+        "item": "mythria:log",
+        "data": 3
+      },
+      {
+        "item": "mythria:log",
+        "data": 4
+      },
+      {
+        "item": "mythria:log",
+        "data": 5
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 8,
+    "data": 0
+  }
+}

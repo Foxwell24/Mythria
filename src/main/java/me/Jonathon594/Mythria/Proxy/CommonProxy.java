@@ -47,6 +47,7 @@ public class CommonProxy {
         PerkManager.CreateLifes();
         PerkManager.CreateCombats();
         PerkManager.CreatePersonalities();
+        PerkManager.CreateBlessings();
         MaterialRequirementsManager.Initialize();
         RecipeManager.Initialize();
         WeightManager.Initialize();

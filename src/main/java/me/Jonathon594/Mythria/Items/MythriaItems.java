@@ -223,7 +223,7 @@ public class MythriaItems {
     public static final Item STONE_BRICK = new MythriaItem("stone_brick_item", 1, 8);
 
     public static final Item LOG = new ItemLog("log", 10);
-    public static final Item PLANK = new MythriaItem("plank", 4, 8);
+    public static final Item PLANK = new ItemPlank("plank", 5);
 
     //Ore
     public static final Item COPPER_ORE = new ItemOre("copper_ore_item", 3);
@@ -236,10 +236,6 @@ public class MythriaItems {
     public static final Item TUNGSTEN_ORE = new ItemOre("tungsten_ore_item", 14);
 
     public static final MythriaItem THATCH = new MythriaItem("thatch", 16, 1);
-
-    public static final MythriaItemShield BRONZE_SHIELD = new MythriaItemShield("bronze_shield", BRONZE_TM, 20);
-
-//    public static final ItemWand OAK_WAND = new ItemWand("oak_wand", 1);
 
     @SubscribeEvent
     public static void Register(final RegistryEvent.Register<Item> event) {

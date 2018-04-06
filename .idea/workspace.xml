@@ -2,25 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/campfire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/copper_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/primative_crate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/primative_wooden_wall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/blocks/silver_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/gui/container/container_campfire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/gui/container/perk_menu_gui_144_tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/gui/container/perk_menu_gui_tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/bundle_of_sticks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/copper_ingot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/diamond_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/golden_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/iron_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/obsidian_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/silver_ingot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/assets/mythria/textures/items/stone_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1 - Mythria/pack.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resourcepacks/Invictus_4.3.1.zip" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/BlessingPerk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIAvoidProfileWithFlag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/plank.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Wood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Wood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AbilityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AbilityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CarpentryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CarpentryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/plank.json" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -37,18 +43,96 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mythria" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore/.gitignore">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PerkManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="-476">
+              <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VanillaEntityManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MythriaUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="428" column="87" selection-start-line="428" selection-start-column="87" selection-end-line="428" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlessingManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>log</find>
+      <find>Log</find>
+      <find>commands.give</find>
+      <find>addAtt</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>plank</replace>
+      <replace>Plank</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -507,7 +591,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6088446661751" />
+        <entry key="$PROJECT_DIR$" value="6088447398594" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="94749622" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3181297915" />
@@ -740,6 +824,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/plank.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Wood.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CarpentryManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/BlessingPerk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIAvoidProfileWithFlag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AbilityManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
       </list>
     </option>
   </component>
@@ -754,6 +860,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -769,23 +877,136 @@
             <path>
               <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resourcepacks" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Capability" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Managers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mythria" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="minecraft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="minecraft" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_141/bin/jvisualvm.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="me.Jonathon594.Mythria.Util.MythriaUtil" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="me.Jonathon594.Mythria.Entity.AI" />
+      <recent name="me.Jonathon594.Mythria.Managers" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="me.Jonathon594.Mythria.Commands" />
+      <recent name="me.Jonathon594.Mythria.DataTypes" />
+      <recent name="me.Jonathon594.Mythria.Items" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\blockstates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -799,9 +1020,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Minecraft Client">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="Minecraft Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="Mythria_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../Mythria\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="Minecraft Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <module name="Mythria_main" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../Mythria\run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -844,19 +1079,23 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
+    <configuration default="true" factoryName="Remote" type="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" factoryName="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
     </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client" />
+      <item itemvalue="Application.Minecraft Server" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -873,42 +1112,70 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32900432" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info anchor="bottom" id="Run with VisualVM" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.32900432" />
-      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="bottom" id="Messages" weight="0.32900432" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32900432" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Run with VisualVM" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug with VisualVM" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39935064" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug with VisualVM" order="7" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32900432" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3468">
+          <caret line="225" column="61" selection-start-line="225" selection-start-column="61" selection-end-line="225" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CarpentryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="113" lean-forward="true" selection-start-line="24" selection-start-column="113" selection-end-line="24" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Wood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -916,6 +1183,285 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/plank.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Wood.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPottery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemToolHead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CarpentryManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="27" column="123" selection-start-line="27" selection-start-column="123" selection-end-line="27" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1111">
+          <caret line="188" column="47" lean-forward="true" selection-start-line="188" selection-start-column="47" selection-end-line="188" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/BlessingPerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/command/CommandBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="268" column="33" selection-start-line="268" selection-start-column="33" selection-end-line="268" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+          <folding>
+            <element signature="e#3372#3373#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/command/CommandException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/command/CommandGive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515.jar!/assets/minecraft/lang/en_us.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="1782" selection-start-line="1782" selection-end-line="1782" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="86" column="36" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="220" column="40" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="51" column="107" selection-start-line="51" selection-start-column="107" selection-end-line="51" selection-end-column="107" />
+          <folding>
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#3080#3081#0" expanded="true" />
+            <element signature="e#3152#3153#0" expanded="true" />
+            <element signature="e#3242#3243#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="183" column="48" selection-start-line="183" selection-start-column="48" selection-end-line="183" selection-end-column="48" />
+          <folding>
+            <element signature="e#8426#8435#0" expanded="true" />
+            <element signature="e#88333#88334#0" expanded="true" />
+            <element signature="e#88396#88397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/effect/EntityLightningBolt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/util/DamageSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SkillManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/21.0/b9ed26b8c23fe7cd3e6b463b34e54e5c6d9536d5/guava-21.0-sources.jar!/com/google/common/base/Predicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="110" column="33" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/ai/EntityAIAvoidEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="67" column="39" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIAvoidProfileWithFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraftforge/common/ForgeHooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="546" column="35" selection-start-line="546" selection-start-column="35" selection-end-line="546" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="428" column="87" selection-start-line="428" selection-start-column="87" selection-end-line="428" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="197" column="43" selection-start-line="197" selection-start-column="43" selection-end-line="197" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AbilityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-476">
+          <caret line="120" column="32" selection-start-line="120" selection-start-column="32" selection-end-line="120" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="genIntellijRuns" />
   </component>
   <component name="masterDetails">
     <states>

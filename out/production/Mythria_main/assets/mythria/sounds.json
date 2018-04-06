@@ -1,0 +1,16 @@
+{
+  "ability_activate": {
+    "category": "master",
+    "subtitle": "mythria.subtitle.ability_activate",
+    "sounds": [
+      "mythria:ability_activate"
+    ]
+  },
+  "ability_deactivate": {
+    "category": "master",
+    "subtitle": "mythria.subtitle.ability_deactivate",
+    "sounds": [
+      "mythria:ability_deactivate"
+    ]
+  }
+}

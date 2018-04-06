@@ -27,6 +27,7 @@ import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.monster.*;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -408,5 +409,23 @@ public class MythriaUtil {
                 pmc.setContents();
             }
         }
+    }
+
+    public static boolean isLilasiaMob(EntityLivingBase entity) {
+        return entity instanceof EntityZombie || entity instanceof EntitySkeleton || entity instanceof EntitySpider ||
+                entity instanceof EntityWitch || entity instanceof EntityCreeper;
+    }
+
+    public static boolean isFireMob(EntityLivingBase entity) {
+        return entity instanceof EntityBlaze || entity instanceof EntityMagmaCube || entity instanceof EntityGhast ||
+                entity instanceof EntityWitherSkeleton || entity instanceof EntityPigZombie;
+    }
+
+    public static boolean isWaterMob(EntityLivingBase entity) {
+        return entity instanceof EntityGuardian || entity instanceof EntityElderGuardian;
+    }
+
+    public static boolean isEarthMob(EntityLivingBase entity) {
+        return entity instanceof EntityCaveSpider || entity instanceof EntitySilverfish;
     }
 }

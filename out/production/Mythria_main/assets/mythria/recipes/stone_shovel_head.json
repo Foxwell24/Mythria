@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "mythria:rock"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:stone_shovel_head",
+    "data": 0
+  }
+}

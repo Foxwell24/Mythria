@@ -327,6 +327,27 @@ public class Profile implements IProfile {
     }
 
     @Override
+    public void removeAttribute(Perk perk) {
+        attributes.remove(perk);
+
+        if(perk instanceof PersonallityTrait) {
+            if(getPersonality() == null) {
+                PersonallityTrait pers = (PersonallityTrait) perk;
+                for(Entry<Attribute, Integer> e : pers.getStartingAttributes().entrySet()) {
+                    attributeValues.put(e.getKey(), attributeValues.get(e.getKey()) - e.getValue());
+                }
+            }
+        }
+
+        if (player == null)
+            return;
+        if (player.world.isRemote)
+            return;
+
+        syncToClient();
+    }
+
+    @Override
     public int getAttribute(Attribute attribute) {
         return attributeValues.get(attribute);
     }

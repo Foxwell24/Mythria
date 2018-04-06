@@ -83,4 +83,6 @@ public interface IProfile {
     HashMap<Attribute, Integer> getAttributes();
 
     double getStat(StatType statType);
+
+    void removeAttribute(Perk perk);
 }

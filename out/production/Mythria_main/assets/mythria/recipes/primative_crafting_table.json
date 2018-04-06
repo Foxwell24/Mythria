@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "mythria:log",
+        "data": 0
+      },
+      {
+        "item": "mythria:log",
+        "data": 1
+      },
+      {
+        "item": "mythria:log",
+        "data": 2
+      },
+      {
+        "item": "mythria:log",
+        "data": 3
+      },
+      {
+        "item": "mythria:log",
+        "data": 4
+      },
+      {
+        "item": "mythria:log",
+        "data": 5
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:primative_crafting_table",
+    "data": 0
+  }
+}

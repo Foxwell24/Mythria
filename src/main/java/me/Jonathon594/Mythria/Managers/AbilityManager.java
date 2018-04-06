@@ -46,37 +46,9 @@ public class AbilityManager {
         IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
         if(profile == null) return;
         Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
-        if(profile.hasFlag(AttributeFlag.ELIANA_BLESSING_ELYTRA) || (d != null && d.equals(Deity.ELIANA))) {
+        if(profile.hasFlag(AttributeFlag.ELIANA_FLIGHT) || (d != null && d.equals(Deity.ELIANA))) {
             if(player.isSneaking()) {
                 player.addVelocity(player.getLookVec().x, 1, player.getLookVec().z);
-            }
-        }
-    }
-
-    @SideOnly(Side.CLIENT)
-    public static void onClientTick() {
-        EntityPlayer player = Minecraft.getMinecraft().player;
-        if(player == null) return;
-        if(player.world.getWorldTime() % 20 != 0) return;
-        IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
-        if(profile == null) return;
-        Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
-        if(profile.hasFlag(AttributeFlag.ELIANA_BLESSING_ELYTRA) || (d != null && d.equals(Deity.ELIANA))) {
-            if(player.isElytraFlying()) {
-                if(player.getFoodStats().getFoodLevel() > 6) {
-                    if(player.posY < 345) {
-                        Vec3d vel = new Vec3d(player.motionX, player.motionY, player.motionZ);
-                        if(!player.isSneaking()) {
-                            Vec3d vec = new Vec3d(player.getLookVec().x, 0.767, player.getLookVec().z).scale(0.35);
-                            player.addVelocity(vec.x, vec.y, vec.z);
-                        } else if (vel.lengthVector() > 0.5) {
-                            Vec3d neg = vel.scale(-0.5);
-                            player.addVelocity(neg.x, neg.y, neg.z);
-                        } else {
-                            player.addVelocity(0, 0.4, 0);
-                        }
-                    }
-                }
             }
         }
     }
