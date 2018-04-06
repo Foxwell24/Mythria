@@ -3,6 +3,8 @@
 run/
 .gradle/
 build/
+gradle/
+resourcepacks/
 gradle-app.setting
 
 ## IntelliJ IDEA

@@ -1,904 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c639dbcf-5e59-482d-96c7-51cda5d0a938" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mixin.out/audit/mixin_implementation_report.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mixin.out/audit/mixin_implementation_report.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CREDITS-fml.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE-new.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MinecraftForge-Credits.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mythria/Profiles/47b4f701-12be-429d-8baf-c920ffe14709.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mythria/Profiles/a36654ce-b304-4ac9-b088-f2ea16948b1b.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paulscode IBXM Library License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Paulscode SoundSystem CodecIBXM License.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banned-ips.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banned-players.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/MovingWorld/AssemblePriority.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/MovingWorld/Main.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/davincisvessels.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/forge.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/forgeChunkLoading.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/splash.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/worldedit/worldedit.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-27_22.09.49-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-27_22.28.13-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-27_22.30.07-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-27_23.39.53-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_02.38.38-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_04.43.42-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_04.53.07-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_20.10.59-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_20.11.18-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-28_22.31.33-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_03.06.31-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_03.07.46-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_03.11.45-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_05.19.50-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_05.31.11-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-29_21.39.12-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_03.05.54-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_03.07.40-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_03.09.24-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_04.11.54-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_04.21.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_05.04.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_05.53.55-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_07.05.49-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_07.12.42-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_08.18.07-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-30_09.56.32-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_00.17.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_04.54.19-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_04.58.57-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_05.04.33-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_05.37.58-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-10-31_21.56.17-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_02.03.22-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_02.04.36-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_02.06.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_02.09.10-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_07.35.16-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_07.59.18-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_09.06.33-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_09.22.54-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_11.55.23-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_19.36.12-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_23.47.05-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_23.57.30-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-01_23.59.25-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.03.40-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.31.12-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.32.55-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.35.27-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.37.23-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_00.38.19-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.08.31-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.12.31-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.13.57-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.51.03-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.52.22-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_01.54.05-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-02_22.56.30-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_00.48.01-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_02.29.39-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_02.38.47-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_02.38.49-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_07.15.35-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_07.20.21-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_07.20.25-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-03_07.44.24-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-11-19_17.19.29-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_00.18.02-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_00.20.11-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_03.32.43-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_03.34.03-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_03.36.51-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_22.20.19-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_22.35.01-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_22.36.28-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_23.20.30-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_23.23.32-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-01_23.41.24-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_04.08.50-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_04.11.00-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_04.32.45-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_04.35.29-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_04.43.51-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-03_05.53.54-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-04_07.47.45-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-04_08.33.45-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-04_09.05.10-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-04_09.28.18-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_09.43.16-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_10.39.27-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_11.16.13-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_11.22.48-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_12.32.42-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_12.34.25-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_12.36.11-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_12.55.18-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_13.13.23-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_13.29.04-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-05_13.48.58-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-06_03.31.22-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-06_05.35.01-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-06_06.56.24-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-06_11.51.04-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_03.40.44-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_03.58.44-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_05.05.00-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_05.06.53-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_05.35.10-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_09.17.41-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_09.20.36-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_09.20.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_09.34.37-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_09.35.53-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.25.47-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.27.43-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.27.46-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.29.32-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.29.35-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_13.36.35-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-07_14.14.53-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.00.59-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.05.31-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.07.20-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.09.56-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.11.38-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_05.33.59-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_08.01.06-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_08.02.58-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_08.12.29-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_08.14.28-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_11.54.37-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_13.11.47-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_13.19.22-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_13.21.06-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_13.23.36-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_14.32.37-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_16.44.06-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_19.20.56-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_19.23.04-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_19.24.42-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_19.33.00-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-08_20.18.52-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_06.16.51-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_10.39.51-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_16.52.24-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_16.54.54-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_16.57.34-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_16.59.02-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.04.58-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.05.42-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.06.04-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.06.48-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.07.19-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.08.39-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.09.09-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.09.36-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.10.53-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.11.26-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.13.11-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.14.14-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.16.36-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.17.28-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-09_17.22.04-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-10_11.26.03-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-10_17.07.53-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-10_17.09.36-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_09.44.23-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_09.52.44-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_10.41.45-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_13.12.21-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_13.55.28-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_13.58.41-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-11_14.02.31-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-14_18.06.09-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-17_15.53.07-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-17_19.16.05-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-17_19.17.41-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-18_14.46.47-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-18_14.47.23-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-18_15.42.46-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-19_14.21.48-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-20_17.51.26-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-20_17.54.00-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-20_17.55.10-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_03.14.56-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_03.16.50-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_03.18.20-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_03.20.21-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_05.16.39-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2017-12-28_07.10.38-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-14_16.00.51-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-15_19.37.14-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-15_19.40.05-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_00.20.23-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_00.21.20-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_00.32.47-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_00.35.27-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_00.38.32-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_20.06.05-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_20.30.37-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-17_21.07.31-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-18_06.33.01-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-18_06.35.10-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-18_06.46.40-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-18_18.42.14-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-22_22.25.34-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-26_00.39.10-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-26_00.43.34-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-26_01.12.13-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-01-26_22.44.12-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-02-19_21.49.10-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-10_15.56.56-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-10_16.07.06-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-12_14.19.41-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-12_14.35.28-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-12_15.16.35-client.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-12_17.58.21-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-13_16.09.37-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-13_16.12.36-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crash-reports/crash-2018-03-14_19.48.33-server.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forge-1.12.2-14.23.0.2515-changelog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-27-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-28-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-29-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-30-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-10-31-7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-01-7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-02-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-03-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-04-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-05-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-12-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-16-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-19-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-30-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-30-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-11-30-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-01-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-02-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-02-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-02-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-03-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-04-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-05-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-06-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-07-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-08-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-09-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-10-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-11-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-12-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-13-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-14-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-15-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-16-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-17-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-18-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-19-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-20-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-28-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2017-12-31-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-11-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-11-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-11-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-14-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-15-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-16-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-17-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-18-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-19-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-21-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-22-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-23-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-26-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-27-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-27-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-01-27-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-19-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-20-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-20-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-02-21-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-03-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-09-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-10-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-12-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-13-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-1.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-2.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-3.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-4.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-5.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-6.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2018-03-14-7.log.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-client-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-client-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-client-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-client-latest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-junk-earlystartup.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-server-1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-server-2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-server-3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/fml-server-latest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/latest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ops.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/options.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/realms_persistence.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/Mythria-20171028-233004.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171205-093704.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171205-123210.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171209-162853.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171209-172710.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171210-125226.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171212-125245.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171217-192120.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171218-151528.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20171218-154239.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20180117-200545.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World-20180309-122701.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM-1/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM-1/data/villages_nether.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM-1/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM1/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM1/data/villages_end.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/DIM1/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/advancements/746de006-0e8a-44b6-9671-f34626dbbd1a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/data/mythria_global_data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/data/villages.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/level.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/level.dat_old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/playerdata/746de006-0e8a-44b6-9671-f34626dbbd1a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/region/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/region/r.-1.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/region/r.0.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/region/r.0.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/session.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/New World/stats/746de006-0e8a-44b6-9671-f34626dbbd1a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/World-20171031-230836.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/World-20171101-022352.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/World-20171101-075756.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/World-20171101-082035.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/saves/World-20171101-091839.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2017-12-05_05.23.36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2017-12-05_05.34.46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-19_22.31.22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-22_22.41.50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-22_22.43.38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-22_22.43.52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-22_22.44.04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/2018-01-22_23.16.13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/servers.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockCampfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockCampfire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockCrate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockCrate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockImprovedCampfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockImprovedCampfire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockPrimativeCraftingTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockPrimativeCraftingTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaStairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Food/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Food/Food.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Food/IFood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Food/IFood.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/CustomRenderManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderLivingBaseCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderPlayerCustom.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/Beta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/GameModeCreative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/GameModeCreative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/GameModeSurvival.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/GameModeSurvival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/Heal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/CombatSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/CombatSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/HealthCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/HealthCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/HealthConditionInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/HealthConditionInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/LifeSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/LifeSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/MagicSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/MagicSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/PersonallityTrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/PersonallityTrait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/PlayerAttribute.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/TradeSkill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/TradeSkill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBrownBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBrownBear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityThrowingWeapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityThrowingWeapon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Alignment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Alignment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/ChatChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/ChatChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Consumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Consumable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/HealthConditionTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/HealthConditionTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/HealthProgressionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/HealthProgressionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/ObtainConditionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/ObtainConditionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/StatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/StatType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/CampfireGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/CampfireGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/CampfireGuiImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/CampfireGuiImproved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CampfireContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CampfireContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CampfireContainerImproved.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CampfireContainerImproved.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/ContainerCustomWorkbench.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/ContainerCustomWorkbench.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CookingFuellotItemHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/CookingFuellotItemHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/PerkMenuGuiContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/PerkMenuGuiContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiCustomCrafting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiCustomCrafting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiHud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiHud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/ProfileShowGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/ProfileShowGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Interface/ConditionalRecipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Interface/ConditionalRecipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaCoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaCoin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemArmor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemArmor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemAxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHoe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemPickaxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemPickaxe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemSpade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemSpade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/AbilityListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/AbilityListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/TerrainGenListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/TerrainGenListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AttributeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AttributeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CombatManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DualSwingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DualSwingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/FoodManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/FoodManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MaterialRequirementsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MaterialRequirementsManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaVanillaBlocksModification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaVanillaBlocksModification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaWorldGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaWorldGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/RecipeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/RecipeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/TimeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/TimeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WallJumpManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WallJumpManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeaponThrowingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeaponThrowingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WorldGenGroundRock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WorldGenGroundRock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WorldGenGroundStick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WorldGenGroundStick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CommandPacketHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CommandPacketHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateStats.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateStatsHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/MythriaTileEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/MythriaTileEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCampfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCampfire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCookingFireAdvanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCookingFireAdvanced.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCookingFireBasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCookingFireBasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityImprovedCampfire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityImprovedCampfire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/ground_rock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/improved_campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/improved_campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/lit_campfire.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/lit_improved_campfire.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/copper_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/copper_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/ground_rock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/silver_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/silver_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_dagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_horse_armor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_ingot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_ingot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/copper_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/diamond_dagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/diamond_dagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/golden_dagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/golden_dagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/improved_campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/improved_campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/iron_dagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/iron_dagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/obsidian_dagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/obsidian_dagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/primative_crafting_table.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/primative_crafting_table.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/primative_crate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/primative_crate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/rock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/rock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/silver_ingot.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/silver_ingot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/silver_ore.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/silver_ore.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_axe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_axe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_dagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_dagger.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_dagger_blade.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_dagger_blade.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_hoe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_hoe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_pickaxe_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_pickaxe_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_shovel_head.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_shovel_head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_sword_blade.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/stone_sword_blade.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_block.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_boots.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_chestplate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_coin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_helmet.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_leggings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/copper_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/diamond_dagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/golden_dagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/improved_campfire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/improved_campfire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/iron_dagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_crafting_table.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_crafting_table.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_crate.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_crate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_wooden_wall.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/primative_wooden_wall.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/silver_coin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_dagger.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/stone_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/thatch_block.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/thatch_block.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/copper_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/ground_rock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/silver_ore.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/thatch_block_side.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/thatch_block_side.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/thatch_block_top.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/thatch_block_top.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/entity/entity_waterbolt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/gui/container/experiment_gui_tex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_axe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_boots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_chestplate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_hoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_ingot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_leggings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_pickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_shovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/copper_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/diamond_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/golden_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/iron_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/obsidian_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/rock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/shuriken.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/silver_ingot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_axe_head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_dagger.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_dagger_blade.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_hoe_head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_pickaxe_head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_shovel_head.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/items/stone_sword_blade.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/models/armor/copper_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/models/armor/copper_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usercache.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usernamecache.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whitelist.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world-20171210-171111.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world-20171213-130325.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world-20180312-144733.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM-1/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM-1/data/villages_nether.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM-1/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM1/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM1/data/villages_end.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/DIM1/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/advancements/4c1ef722-438b-44ea-9093-71c8b5b7647f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/advancements/53259387-4836-4be1-b2d2-9b7ba11e7864.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/advancements/746de006-0e8a-44b6-9671-f34626dbbd1a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/advancements/ccf3dfb5-8ac6-42be-af11-ede31219c2c9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/data/Mineshaft.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/data/Village.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/data/capabilities.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/data/mythria_global_data.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/data/villages.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/forcedchunks.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/level.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/level.dat_old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/playerdata/4c1ef722-438b-44ea-9093-71c8b5b7647f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/playerdata/53259387-4836-4be1-b2d2-9b7ba11e7864.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/playerdata/746de006-0e8a-44b6-9671-f34626dbbd1a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/playerdata/ccf3dfb5-8ac6-42be-af11-ede31219c2c9.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.-1.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.-1.1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.0.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.0.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/region/r.0.1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/session.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/stats/4c1ef722-438b-44ea-9093-71c8b5b7647f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/stats/53259387-4836-4be1-b2d2-9b7ba11e7864.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/stats/746de006-0e8a-44b6-9671-f34626dbbd1a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/world/stats/ccf3dfb5-8ac6-42be-af11-ede31219c2c9.json" beforeDir="false" />
+    <list default="true" id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -915,38 +21,13 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Mythria" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state relative-caret-position="102">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -1410,7 +491,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6088445874103" />
+        <entry key="$PROJECT_DIR$" value="6088446661751" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="94749622" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="3181297915" />
@@ -1631,17 +712,17 @@
     </option>
     <option name="projectSyncType">
       <map>
-        <entry key="$USER_HOME$/Documents/GitHub/VoiceChat" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$/../../GitHub/Mythria" value="PREVIEW" />
         <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
-        <entry key="$PROJECT_DIR$/../Mythria Forge" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../VoiceChat" value="PREVIEW" />
+        <entry key="$USER_HOME$/OneDrive/Documents/GitHub/Mythria" value="PREVIEW" />
+        <entry key="$USER_HOME$/OneDrive/Documents/workspace/Mythria" value="PREVIEW" />
+        <entry key="$USER_HOME$/OneDrive/Documents/workspace/Mythria Forge" value="PREVIEW" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore/.gitignore" />
       </list>
     </option>
@@ -1697,23 +778,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="Minecraft Client" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <module name="Mythria_main" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../Mythria\run" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="Minecraft Server" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <module name="Mythria_main" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/../Mythria\run" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1756,34 +823,30 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" factoryName="Remote" type="Remote">
+    <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
-    <configuration default="true" factoryName="Plugin" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list>
-      <item itemvalue="Application.Minecraft Client" />
-      <item itemvalue="Application.Minecraft Server" />
-    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c639dbcf-5e59-482d-96c7-51cda5d0a938" name="Default" comment="" />
-      <created>1522987611009</created>
+      <changelist id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="" />
+      <created>1522988697168</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1522987611009</updated>
+      <updated>1522988697168</updated>
     </task>
     <servers />
   </component>
@@ -1798,15 +861,15 @@
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
       <window_info anchor="bottom" id="Run with VisualVM" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.32900432" />
-      <window_info anchor="right" id="Gradle" visible="true" weight="0.32995737" />
+      <window_info anchor="bottom" id="Build" visible="true" weight="0.32900432" />
+      <window_info anchor="right" id="Gradle" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
@@ -1826,23 +889,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="gradleExecuteTaskHistory">
-    <option value="$PROJECT_DIR$" />
-    <option value="genIntellijRuns" />
   </component>
   <component name="masterDetails">
     <states>
