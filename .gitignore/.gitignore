@@ -5,6 +5,7 @@ run/
 build/
 gradle/
 resourcepacks/
+mods/
 gradle-app.setting
 
 ## IntelliJ IDEA
