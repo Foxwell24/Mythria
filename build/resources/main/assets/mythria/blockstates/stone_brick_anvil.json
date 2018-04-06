@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "mythria:stone_brick_anvil"
+    },
+    "facing=south": {
+      "model": "mythria:stone_brick_anvil",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "mythria:stone_brick_anvil",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "mythria:stone_brick_anvil",
+      "y": 90
+    }
+  }
+}

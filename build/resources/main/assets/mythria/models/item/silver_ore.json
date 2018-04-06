@@ -1,0 +1,6 @@
+{
+  "parent": "mythria:block/silver_ore",
+  "textures": {
+    "all": "mythria:blocks/ore/silver_ore"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g",
+    "g "
+  ],
+  "key": {
+    "g": [
+      {
+        "item": "minecraft:leather"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:primative_bandolier",
+    "data": 0
+  }
+}

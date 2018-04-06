@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    "TST"
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "minecraft:stick"
+      }
+    ],
+    "T": [
+      {
+        "item": "mythria:thatch"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:thatch_block",
+    "data": 0
+  }
+}

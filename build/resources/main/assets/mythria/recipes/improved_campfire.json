@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RRR",
+    "RCR",
+    "RRR"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "mythria:campfire"
+      }
+    ],
+    "R": [
+      {
+        "item": "mythria:rock"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:improved_campfire",
+    "data": 0
+  }
+}
