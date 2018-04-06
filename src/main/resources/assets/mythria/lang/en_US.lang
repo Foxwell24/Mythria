@@ -1,0 +1,237 @@
+#	<!!--METAL--!!>
+#		CUSTOM
+#			ORE
+item.platinum_ore_item.name=Platinum Ore
+item.titanium_ore_item.name=Titanium Ore
+item.tungsten_ore_item.name=Tungsten Ore
+item.silver_ore_item.name=Silver Ore
+item.copper_ore_item.name=Copper Ore
+item.tin_ore_item.name=Tin Ore
+#			REFINED
+#				COPPER
+item.copper_ingot.name=Copper Ingot
+#				BRONZE
+item.bronze_ingot.name=Bronze Ingot
+item.bronze_double_ingot.name=Bronze Double Ingot
+item.bronze_sheet.name=Bronze Sheet
+item.bronze_double_sheet.name=Bronze Double Sheet
+#				SILVER
+item.silver_ingot.name=Silver Ingot
+
+#				STEEL
+item.steel_ingot.name=Steel Ingot
+item.steel_double_ingot.name=Steel Double Ingot
+item.steel_sheet.name=Steel Sheet
+item.steel_double_sheet.name=Steel Double Sheet
+#		VANILLA
+#			ORE
+item.gold_ore_item.name=Gold Ore
+item.iron_ore_item.name=Iron Ore
+REFINED
+#				IRON
+item.iron_ingot.name=Iron Ingot
+item.iron_double_ingot.name=Iron Double Ingot
+item.iron_sheet.name=Iron Sheet
+item.iron_double_sheet.name=Iron Double Sheet
+#				GOLD
+item.gold_ingot.name=Gold Ingot
+item.gold_double_ingot.name=Gold Double Ingot
+
+
+
+#	<!!--ARMOR--!!>
+
+#		BRONZE
+item.bronze_helmet.name=Bronze Helmet
+item.bronze_chestplate.name=Bronze Chestplate
+item.bronze_leggings.name=Bronze Leggings
+item.bronze_boots.name=Bronze Boots
+#		LEATHER
+item.primative_bandolier.name=Primative Bandolier
+item.primative_belt.name=Primative Belt
+STEEL
+item.steel_helmet.name=Steel Helmet
+item.steel_chestplate.name=Steel Chestplate
+item.steel_leggings.name=Steel Leggings
+item.steel_boots.name=Steel Boots
+
+
+#	<!!--TOOLS--!!>
+
+#		STONE
+item.stone_dagger.name=Stone Dagger
+item.stone_hammer.name=Stone Hammer
+item.stone_saw.name=Stone Saw
+#			HEAD
+item.stone_axe_head.name=Stone Axe Head
+item.stone_pickaxe_head.name=Stone Pickaxe Head
+item.stone_shovel_head.name=Stone Shovel Head
+item.stone_hoe_head.name=Stone Hoe Head
+item.stone_hammer_head.name=Stone Hammer Head
+item.stone_saw_blade.name=Stone Saw Blade
+#			BLADE
+item.stone_sword_blade.name=Stone Sword Blade
+item.stone_dagger_blade.name=Stone Dagger Blade
+#		BRONZE
+item.bronze_sword.name=Bronze Sword
+item.bronze_axe.name=Bronze Axe
+item.bronze_pickaxe.name=Bronze Pickaxe
+item.bronze_shovel.name=Bronze Shovel
+item.bronze_hoe.name=Bronze Hoe
+item.bronze_dagger.name=Bronze Dagger
+item.bronze_hammer.name=Bronze Hammer
+item.bronze_chisel.name=Bronze Chisel
+item.bronze_saw.name=Bronze Saw
+#			HEAD
+item.bronze_axe_head.name=Bronze Axe Head
+item.bronze_pickaxe_head.name=Bronze Pickaxe Head
+item.bronze_shovel_head.name=Bronze Shovel Head
+item.bronze_hoe_head.name=Bronze Hoe Head
+item.bronze_hammer_head.name=Bronze Hammer Head
+item.bronze_chisel_head.name=Bronze Chisel Head
+item.bronze_saw_blade.name=Bronze Saw Blade
+#			BLADE
+item.bronze_sword_blade.name=Bronze Sword Blade
+item.bronze_dagger_blade.name=Bronze Dagger Blade
+#		IRON
+item.iron_dagger.name=Iron Dagger
+item.iron_hammer.name=Iron Hammer
+item.iron_chisel.name=Iron Chisel
+item.iron_saw.name=Iron Saw
+#       HEAD
+item.iron_sword_blade.name=Iron Sword Blade
+item.iron_dagger_blade.name=Iron Dagger Blade
+item.iron_axe_head.name=Iron Axe Head
+item.iron_pickaxe_head.name=Iron Pickaxe Head
+item.iron_shovel_head.name=Iron Shovel Head
+item.iron_hoe_head.name=Iron Hoe Head
+item.iron_hammer_head.name=Iron Hammer Head
+item.iron_chisel_head.name=Iron Chisel Head
+item.iron_saw_blade.name=Iron Saw Blade
+#		GOLD
+item.golden_dagger.name=Golden Dagger
+#		DIAMOND
+item.diamond_dagger.name=Diamond Dagger
+#		OBSIDIAN
+item.obsidian_dagger.name=Obsidian Dagger
+#		STEEL
+item.steel_sword.name=Steel Sword
+item.steel_axe.name=Steel Axe
+item.steel_pickaxe.name=Steel Pickaxe
+item.steel_shovel.name=Steel Shovel
+item.steel_hoe.name=Steel Hoe
+item.steel_dagger.name=Steel Dagger
+item.steel_hammer.name=Steel Hammer
+item.steel_chisel.name=Steel Chisel
+item.steel_saw.name=Steel Saw
+#			HEAD
+item.steel_axe_head.name=Steel Axe Head
+item.steel_pickaxe_head.name=Steel Pickaxe Head
+item.steel_shovel_head.name=Steel Shovel Head
+item.steel_hoe_head.name=Steel Hoe Head
+item.steel_hammer_head.name=Steel Hammer Head
+item.steel_chisel_head.name=Steel Chisel Head
+item.steel_saw_blade.name=Steel Saw Blade
+#			BLADE
+item.steel_sword_blade.name=Steel Sword Blade
+item.steel_dagger_blade.name=Steel Dagger Blade
+
+
+#	<!!--MOLDS--!!>
+
+#		CLAY
+item.clay_mold_ingot.name=Clay Ingot Mold
+item.clay_mold_axe.name=Clay Axe Mold
+item.clay_mold_hoe.name=Clay Hoe Mold
+item.clay_mold_shovel.name=Clay Shovel Mold
+item.clay_mold_pick.name=Clay Pickaxe Mold
+item.clay_mold_dagger.name=Clay Dagger Mold
+item.clay_mold_sword.name=Clay Sword Mold
+item.clay_mold_hammer.name=Clay Hammer Mold
+item.clay_mold_chisel.name=Clay Chisel Mold
+item.clay_mold_saw.name=Clay Saw Mold
+item.clay_vessel.name=Clay Vessel
+item.clay_brick.name=Clay Brick
+#		CERAMIC
+item.ceramic_mold_ingot.name=Ceramic Ingot Mold
+item.ceramic_mold_axe.name=Ceramic Axe Mold
+item.ceramic_mold_hoe.name=Ceramic Hoe Mold
+item.ceramic_mold_shovel.name=Ceramic Shovel Mold
+item.ceramic_mold_pick.name=Ceramic Pickaxe Mold
+item.ceramic_mold_dagger.name=Ceramic Dagger Mold
+item.ceramic_mold_sword.name=Ceramic Sword Mold
+item.ceramic_mold_hammer.name=Ceramic Hammer Mold
+item.ceramic_mold_chisel.name=Ceramic Chisel Mold
+item.ceramic_mold_saw.name=Ceramic Saw Mold
+item.ceramic_vessel.name=Ceramic Vessel
+COPPER
+item.ceramic_mold_ingot_copper.name=Ceramic Ingot Mold (Copper)
+#		BRONZE
+item.ceramic_mold_ingot_bronze.name=Ceramic Ingot Mold (Bronze)
+item.ceramic_mold_axe_bronze.name=Ceramic Axe Mold (Bronze)
+item.ceramic_mold_hoe_bronze.name=Ceramic Hoe Mold (Bronze)
+item.ceramic_mold_shovel_bronze.name=Ceramic Shovel Mold (Bronze)
+item.ceramic_mold_pick_bronze.name=Ceramic Pickaxe Mold (Bronze)
+item.ceramic_mold_dagger_bronze.name=Ceramic Dagger Mold (Bronze)
+item.ceramic_mold_sword_bronze.name=Ceramic Sword Mold (Bronze)
+item.ceramic_mold_hammer_bronze.name=Ceramic Hammer Mold (Bronze)
+item.ceramic_mold_chisel_bronze.name=Ceramic Chisel Mold (Bronze)
+item.ceramic_mold_saw_bronze.name=Ceramic Saw Mold (Bronze)
+IRON
+item.ceramic_mold_ingot_iron.name=Ceramic Ingot Mold (Iron)
+SILVER
+item.ceramic_mold_ingot_silver.name=Ceramic Ingot Mold (Silver)
+GOLD
+item.ceramic_mold_ingot_gold.name=Ceramic Ingot Mold (Gold)
+STEEL
+item.ceramic_mold_ingot_steel.name=Ceramic Ingot Mold (Steel)
+
+
+#	<!!--MISC--!!>
+
+item.gold_coin.name=Gold Coin
+item.silver_coin.name=Silver Coin
+item.copper_coin.name=Copper Coin
+item.tool_handle.name=Tool Handle
+item.rock.name=Rock
+item.stone_brick_item.name=Stone Brick
+item.thatch.name=Thatch
+
+item.log.name=Log
+item.log.oak.name=Oak Log
+item.log.birch.name=Birch Log
+item.log.spruce.name=Spruce Log
+item.log.jungle.name=Jungle Log
+item.log.acacia.name=Acacia Log
+item.log.dark_oak.name=Dark Oak Log
+
+item.bundle_of_sticks.name=Bundle of Sticks
+item.plank.name=Plank
+
+
+
+
+#	<!!--NOT_ITEM_SHIT--!!>
+
+tile.campfire.name=Campfire
+tile.improved_campfire.name=Improved Campfire
+tile.primative_wooden_wall.name=Primative Wooden Wall
+tile.primative_crate.name=Primative Crate
+tile.copper_ore.name=Copper Ore
+tile.silver_ore.name=Silver Ore
+tile.tin_ore.name=Tin Ore
+tile.iron_ore.name=Iron Ore
+tile.gold_ore.name=Gold Ore
+tile.platinum_ore.name=Platinum Ore
+tile.titanium_ore.name=Titanium Ore
+tile.tungsten_ore.name=Tungsten Ore
+tile.copper_block.name=Copper Block
+tile.thatch_block.name=Thatch Block
+tile.thatch_stair.name=Thatch Stair
+tile.primative_crafting_table.name=Primative Crafting Table
+tile.stone_brick_anvil.name=Brick Anvil
+tile.bronze_anvil.name=Bronze Anvil
+tile.iron_anvil.name=Iron Anvil
+tile.saw_horse.name=Sawhorse
+
+container.primative_crate=Primative Crate

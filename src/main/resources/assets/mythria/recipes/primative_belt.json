@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  ",
+    "gg"
+  ],
+  "key": {
+    "g": [
+      {
+        "item": "minecraft:leather"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:primative_belt",
+    "data": 0
+  }
+}

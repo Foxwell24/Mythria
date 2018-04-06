@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "mythria:saw_horse" },
+    "facing=south": { "model": "mythria:saw_horse", "y": 180 },
+    "facing=west":  { "model": "mythria:saw_horse", "y": 270 },
+    "facing=east":  { "model": "mythria:saw_horse", "y": 90 }
+  }
+}

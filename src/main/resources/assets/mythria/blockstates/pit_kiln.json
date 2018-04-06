@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "burning=true,full=0": {"model": "mythria:pit_kiln_thatch"},
+    "burning=true,full=1": {"model": "mythria:pit_kiln_thatch_2"},
+    "burning=true,full=2": {"model": "mythria:pit_kiln_thatch_3"},
+    "burning=true,full=3": {"model": "mythria:pit_kiln_thatch_4"},
+    "burning=true,full=4": {"model": "mythria:pit_kiln_logs"},
+    "burning=true,full=5": {"model": "mythria:pit_kiln_logs_2"},
+    "burning=true,full=6": {"model": "mythria:pit_kiln_logs_3"},
+    "burning=true,full=7": {"model": "mythria:pit_kiln_logs_4"},
+    "burning=false,full=0": {"model": "mythria:pit_kiln_thatch"},
+    "burning=false,full=1": {"model": "mythria:pit_kiln_thatch_2"},
+    "burning=false,full=2": {"model": "mythria:pit_kiln_thatch_3"},
+    "burning=false,full=3": {"model": "mythria:pit_kiln_thatch_4"},
+    "burning=false,full=4": {"model": "mythria:pit_kiln_logs"},
+    "burning=false,full=5": {"model": "mythria:pit_kiln_logs_2"},
+    "burning=false,full=6": {"model": "mythria:pit_kiln_logs_3"},
+    "burning=false,full=7": {"model": "mythria:pit_kiln_logs_4"}
+  }
+}

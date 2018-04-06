@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PP",
+    "PP"
+  ],
+  "key": {
+    "P": [
+      {
+        "item": "mythria:plank",
+        "data": 1
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:planks",
+    "data": 1
+  }
+}

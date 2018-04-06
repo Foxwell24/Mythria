@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "mythria:thatch_block"
+    }
+  }
+}
