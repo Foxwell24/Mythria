@@ -1,0 +1,14 @@
+{
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2018-04-06 23:08:08 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "plains": "2018-04-06 23:07:20 -0500"
+    },
+    "done": false
+  }
+}

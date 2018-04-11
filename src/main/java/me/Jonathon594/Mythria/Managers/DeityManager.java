@@ -63,7 +63,7 @@ public class DeityManager {
                 grantedFlags.add(AttributeFlag.FELIXIA_NO_WITHER);
                 break;
             case SELINA:
-                grantedFlags.add(AttributeFlag.SELINA_FERTILITY);
+                grantedFlags.add(AttributeFlag.SELINA_NO_NATURE_MOBS);
                 grantedFlags.add(AttributeFlag.SELINA_IMMORTALITY);
                 grantedFlags.add(AttributeFlag.SELINA_PROSPERITY);
                 break;

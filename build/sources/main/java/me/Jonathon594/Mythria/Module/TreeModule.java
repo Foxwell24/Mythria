@@ -44,7 +44,7 @@ public class TreeModule {
                             new ItemStack(Items.STICK, 1));
                 } else if(Math.random() < 0.5) {
                     InventoryHelper.spawnItemStack(p.world, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-                            new ItemStack(MythriaItems.LOG, 1));
+                            getLogItemFromLeaves(bs));
                 }
 
             }
@@ -67,6 +67,20 @@ public class TreeModule {
             p.setHeldItem(EnumHand.MAIN_HAND, ItemStack.EMPTY);
         }
         return consideredMaterials;
+    }
+
+    private static ItemStack getLogItemFromLeaves(IBlockState bs) {
+        int meta = 0;
+        int bmeta = bs.getBlock().getMetaFromState(bs);
+        meta = bmeta % 4;
+
+        if(bs.getBlock().equals(Blocks.LEAVES)) {
+            return new ItemStack(MythriaItems.LOG, 1, meta);
+        }
+        if(bs.getBlock().equals(Blocks.LEAVES2)) {
+            return new ItemStack(MythriaItems.LOG, 1, meta+4);
+        }
+        return null;
     }
 
     private static boolean hasLeaves(final ArrayList<Block> blocks) {

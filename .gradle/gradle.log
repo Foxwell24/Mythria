@@ -17,7 +17,7 @@ This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
+:sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
@@ -37,10 +37,10 @@ Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 3 warnings
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
-:sourceTestJava
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
@@ -48,7 +48,7 @@ Note: Recompile with -Xlint:unchecked for details.
 :extractMcpData SKIPPED
 :extractMcpMappings SKIPPED
 :getVersionJson
-:extractUserdev
+:extractUserdev UP-TO-DATE
 :genSrgs SKIPPED
 :reobfJar
 :extractAnnotationsJar
@@ -66,4 +66,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 37.812 secs
+Total time: 43.887 secs

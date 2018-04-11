@@ -116,7 +116,7 @@ public class PerkManager {
 
         // Selina
         // Blessings
-        new BlessingPerk("SelinaFertility", AttributeFlag.SELINA_FERTILITY);
+        new BlessingPerk("SelianNoNatureMobs", AttributeFlag.SELINA_NO_NATURE_MOBS);
         new BlessingPerk("SelinaProsperty", AttributeFlag.SELINA_PROSPERITY);
         new BlessingPerk("SelinaImmortality", AttributeFlag.SELINA_IMMORTALITY);
 

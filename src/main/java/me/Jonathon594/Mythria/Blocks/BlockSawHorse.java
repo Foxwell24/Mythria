@@ -1,12 +1,7 @@
 package me.Jonathon594.Mythria.Blocks;
 
-import me.Jonathon594.Mythria.Capability.Profile.IProfile;
-import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
-import me.Jonathon594.Mythria.Enum.AttributeFlag;
-import me.Jonathon594.Mythria.GUI.MythriaConst;
 import me.Jonathon594.Mythria.GUI.MythriaGui;
 import me.Jonathon594.Mythria.Mythria;
-import me.Jonathon594.Mythria.TileEntity.TileEntityAnvil;
 import me.Jonathon594.Mythria.TileEntity.TileEntitySawHorse;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.ITileEntityProvider;
@@ -26,7 +21,6 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -46,8 +40,7 @@ public class BlockSawHorse extends MythriaBlock implements ITileEntityProvider {
         this.setCreativeTab(CreativeTabs.DECORATIONS);
     }
 
-    public boolean isFullCube(IBlockState state)
-    {
+    public boolean isFullCube(IBlockState state) {
         return false;
     }
 
@@ -56,17 +49,14 @@ public class BlockSawHorse extends MythriaBlock implements ITileEntityProvider {
         return SAWHORSE_AABB;
     }
 
-    public IBlockState withRotation(IBlockState state, Rotation rot)
-    {
-        return state.getBlock() != this ? state : state.withProperty(FACING, rot.rotate((EnumFacing)state.getValue(FACING)));
+    public IBlockState withRotation(IBlockState state, Rotation rot) {
+        return state.getBlock() != this ? state : state.withProperty(FACING, rot.rotate((EnumFacing) state.getValue(FACING)));
     }
 
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing enumfacing = EnumFacing.getFront(meta);
 
-        if (enumfacing.getAxis() == EnumFacing.Axis.Y)
-        {
+        if (enumfacing.getAxis() == EnumFacing.Axis.Y) {
             enumfacing = EnumFacing.NORTH;
         }
 
@@ -80,7 +70,7 @@ public class BlockSawHorse extends MythriaBlock implements ITileEntityProvider {
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumFacing)state.getValue(FACING)).getIndex();
+        return ((EnumFacing) state.getValue(FACING)).getIndex();
     }
 
     @Override
@@ -106,29 +96,20 @@ public class BlockSawHorse extends MythriaBlock implements ITileEntityProvider {
             return false;
         if (worldIn.isRemote)
             return false;
-        IProfile profile = playerIn.getCapability(ProfileProvider.PROFILE_CAP, null);
-        if(profile.hasFlag(AttributeFlag.CARPENTRY)) {
-            //Open Anvil Gui
-            playerIn.openGui(Mythria.instance, MythriaGui.SAWHORSE_GUI.ordinal(), worldIn, pos.getX(),
-                    pos.getY(), pos.getZ());
-        } else {
-            playerIn.sendMessage(new TextComponentString(MythriaConst.NO_PERK));
-        }
+        playerIn.openGui(Mythria.instance, MythriaGui.SAWHORSE_GUI.ordinal(), worldIn, pos.getX(),
+                pos.getY(), pos.getZ());
         return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
     }
 
-    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
-    {
+    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {
         return BlockFaceShape.UNDEFINED;
     }
 
-    public boolean isOpaqueCube(IBlockState state)
-    {
+    public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         return this.getDefaultState().withProperty(FACING, placer.getHorizontalFacing().getOpposite());
     }
 }

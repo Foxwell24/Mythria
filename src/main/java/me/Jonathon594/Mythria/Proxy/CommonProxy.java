@@ -125,9 +125,6 @@ public class CommonProxy {
         MythriaPacketHandler.INSTANCE.registerMessage(CPacketAnvilButton.CPacketAnvilButtonHandler.class,
                 CPacketAnvilButton.class, ID++, Side.SERVER);
 
-        MythriaPacketHandler.INSTANCE.registerMessage(CPacketSawhorseButton.CPacketSawhorseButtonHandler.class,
-                CPacketSawhorseButton.class, ID++, Side.SERVER);
-
         MythriaPacketHandler.INSTANCE.registerMessage(SPacketSetSelectedDeity.SPacketSetSelectedDeityHandler.class,
                 SPacketSetSelectedDeity.class, ID++, Side.CLIENT);
     }

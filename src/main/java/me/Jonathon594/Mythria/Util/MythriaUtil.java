@@ -28,6 +28,7 @@ import net.minecraft.entity.ai.attributes.IAttribute;
 import net.minecraft.entity.ai.attributes.IAttributeInstance;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.monster.*;
+import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -427,5 +428,9 @@ public class MythriaUtil {
 
     public static boolean isEarthMob(EntityLivingBase entity) {
         return entity instanceof EntityCaveSpider || entity instanceof EntitySilverfish;
+    }
+
+    public static boolean isNatureMob(EntityLivingBase entity) {
+        return entity instanceof EntityAnimal;
     }
 }

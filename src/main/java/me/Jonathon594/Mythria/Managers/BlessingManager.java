@@ -49,7 +49,7 @@ public class BlessingManager {
             if(profile.hasFlag(AttributeFlag.RAIKA_ELECTROCUTE)) {
                 EntityPlayer e = (EntityPlayer) ds.getTrueSource();
                 DamageSource d = DamageSource.causeThornsDamage(player);
-                e.attackEntityFrom(ds, 1);
+                e.attackEntityFrom(d, 1);
             }
         }
     }
@@ -159,6 +159,12 @@ public class BlessingManager {
 
             if(MythriaUtil.isEarthMob(e)) {
                 if(profile.hasFlag(AttributeFlag.ASANA_NO_MOBS)) {
+                    ((EntityLiving) e).setAttackTarget(null);
+                }
+            }
+
+            if(MythriaUtil.isNatureMob(e)) {
+                if(profile.hasFlag(AttributeFlag.SELINA_NO_NATURE_MOBS)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
