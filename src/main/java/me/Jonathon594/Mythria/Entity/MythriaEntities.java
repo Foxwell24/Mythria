@@ -1,11 +1,10 @@
 package me.Jonathon594.Mythria.Entity;
 
 import me.Jonathon594.Mythria.Client.Renderer.*;
-import me.Jonathon594.Mythria.Entity.Magic.*;
-import me.Jonathon594.Mythria.Entity.Weather.Tornado;
-import me.Jonathon594.Mythria.Entity.monster.EntityRex;
+import me.Jonathon594.Mythria.Entity.Weather.*;
 import me.Jonathon594.Mythria.Mythria;
 import net.minecraft.client.Minecraft;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
@@ -30,6 +29,11 @@ public class MythriaEntities {
         EntityRegistry.registerModEntity(new ResourceLocation("mythria:brownbear"),
                 EntityBrownBear.class, "BrownBear", id++, Mythria.instance, 80, 3, true);
 
+        EntityRegistry.registerModEntity(new ResourceLocation("mythria:tornado"),
+                EntityTornado.class, "EntityTornado", id++, Mythria.instance, 80, 3, true);
+        EntityRegistry.registerModEntity(new ResourceLocation("mythria:earthquake"),
+                EntityEarthQuake.class, "EntityEarthQuake", id++, Mythria.instance, 80, 3, true);
+
         registerSpawns();
     }
 
@@ -46,5 +50,7 @@ public class MythriaEntities {
 
         RenderingRegistry.registerEntityRenderingHandler(EntityBlackBear.class, manager -> new RenderBlackBear<>(manager));
         RenderingRegistry.registerEntityRenderingHandler(EntityBrownBear.class, manager -> new RenderBrownBear<>(manager));
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityTornado.class, manager -> new RenderTornado<>(manager));
     }
 }

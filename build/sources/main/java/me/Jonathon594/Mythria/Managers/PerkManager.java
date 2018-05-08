@@ -116,7 +116,7 @@ public class PerkManager {
 
         // Selina
         // Blessings
-        new BlessingPerk("SelinaFertility", AttributeFlag.SELINA_FERTILITY);
+        new BlessingPerk("SelianNoNatureMobs", AttributeFlag.SELINA_NO_NATURE_MOBS);
         new BlessingPerk("SelinaProsperty", AttributeFlag.SELINA_PROSPERITY);
         new BlessingPerk("SelinaImmortality", AttributeFlag.SELINA_IMMORTALITY);
 
@@ -401,9 +401,9 @@ public class PerkManager {
     public static void CreatePersonalities() {
         new PersonallityTrait("Warrior", Items.IRON_SWORD, 1, 1)
                 .addStartingAttributes(Attribute.STRENGTH, 12)
-                .addStartingAttributes(Attribute.DEXTERITY, 12)
+                .addStartingAttributes(Attribute.DEXTERITY, 14)
                 .addStartingAttributes(Attribute.VIGOR, 16)
-                .addStartingAttributes(Attribute.ENDURANCE, 12)
+                .addStartingAttributes(Attribute.ENDURANCE, 10)
                 .addStartingAttributes(Attribute.ATTUNEMENT, 0)
                 .addStartingAttributes(Attribute.INTELLIGENCE, 8);
 
@@ -465,10 +465,10 @@ public class PerkManager {
 
         new PersonallityTrait("Mason", Blocks.STONEBRICK, 2, 3)
                 .addStartingAttributes(Attribute.STRENGTH, 16)
-                .addStartingAttributes(Attribute.DEXTERITY, 8)
+                .addStartingAttributes(Attribute.DEXTERITY, 10)
                 .addStartingAttributes(Attribute.VIGOR, 8)
                 .addStartingAttributes(Attribute.ENDURANCE, 8)
-                .addStartingAttributes(Attribute.ATTUNEMENT, 4)
+                .addStartingAttributes(Attribute.ATTUNEMENT, 2)
                 .addStartingAttributes(Attribute.INTELLIGENCE, 16);
 
         new PersonallityTrait("Arcanist", Items.ENDER_PEARL, 2, 4)

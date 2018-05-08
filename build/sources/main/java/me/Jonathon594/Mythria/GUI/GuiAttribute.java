@@ -1,15 +1,9 @@
 package me.Jonathon594.Mythria.GUI;
 
 import me.Jonathon594.Mythria.GUI.Container.ContainerAttribute;
-import me.Jonathon594.Mythria.GUI.Container.ContainerSawhorse;
-import me.Jonathon594.Mythria.MythriaPacketHandler;
-import me.Jonathon594.Mythria.Packets.CPacketSawhorseButton;
-import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
-
-import java.io.IOException;
 
 public class GuiAttribute extends GuiContainer {
     private final ResourceLocation gui_tex;

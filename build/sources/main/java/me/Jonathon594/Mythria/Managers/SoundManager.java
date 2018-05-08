@@ -12,8 +12,8 @@ public class SoundManager {
                 1.0f, 1.0f);
     }
 
-    public static void playForPlayerOnly(final EntityPlayerMP player, final SoundEvent sound) {
-        playForPlayerOnly(player, player.posX, player.posY, player.posZ, sound, 1.0f, 1.0f);
+    public static void playForPlayerOnly(final EntityPlayerMP player, final SoundEvent sound, float vol) {
+        playForPlayerOnly(player, player.posX, player.posY, player.posZ, sound, vol, 1.0f);
     }
 
     private static void playForPlayerOnly(final EntityPlayerMP player, final double posX, final double posY,

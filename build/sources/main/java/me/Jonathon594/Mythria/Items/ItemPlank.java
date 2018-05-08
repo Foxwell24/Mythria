@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class ItemPlank extends MythriaItem implements IVariantData {
     public ItemPlank(String name, double weight) {
-        super(name,4, weight);
+        super(name,16, weight);
         setMaxDamage(0);
         this.hasSubtypes = true;
         this.setMaxDamage(0);

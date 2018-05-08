@@ -1,16 +1,9 @@
 {
-  "ability_activate": {
+  "sawhorse_saw": {
     "category": "master",
-    "subtitle": "mythria.subtitle.ability_activate",
+    "subtitle": "mythria.subtitle.sawhorse_saw",
     "sounds": [
-      "mythria:ability_activate"
-    ]
-  },
-  "ability_deactivate": {
-    "category": "master",
-    "subtitle": "mythria.subtitle.ability_deactivate",
-    "sounds": [
-      "mythria:ability_deactivate"
+      "mythria:sawhorse_saw"
     ]
   }
 }

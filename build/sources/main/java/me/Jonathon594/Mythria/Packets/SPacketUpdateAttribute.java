@@ -1,9 +1,13 @@
 package me.Jonathon594.Mythria.Packets;
 
 import io.netty.buffer.ByteBuf;
+import me.Jonathon594.Mythria.Capability.Profile.IProfile;
+import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Enum.Attribute;
-import me.Jonathon594.Mythria.Enum.StatType;
+import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 public class SPacketUpdateAttribute implements IMessage {
 
@@ -39,4 +43,14 @@ public class SPacketUpdateAttribute implements IMessage {
         return value;
     }
 
+    public static class SPacketUpdateAttributeHandler implements IMessageHandler<SPacketUpdateAttribute, IMessage> {
+
+        @Override
+        public IMessage onMessage(final SPacketUpdateAttribute message, final MessageContext ctx) {
+            final IProfile profile = Minecraft.getMinecraft().player.getCapability(ProfileProvider.PROFILE_CAP, null);
+            profile.getAttributes().put(message.getStat(), message.getValue());
+            return null;
+        }
+
+    }
 }

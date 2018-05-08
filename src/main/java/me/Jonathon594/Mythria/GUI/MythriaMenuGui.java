@@ -4,7 +4,6 @@ import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Mythria;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.CommandPacket;
-import me.Jonathon594.Mythria.Packets.CommandPacketHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -34,23 +33,23 @@ public class MythriaMenuGui extends GuiScreen {
             mc.player.openGui(Mythria.instance, MythriaGui.MYTHRIA_SHOW_PROFILE_GUI.ordinal(), mc.world, 0, 0, 0);
         if (button == buttonShowPersonalities) {
             mc.displayGuiScreen(null);
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.OPEN_PERSONALITIES_GUI));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.OPEN_PERSONALITIES_GUI));
         }
         if (button == buttonShowTradeSkills) {
             mc.displayGuiScreen(null);
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.OPEN_TRADE_SKILLS_GUI));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.OPEN_TRADE_SKILLS_GUI));
         }
         if (button == buttonShowLifeSkills) {
             mc.displayGuiScreen(null);
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.OPEN_LIFE_SKILLS_GUI));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.OPEN_LIFE_SKILLS_GUI));
         }
         if (button == buttonShowCombatSkills) {
             mc.displayGuiScreen(null);
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.OPEN_LIFE_COMBAT_GUI));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.OPEN_LIFE_COMBAT_GUI));
         }
         if (button == buttonShowAttributes) {
             mc.displayGuiScreen(null);
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.OPEN_ATTRIBUTE_GUI));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.OPEN_ATTRIBUTE_GUI));
         }
     }
 

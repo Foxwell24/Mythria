@@ -45,7 +45,7 @@ public class MythriaInventoryManager {
     }
 
     public static boolean isSlotOpen(final EntityPlayer p, final int i) {
-        if (p.canUseCommand(2, "")) return true;
+        if (p.isCreative()) return true;
         final ArrayList<Integer> freeSlots = getOpenSlots(p);
         if (freeSlots.contains(i))
             return true;
@@ -57,12 +57,12 @@ public class MythriaInventoryManager {
         final Minecraft mc = Minecraft.getMinecraft();
         final EntityPlayer p = mc.player;
         final GuiScreen gui = event.getGui();
-        if (event.getGui() instanceof GuiInventory) {
+        if (event.getGui() instanceof GuiContainer) {
             final GuiContainer guiContainer = (GuiContainer) gui;
             if (!isAtMaxSlots(p)) {
                 final List<Slot> slotList = guiContainer.inventorySlots.inventorySlots;
                 if (slotList != null && slotList.size() > 0)
-                    for (int i = 0; i < 36; i++) {
+                    for (int i = 0; i < slotList.size(); i++) {
                         final Slot slot = guiContainer.inventorySlots.getSlot(i);
 
                         if (slot != null && slot.isHere(p.inventory, slot.getSlotIndex())) {
@@ -142,7 +142,7 @@ public class MythriaInventoryManager {
     }
 
     private static boolean isAtMaxSlots(final EntityPlayer p) {
-        return getOpenSlots(p).size() == 36 || p.canUseCommand(2, "");
+        return getOpenSlots(p).size() == 36 || p.isCreative();
     }
 
     private static ArrayList<Integer> getOpenSlots(final EntityPlayer p) {

@@ -14,7 +14,7 @@ import me.Jonathon594.Mythria.GUI.Responder.GenderSliderGuiResponder;
 import me.Jonathon594.Mythria.GUI.Responder.MonthSliderGuiResponder;
 import me.Jonathon594.Mythria.Managers.TimeManager;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
-import me.Jonathon594.Mythria.Packets.ProfileCreationPacket;
+import me.Jonathon594.Mythria.Packets.CPacketProfileCreation;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
@@ -96,7 +96,7 @@ public class MythriaProfileCreationGui extends GuiScreen {
             p.setGender(gender);
             mc.displayGuiScreen(null);
 
-            MythriaPacketHandler.INSTANCE.sendToServer(new ProfileCreationPacket(p.toNBT()));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CPacketProfileCreation(p.toNBT()));
         }
     }
 

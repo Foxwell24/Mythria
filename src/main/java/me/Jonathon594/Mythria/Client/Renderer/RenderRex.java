@@ -1,9 +1,7 @@
 package me.Jonathon594.Mythria.Client.Renderer;
 
-import me.Jonathon594.Mythria.Client.Model.ModelBrownBear;
 import me.Jonathon594.Mythria.Client.Model.ModelRex;
-import me.Jonathon594.Mythria.Entity.EntityBrownBear;
-import me.Jonathon594.Mythria.Entity.monster.EntityRex;
+import me.Jonathon594.Mythria.Entity.Monster.EntityRex;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -16,7 +14,7 @@ import javax.annotation.Nullable;
 @SideOnly(Side.CLIENT)
 public class RenderRex<T extends EntityRex> extends RenderLivingBase<T>
 {
-    private static final ResourceLocation REX_TEXTURE = new ResourceLocation("mythria:textures/entity/monster/rex.png");
+    private static final ResourceLocation REX_TEXTURE = new ResourceLocation("mythria:textures/entity/Monster/rex.png");
 
     public RenderRex(RenderManager renderManager)
     {

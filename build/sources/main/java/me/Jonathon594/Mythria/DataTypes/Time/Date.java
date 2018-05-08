@@ -1,9 +1,12 @@
 package me.Jonathon594.Mythria.DataTypes.Time;
 
+import me.Jonathon594.Mythria.Enum.Season;
 import me.Jonathon594.Mythria.GUI.MythriaConst;
 import me.Jonathon594.Mythria.Managers.TimeManager;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.util.text.TextFormatting;
+
+import java.sql.Time;
 
 public class Date {
     private int MGD = 1;
@@ -90,5 +93,13 @@ public class Date {
         mGD += getDaysToMonthX(month);
         mGD += day;
         setMGD(mGD);
+    }
+
+    public Season getSeason() {
+        int dayInYear = getYearDay();
+        if(dayInYear > TimeManager.getDaysPerYear() * 0.75) return Season.FALL;
+        else if(dayInYear > TimeManager.getDaysPerYear() * 0.5) return Season.SUMMER;
+        else if(dayInYear > TimeManager.getDaysPerYear() * 0.25) return Season.SPRING;
+        else return Season.WINTER;
     }
 }

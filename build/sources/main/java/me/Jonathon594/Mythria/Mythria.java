@@ -16,7 +16,7 @@ public class Mythria {
 
     public static final String MODID = "mythria";
     public static final String MODNAME = "Mythria";
-    public static final String VERSION = "1.2.3";
+    public static final String VERSION = "1.3.0";
 
     @SidedProxy(clientSide = "me.Jonathon594.Mythria.Proxy.ClientProxy", serverSide = "me.Jonathon594.Mythria.Proxy.ServerProxy")
     public static CommonProxy proxy;

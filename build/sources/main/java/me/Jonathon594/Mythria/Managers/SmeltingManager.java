@@ -1,12 +1,17 @@
 package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Capability.Vessel.IVessel;
+import me.Jonathon594.Mythria.Capability.Vessel.Vessel;
 import me.Jonathon594.Mythria.Capability.Vessel.VesselProvider;
 import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
+import me.Jonathon594.Mythria.GUI.Container.ContainerAttribute;
+import me.Jonathon594.Mythria.GUI.Container.PerkMenuGuiContainer;
 import me.Jonathon594.Mythria.Interface.ISmelter;
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.init.Items;
+import net.minecraft.inventory.Container;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.event.entity.player.PlayerContainerEvent;
 import net.minecraftforge.items.IItemHandler;
 
 import java.util.ArrayList;
@@ -76,5 +81,18 @@ public class SmeltingManager {
 
         new SmeltingRecipe(2, SmeltingRecipe.EnumMetal.STEEL, 1204, new SmeltingRecipe.SmeltingRecipePair(MythriaItems.IRON_ORE, 0.7),
                 new SmeltingRecipe.SmeltingRecipePair(Items.COAL, 0.3));
+    }
+
+    public static void updateVessels(PlayerContainerEvent.Open event) {
+        final Container c = event.getContainer();
+        if (c instanceof PerkMenuGuiContainer || c instanceof ContainerAttribute)
+            return;
+        for (int i = 0; i < c.getInventory().size(); i++) {
+            final ItemStack is = c.getInventory().get(i);
+            if(is.hasCapability(VesselProvider.VESSEL_CAP, null)) {
+                is.getCapability(VesselProvider.VESSEL_CAP, null).update(event.getEntityPlayer().world.getBiome(event.getEntityPlayer().getPosition())
+                        .getTemperature(event.getEntityPlayer().getPosition()), is);
+            }
+        }
     }
 }

@@ -1,19 +1,19 @@
-[01:04:43] [main/INFO]: Setting user: Player985
-[01:04:48] [main/WARN]: Skipping bad option: lastServer:
-[01:04:48] [main/INFO]: LWJGL Version: 2.9.4
-[01:04:53] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mythria
-[01:04:57] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[01:04:57] [Thread-5/INFO]: Initializing LWJGL OpenAL
-[01:04:57] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[01:04:57] [Thread-5/INFO]: OpenAL initialized.
-[01:04:57] [Sound Library Loader/INFO]: Sound engine started
-[01:05:03] [main/INFO]: Created: 512x512 textures-atlas
-[01:05:05] [main/WARN]: Skipping bad option: lastServer:
-[01:05:05] [main/INFO]: Narrator library for x64 successfully loaded
-[01:05:06] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[01:05:09] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
-[01:05:09] [Server thread/INFO]: Generating keypair
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_shovel
+[22:45:29] [main/INFO]: Setting user: Player570
+[22:45:33] [main/WARN]: Skipping bad option: lastServer:
+[22:45:33] [main/INFO]: LWJGL Version: 2.9.4
+[22:45:41] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mythria
+[22:45:52] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:45:52] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[22:45:52] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:45:52] [Thread-5/INFO]: OpenAL initialized.
+[22:45:52] [Sound Library Loader/INFO]: Sound engine started
+[22:45:59] [main/INFO]: Created: 512x512 textures-atlas
+[22:46:02] [main/WARN]: Skipping bad option: lastServer:
+[22:46:02] [main/INFO]: Narrator library for x64 successfully loaded
+[22:46:03] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[22:46:12] [Server thread/INFO]: Starting integrated minecraft server version 1.12.2
+[22:46:12] [Server thread/INFO]: Generating keypair
+[22:46:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_shovel
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_shovel'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -37,7 +37,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_shovel'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_pickaxe
+[22:46:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_pickaxe
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_pickaxe'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -61,7 +61,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_pickaxe'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_hoe
+[22:46:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_hoe
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_hoe'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -85,7 +85,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_hoe'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_axe
+[22:46:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/tools/wooden_axe
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_axe'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -109,7 +109,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_axe'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/rabbit_stew_from_red_mushroom
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/rabbit_stew_from_red_mushroom
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:rabbit_stew_from_red_mushroom'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -133,7 +133,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:rabbit_stew_from_
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/rabbit_stew_from_brown_mushroom
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/rabbit_stew_from_brown_mushroom
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:rabbit_stew_from_brown_mushroom'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -157,7 +157,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:rabbit_stew_from_
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/pumpkin_pie
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/pumpkin_pie
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:pumpkin_pie'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -181,7 +181,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:pumpkin_pie'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/mushroom_stew
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/mushroom_stew
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:mushroom_stew'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -205,7 +205,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:mushroom_stew'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/golden_apple
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/golden_apple
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:golden_apple'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -229,7 +229,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:golden_apple'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/cookie
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/cookie
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:cookie'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -253,7 +253,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:cookie'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/bread
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/bread
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:bread'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -277,7 +277,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:bread'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/beetroot_soup
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/beetroot_soup
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:beetroot_soup'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -301,7 +301,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:beetroot_soup'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/decorations/furnace
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/decorations/furnace
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:furnace'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -325,7 +325,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:furnace'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/combat/wooden_sword
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/combat/wooden_sword
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_sword'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -349,7 +349,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:wooden_sword'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/spruce_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/spruce_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:spruce_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -373,7 +373,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:spruce_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/oak_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/oak_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:oak_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -397,7 +397,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:oak_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/jungle_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/jungle_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:jungle_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -421,7 +421,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:jungle_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/dark_oak_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/dark_oak_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:dark_oak_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -445,7 +445,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:dark_oak_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/birch_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/birch_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:birch_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -469,7 +469,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:birch_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/acacia_planks
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/building_blocks/acacia_planks
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:acacia_planks'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -493,7 +493,7 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:acacia_planks'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/brewing/golden_carrot
+[22:46:14] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/brewing/golden_carrot
 com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:golden_carrot'
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:204) ~[AdvancementRewards$Deserializer.class:?]
 	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(AdvancementRewards.java:180) ~[AdvancementRewards$Deserializer.class:?]
@@ -517,15 +517,18 @@ com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:golden_carrot'
 	at net.minecraft.server.integrated.IntegratedServer.init(IntegratedServer.java:160) [IntegratedServer.class:?]
 	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:550) [MinecraftServer.class:?]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:10] [Server thread/INFO]: Loaded 467 advancements
-[01:05:10] [Server thread/INFO]: Preparing start region for level 0
-[01:05:11] [Server thread/INFO]: Preparing spawn area: 32%
-[01:05:12] [Server thread/INFO]: Changing view distance to 13, from 10
-[01:05:13] [Server thread/INFO]: Player985[local:E:7571d72f] logged in with entity id 360 at (115.81558766457673, 68.0, 188.94067095984482)
-[01:05:13] [Server thread/INFO]: Player985 joined the game
-[01:05:15] [Server thread/INFO]: Saving and pausing game...
-[01:05:15] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[01:05:15] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@27950e95[id=d1587dea-b047-3ee8-b46a-f3d599824159,name=Player985,properties={},legacy=false]
+[22:46:14] [Server thread/INFO]: Loaded 467 advancements
+[22:46:14] [Server thread/INFO]: Preparing start region for level 0
+[22:46:15] [Server thread/INFO]: Preparing spawn area: 24%
+[22:46:16] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:46:17] [Server thread/INFO]: Player570[local:E:a2ab29da] logged in with entity id 207 at (-207.5, 68.0, 233.5)
+[22:46:17] [Server thread/INFO]: Player570 joined the game
+[22:46:19] [Server thread/INFO]: Saving and pausing game...
+[22:46:19] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[22:46:19] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[22:46:19] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[22:46:19] [main/INFO]: [CHAT] This server is in BETA, please report any issues and suggestions on the discord.
+[22:46:20] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@4c3880e0[id=130bfefb-ac8d-3a05-b27c-6205f9d12a06,name=Player570,properties={},legacy=false]
 com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
 	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:79) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:180) [YggdrasilMinecraftSessionService.class:?]
@@ -548,41 +551,12 @@ com.mojang.authlib.exceptions.AuthenticationException: The client has sent too m
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_161]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_161]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_161]
-[01:05:15] [main/INFO]: [CHAT] This server is in BETA, please report any issues and suggestions on the discord.
-[01:05:15] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[01:05:15] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[01:05:24] [Server thread/INFO]: [Player985: Given [Oak Wood] * 1 to Player985]
-[01:05:24] [main/INFO]: [CHAT] Given [Oak Wood] * 1 to Player985
-[01:05:41] [Server thread/INFO]: [Player985: Given [Steel Saw] * 1 to Player985]
-[01:05:41] [main/INFO]: [CHAT] Given [Steel Saw] * 1 to Player985
-[01:06:46] [main/INFO]: [CHAT] [Debug]: Advanced tooltips: shown
-[01:06:52] [Server thread/INFO]: [Player985: Given [Steel Saw] * 1 to Player985]
-[01:06:52] [main/INFO]: [CHAT] Given [Steel Saw] * 1 to Player985
-[01:06:54] [Server thread/INFO]: [Player985: Cleared the inventory of Player985, removing 13 items]
-[01:06:54] [main/INFO]: [CHAT] Cleared the inventory of Player985, removing 13 items
-[01:06:58] [Server thread/INFO]: [Player985: Given [Oak Wood] * 1 to Player985]
-[01:06:59] [main/INFO]: [CHAT] Given [Oak Wood] * 1 to Player985
-[01:07:25] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 17002ms behind, skipping 340 tick(s)
-[01:07:27] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3025ms behind, skipping 60 tick(s)
-[01:08:58] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 8926ms behind, skipping 178 tick(s)
-[01:09:08] [Server thread/INFO]: [Player985: Given [Oak Wood] * 1 to Player985]
-[01:09:08] [main/INFO]: [CHAT] Given [Oak Wood] * 1 to Player985
-[01:09:11] [Server thread/INFO]: [Player985: Given [Oak Wood] * 1 to Player985]
-[01:09:11] [main/INFO]: [CHAT] Given [Oak Wood] * 1 to Player985
-[01:09:17] [Server thread/INFO]: [Player985: Given [Oak Wood] * 1 to Player985]
-[01:09:17] [main/INFO]: [CHAT] Given [Oak Wood] * 1 to Player985
-[01:09:23] [main/INFO]: [CHAT] Unknown command. Try /help for a list of commands
-[01:09:26] [Server thread/INFO]: [Player985: Cleared the inventory of Player985, removing 52 items]
-[01:09:26] [main/INFO]: [CHAT] Cleared the inventory of Player985, removing 52 items
-[01:09:27] [main/INFO]: Stopping!
-[01:09:27] [Server thread/INFO]: Stopping server
-[01:09:27] [Server thread/INFO]: Saving players
-[01:09:27] [Server thread/INFO]: Saving worlds
-[01:09:27] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
-[01:09:27] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
-[01:09:27] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
-[01:09:28] [main/INFO]: SoundSystem shutting down...
-[01:09:33] [main/ERROR]: Error in class 'LibraryLWJGLOpenAL'
-[01:09:33] [main/ERROR]: Stream thread did not die!
-[01:09:33] [main/INFO]: Ignoring errors... continuing clean-up.
-[01:09:33] [main/WARN]: Author: Paul Lamb, www.paulscode.com
+[22:46:35] [main/INFO]: Stopping!
+[22:46:35] [Server thread/INFO]: Stopping server
+[22:46:35] [Server thread/INFO]: Saving players
+[22:46:35] [Server thread/INFO]: Saving worlds
+[22:46:35] [Server thread/INFO]: Saving chunks for level 'New World'/overworld
+[22:46:35] [Server thread/INFO]: Saving chunks for level 'New World'/the_nether
+[22:46:35] [Server thread/INFO]: Saving chunks for level 'New World'/the_end
+[22:46:36] [main/INFO]: SoundSystem shutting down...
+[22:46:36] [main/WARN]: Author: Paul Lamb, www.paulscode.com

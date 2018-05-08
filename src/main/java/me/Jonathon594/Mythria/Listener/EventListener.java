@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Listener;
 
-import com.google.common.eventbus.Subscribe;
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Client.Keybindings;
@@ -8,7 +7,6 @@ import me.Jonathon594.Mythria.Client.Renderer.DeityRenderManager;
 import me.Jonathon594.Mythria.Client.Renderer.ReticleRenderer;
 import me.Jonathon594.Mythria.Client.Sounds.MythriaSounds;
 import me.Jonathon594.Mythria.Const.Blacklist;
-import me.Jonathon594.Mythria.Const.CombatMessages;
 import me.Jonathon594.Mythria.Const.StaminaCost;
 import me.Jonathon594.Mythria.DataTypes.Perk;
 import me.Jonathon594.Mythria.Enum.*;
@@ -22,7 +20,6 @@ import me.Jonathon594.Mythria.Module.*;
 import me.Jonathon594.Mythria.Mythria;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.CommandPacket;
-import me.Jonathon594.Mythria.Packets.CommandPacketHandler;
 import me.Jonathon594.Mythria.Packets.SPacketSetSelectedDeity;
 import me.Jonathon594.Mythria.Storage.GlobalSaveData;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
@@ -109,7 +106,7 @@ public class EventListener {
         if (Keybindings.KeyBindingOpenMenu.isPressed())
             mc.player.openGui(Mythria.instance, MythriaGui.MYTHRIA_MENU_GUI.ordinal(), mc.player.world, 0, 0, 0);
         if (Keybindings.KeyBindingToggleChat.isPressed())
-            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacketHandler.TOGGLE_CHAT_ID));
+            MythriaPacketHandler.INSTANCE.sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.TOGGLE_CHAT_ID));
         if (Keybindings.KeyBindingThrowWeapon.isPressed())
             WeaponThrowingManager.throwWeapon();
     }
@@ -253,7 +250,7 @@ public class EventListener {
             if (event.getWorld().isRemote)
                 if (player.equals(Minecraft.getMinecraft().player))
                     MythriaPacketHandler.INSTANCE
-                            .sendToServer(new CommandPacket(CommandPacketHandler.PROFILE_SYNC_REQUEST));
+                            .sendToServer(new CommandPacket(CommandPacket.CommandPacketHandler.PROFILE_SYNC_REQUEST));
         }
         VanillaEntityManager.onEntityJoinWorld(event);
     }
@@ -354,6 +351,7 @@ public class EventListener {
         if (event.getEntityPlayer().getEntityWorld().isRemote)
             return;
         FoodManager.UpdateFoodItems(event);
+        SmeltingManager.updateVessels(event);
     }
 
     @SideOnly(Side.CLIENT)
@@ -447,6 +445,7 @@ public class EventListener {
             StatManager.onTick(event);
             TimeManager.onTick(event);
             HealManager.onTick(event);
+            WeatherManager.onServerTick();
         }
     }
 

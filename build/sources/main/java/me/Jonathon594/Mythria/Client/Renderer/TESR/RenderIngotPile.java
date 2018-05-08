@@ -29,6 +29,7 @@ public class RenderIngotPile extends TileEntitySpecialRenderer<TileEntityIngotPi
         if (tep.getWorld() != null && tep.getStack() != null && block == MythriaBlocks.INGOT_PILE)
         {
             int i = tep.getIngotCount();
+            if(tep.getIngotType() == null) return;
             bindTexture(new ResourceLocation("mythria:textures/blocks/metal/" + tep.getIngotType().name().toLowerCase() + ".png")); //texture
 
             GlStateManager.pushMatrix(); //start

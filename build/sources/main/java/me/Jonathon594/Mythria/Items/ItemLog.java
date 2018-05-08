@@ -10,7 +10,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class ItemLog extends MythriaItem implements IVariantData {
     public ItemLog(String name, double weight) {
-        super(name,4, weight);
+        super(name,8, weight);
         setMaxDamage(0);
         this.hasSubtypes = true;
         this.setMaxDamage(0);

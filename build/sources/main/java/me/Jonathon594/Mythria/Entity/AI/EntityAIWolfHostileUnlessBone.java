@@ -13,7 +13,7 @@ import javax.annotation.Nullable;
 
 public class EntityAIWolfHostileUnlessBone<T extends EntityLivingBase> extends EntityAINearestAttackableTarget<T> {
     private final EntityWolf wolf;
-    private final int targetChance = 20;
+    private final int targetChance = 1;
 
     public EntityAIWolfHostileUnlessBone(final EntityWolf wolf, final Class<T> classTarget) {
         super(wolf, classTarget, 20, true, true, null);

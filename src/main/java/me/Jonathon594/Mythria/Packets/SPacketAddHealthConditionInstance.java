@@ -1,11 +1,16 @@
 package me.Jonathon594.Mythria.Packets;
 
 import io.netty.buffer.ByteBuf;
+import me.Jonathon594.Mythria.Capability.Profile.IProfile;
+import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.DataTypes.HealthConditionInstance;
 import me.Jonathon594.Mythria.Managers.HealthManager;
+import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 public class SPacketAddHealthConditionInstance implements IMessage {
 
@@ -43,4 +48,16 @@ public class SPacketAddHealthConditionInstance implements IMessage {
         return pa;
     }
 
+    public static class SPacketAddHealthConditionInstanceHandler
+            implements IMessageHandler<SPacketAddHealthConditionInstance, IMessage> {
+
+        @Override
+        public IMessage onMessage(final SPacketAddHealthConditionInstance message, final MessageContext ctx) {
+            final Minecraft mc = Minecraft.getMinecraft();
+            final IProfile profile = mc.player.getCapability(ProfileProvider.PROFILE_CAP, null);
+            profile.addHealthCondition(message.getAttribute());
+            return null;
+        }
+
+    }
 }

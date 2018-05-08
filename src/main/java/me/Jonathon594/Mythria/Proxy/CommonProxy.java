@@ -74,6 +74,7 @@ public class CommonProxy {
         SmithingManager.Initialize();
         CarpentryManager.Initialize();
         MythriaVanillaBlocksModification.setAllDefaultStackSizes();
+        WeatherManager.initialize();
 
         MinecraftForge.EVENT_BUS.register(CapabilityHandler.class);
         MinecraftForge.EVENT_BUS.register(EventListener.class);
@@ -87,36 +88,36 @@ public class CommonProxy {
         TimeManager.Initialize();
 
         int ID = 0;
-        MythriaPacketHandler.INSTANCE.registerMessage(ProfileCreationPacketHandler.class, ProfileCreationPacket.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketProfileCreation.ProfileCreationPacketHandler.class, CPacketProfileCreation.class,
                 ID++, Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(CommandPacketHandler.class, CommandPacket.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(CommandPacket.CommandPacketHandler.class, CommandPacket.class, ID++,
                 Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateAttributeHandler.class, SPacketUpdateAttribute.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateAttribute.SPacketUpdateAttributeHandler.class, SPacketUpdateAttribute.class, ID++,
                 Side.CLIENT);
-        MythriaPacketHandler.INSTANCE.registerMessage(ClientProfileDataCachePacketHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(ClientProfileDataCachePacket.ClientProfileDataCachePacketHandler.class,
                 ClientProfileDataCachePacket.class, ID++, Side.CLIENT);
-        MythriaPacketHandler.INSTANCE.registerMessage(CPacketAddExperienceHandler.class, CPacketAddExperience.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketAddExperience.CPacketAddExperienceHandler.class, CPacketAddExperience.class,
                 ID++, Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateExperienceHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketAddExperience.SPacketUpdateExperienceHandler.class,
                 SPacketUpdateExperience.class, ID++, Side.CLIENT);
-        MythriaPacketHandler.INSTANCE.registerMessage(WallJumpPacketHandler.class, WallJumpPacket.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(WallJumpPacket.WallJumpPacketHandler.class, WallJumpPacket.class, ID++,
                 Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(ThrowWeaponPacketHandler.class, ThrowWeaponPacket.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(ThrowWeaponPacket.ThrowWeaponPacketHandler.class, ThrowWeaponPacket.class, ID++,
                 Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(SPacketAddAttributeHandler.class, SPacketAddAttribute.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(SPacketAddAttribute.SPacketAddAttributeHandler.class, SPacketAddAttribute.class, ID++,
                 Side.CLIENT);
-        MythriaPacketHandler.INSTANCE.registerMessage(CPacketConsumeConsumableHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketConsumeConsumable.CPacketConsumeConsumableHandler.class,
                 CPacketConsumeConsumable.class, ID++, Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(DPacketSoundEventHandler.class, DPacketSoundEvent.class, ID++,
+        MythriaPacketHandler.INSTANCE.registerMessage(DPacketSoundEvent.DPacketSoundEventHandler.class, DPacketSoundEvent.class, ID++,
                 Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(CPacketSetResistanceTicksHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketSetResistanceTicks.CPacketSetResistanceTicksHandler.class,
                 CPacketSetResistanceTicks.class, ID++, Side.SERVER);
-        MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateConsumablesHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateConsumables.SPacketUpdateConsumablesHandler.class,
                 SPacketUpdateConsumables.class, ID++, Side.CLIENT);
-        MythriaPacketHandler.INSTANCE.registerMessage(SPacketAddHealthConditionInstanceHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(SPacketAddHealthConditionInstance.SPacketAddHealthConditionInstanceHandler.class,
                 SPacketAddHealthConditionInstance.class, ID++, Side.CLIENT);
 
-        MythriaPacketHandler.INSTANCE.registerMessage(AttackEntityPacketCustomHandler.class,
+        MythriaPacketHandler.INSTANCE.registerMessage(AttackEntityPacketCustom.AttackEntityPacketCustomHandler.class,
                 AttackEntityPacketCustom.class, ID++, Side.SERVER);
 
         MythriaPacketHandler.INSTANCE.registerMessage(SPacketUpdateVessel.SPacketUpdateVesselHandler.class,
@@ -124,6 +125,9 @@ public class CommonProxy {
 
         MythriaPacketHandler.INSTANCE.registerMessage(CPacketAnvilButton.CPacketAnvilButtonHandler.class,
                 CPacketAnvilButton.class, ID++, Side.SERVER);
+
+        MythriaPacketHandler.INSTANCE.registerMessage(CPacketSawhorseButton.CPacketSawhorseButtonHandler.class,
+                CPacketSawhorseButton.class, ID++, Side.SERVER);
 
         MythriaPacketHandler.INSTANCE.registerMessage(SPacketSetSelectedDeity.SPacketSetSelectedDeityHandler.class,
                 SPacketSetSelectedDeity.class, ID++, Side.CLIENT);

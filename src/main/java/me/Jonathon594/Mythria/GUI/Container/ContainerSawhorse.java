@@ -1,14 +1,9 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.Capability.Profile.IProfile;
-import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
-import me.Jonathon594.Mythria.Enum.AttributeFlag;
-import me.Jonathon594.Mythria.Managers.CarpentryManager;
+import me.Jonathon594.Mythria.TileEntity.TileEntityAnvil;
 import me.Jonathon594.Mythria.TileEntity.TileEntitySawHorse;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.Container;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
@@ -22,6 +17,7 @@ public class ContainerSawhorse extends Container {
 
     public ContainerSawhorse(TileEntitySawHorse sawHorse, InventoryPlayer inventoryPlayer) {
         inventory = sawHorse.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
+
         this.sawHorse = sawHorse;
         this.addSlotToContainer(new SawhorseWoodSlot(inventory, 0, 87, 12));
         this.addSlotToContainer(new SawhotseSawSlot(inventory, 1, 105, 12));
@@ -42,35 +38,6 @@ public class ContainerSawhorse extends Container {
     }
 
     @Override
-    public ItemStack slotClick(int slotId, int dragType, ClickType clickTypeIn, EntityPlayer player) {
-        if(slotId == 2) {
-            takeResult(player);
-        }
-
-        ItemStack is = super.slotClick(slotId, dragType, clickTypeIn, player);
-
-        inputChanged(player);
-
-        return is;
-    }
-
-    private void inputChanged(EntityPlayer player) {
-        ItemStack input = inventory.getStackInSlot(0);
-        ItemStack saw = this.inventorySlots.get(1).getStack();
-        if(input != null && input != ItemStack.EMPTY && !input.getItem().equals(Items.AIR) &&
-            saw != null && saw != ItemStack.EMPTY && !saw.getItem().equals(Items.AIR)) {
-                IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
-                CarpentryManager.SawResult result = CarpentryManager.getSawResult(input);
-                if (result != null && profile.hasFlag(AttributeFlag.CARPENTRY)) {
-                    ItemStack output = result.getOutput();
-                    this.inventorySlots.get(2).putStack(output);
-                }
-        } else {
-            this.inventorySlots.get(2).putStack(ItemStack.EMPTY);
-        }
-    }
-
-    @Override
     public boolean canInteractWith(EntityPlayer playerIn) {
         return true;
     }
@@ -81,10 +48,6 @@ public class ContainerSawhorse extends Container {
         ItemStack original = ItemStack.EMPTY;
         Slot slot = this.inventorySlots.get(index);
 
-        if(index == 2) {
-            takeResult(playerIn);
-        }
-
         if (slot != null && slot.getHasStack())
         {
             ItemStack copy = slot.getStack();
@@ -92,12 +55,8 @@ public class ContainerSawhorse extends Container {
 
             if (index > 2)
             {
-                if (this.inventorySlots.get(0).isItemValid(copy) ) {
+                if (this.inventorySlots.get(0).isItemValid(copy) ){
                     if (!this.mergeItemStack(copy, 0, 1, false)) {
-                        return ItemStack.EMPTY;
-                    }
-                } else if (this.inventorySlots.get(1).isItemValid(copy) ){
-                    if (!this.mergeItemStack(copy, 1, 2, false)) {
                         return ItemStack.EMPTY;
                     }
                 } else {
@@ -132,18 +91,7 @@ public class ContainerSawhorse extends Container {
 
             slot.onTake(playerIn, copy);
         }
-
-        inputChanged(playerIn);
         return original;
-    }
-
-    private void takeResult(EntityPlayer player) {
-        ItemStack saw = this.inventorySlots.get(1).getStack();
-        ItemStack output = this.inventorySlots.get(2).getStack();
-        if(output == null || output.equals(ItemStack.EMPTY) || output.getItem().equals(Items.AIR)) return;
-        this.inventorySlots.get(0).getStack().shrink(1);
-        getSawHorse().damageSaw(saw, output.getCount());
-        getSawHorse().addPlayerXP(player, output.getCount());
     }
 
     public TileEntitySawHorse getSawHorse() {

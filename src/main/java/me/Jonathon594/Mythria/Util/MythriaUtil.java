@@ -41,6 +41,7 @@ import net.minecraft.nbt.NBTTagString;
 import net.minecraft.util.CombatRules;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.*;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import sun.font.SunFontManager;
@@ -422,6 +423,11 @@ public class MythriaUtil {
                 entity instanceof EntityWitherSkeleton || entity instanceof EntityPigZombie;
     }
 
+    public static double round (double value, int precision) {
+        int scale = (int) Math.pow(10, precision);
+        return (double) Math.round(value * scale) / scale;
+    }
+
     public static boolean isWaterMob(EntityLivingBase entity) {
         return entity instanceof EntityGuardian || entity instanceof EntityElderGuardian;
     }
@@ -432,5 +438,18 @@ public class MythriaUtil {
 
     public static boolean isNatureMob(EntityLivingBase entity) {
         return entity instanceof EntityAnimal;
+    }
+
+    public static BlockPos getRandomLocationInRadius(int radius, BlockPos position, World worldIn) {
+        boolean accept = false;
+        Vec3d v = Vec3d.ZERO;
+        while(accept == false) {
+            double x = (Math.random() - 0.5) * radius * 2;
+            double z = (Math.random() - 0.5) * radius * 2;
+            v = new Vec3d(x + position.getX(), position.getY(), z + position.getZ());
+            if(v.distanceTo(new Vec3d(position.getX(), position.getY(), position.getZ())) < radius) accept = true;
+        }
+        BlockPos pos = worldIn.getTopSolidOrLiquidBlock(new BlockPos(v));
+        return pos;
     }
 }
