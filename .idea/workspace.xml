@@ -2,385 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/SpawnData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIReinforceThoseWithFlag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Season.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/StormType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/changelog/1.2.4.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/changelog/1.2.5.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/sounds/sawhorse_saw.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/BlockSawHorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/BlockSawHorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderRex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderRex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/Time/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/Time/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Weather/Tornado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/monster/EntityRex.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/monster/EntityRex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/GuiAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/GuiAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/MythriaMenuGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/MythriaMenuGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/ItemLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/ItemLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/ItemPlank.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/ItemPlank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/EventListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/BlessingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/BlessingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/PerkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/PerkManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/SmeltingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/SmeltingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/SoundManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/SoundManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/VanillaEntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/VanillaEntityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Mythria.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Mythria.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustomHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketAddExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketAddExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketAddExperienceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumableHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton$CPacketSawhorseButtonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton$CPacketSawhorseButtonHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicksHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistanceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocityHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CommandPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CommandPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/CommandPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/DPacketSoundEventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability$Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability$Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ProfileCreationPacket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ProfileCreationPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstanceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttributeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumablesHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/SPacketUpdateExperienceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/WallJumpPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/WallJumpPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Packets/WallJumpPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Util/MythriaUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Util/MythriaUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/lang/en_US.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/sounds/ability_activate.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/sounds/ability_deactivate.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/textures/gui/container/gui_saw_horse.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/textures/gui/container/gui_saw_horse.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/BlockSawHorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/BlockSawHorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Weather/Tornado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/monster/EntityRex.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/monster/EntityRex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/GuiAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/GuiAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/ItemLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/ItemLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/SmeltingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/SmeltingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/SoundManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Mythria.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Mythria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustomHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperienceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumableHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketSawhorseButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicksHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistanceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocityHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CommandPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CommandPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/CommandPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ProfileCreationPacket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ProfileCreationPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstanceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttributeHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumablesHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateExperienceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/sounds/ability_activate.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/sounds/ability_deactivate.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderRex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderRex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/Time/Date.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/Time/Date.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/Tornado.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/monster/EntityRex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/monster/EntityRex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/Container/ContainerSawhorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/Container/ContainerSawhorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/GuiSawhorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/GuiSawhorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/MythriaMenuGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/MythriaMenuGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/ItemLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/ItemLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/ItemPlank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/ItemPlank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/EventListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/PerkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/PerkManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/SmeltingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/SmeltingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/SoundManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/SoundManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/VanillaEntityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/VanillaEntityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustomHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketAddExperience.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketAddExperience.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketAddExperienceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumableHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicksHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistanceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocityHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CommandPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CommandPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/CommandPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/DPacketSoundEventHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability$Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability$Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ProfileCreationPacket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ProfileCreationPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstanceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateAttributeHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumablesHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/SPacketUpdateExperienceHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/ThrowWeaponPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/WallJumpPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/WallJumpPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Packets/WallJumpPacketHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Util/MythriaUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Util/MythriaUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2018-04-10-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2018-04-10-1.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2018-04-10-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2018-04-10-2.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2018-04-10-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2018-04-10-3.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2018-04-10-4.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2018-04-10-4.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/2018-04-10-5.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2018-04-10-5.log.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/007fdc41-9afa-3dd2-b8c2-6d71f040d4a4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/0de52af9-02ff-3033-a9e5-ba9cb563491f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/0e2ef6d7-b626-37a3-b614-05b4e8649bce.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/20c1711e-6e1a-34df-86a3-92ae832d2f9f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/2a040a11-2e73-3076-950d-54036bd62bd7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/3e863622-2d77-3b8e-b124-c7923d3d13f8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/46c1b760-ca01-3b6f-9924-2c0867885238.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/531f93d1-831a-358c-9bf3-ee2b829257f5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/61902a9a-ee57-3dbe-9983-6580939e802a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/8b435ab7-751f-377f-8d6e-243e4ae9abf2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/af1e0784-3719-3271-9d4b-734c7d03d2c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/be5d3ae9-cfb8-3e0e-818b-c883ef6066be.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/c6ee12ed-7678-319d-87c9-a5de81832a4f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/d1587dea-b047-3ee8-b46a-f3d599824159.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/eed453d8-1b3a-3fa3-9fc5-1cf433d73521.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/f4755d8e-161a-3abe-8338-935e4189097a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/f8a1463c-07b2-3433-918f-386b8accf0f1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/f8ecce46-2a8b-3dd7-b17c-715cc94801bb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Temple.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Village.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/007fdc41-9afa-3dd2-b8c2-6d71f040d4a4.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/0de52af9-02ff-3033-a9e5-ba9cb563491f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/0e2ef6d7-b626-37a3-b614-05b4e8649bce.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/20c1711e-6e1a-34df-86a3-92ae832d2f9f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/2a040a11-2e73-3076-950d-54036bd62bd7.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/3e863622-2d77-3b8e-b124-c7923d3d13f8.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/46c1b760-ca01-3b6f-9924-2c0867885238.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/531f93d1-831a-358c-9bf3-ee2b829257f5.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/61902a9a-ee57-3dbe-9983-6580939e802a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/8b435ab7-751f-377f-8d6e-243e4ae9abf2.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/af1e0784-3719-3271-9d4b-734c7d03d2c7.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/be5d3ae9-cfb8-3e0e-818b-c883ef6066be.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/c6ee12ed-7678-319d-87c9-a5de81832a4f.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/d1587dea-b047-3ee8-b46a-f3d599824159.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/eed453d8-1b3a-3fa3-9fc5-1cf433d73521.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f4755d8e-161a-3abe-8338-935e4189097a.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f8a1463c-07b2-3433-918f-386b8accf0f1.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f8ecce46-2a8b-3dd7-b17c-715cc94801bb.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-2.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-2.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-2.0.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-2.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.1.mca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/007fdc41-9afa-3dd2-b8c2-6d71f040d4a4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/0de52af9-02ff-3033-a9e5-ba9cb563491f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/0e2ef6d7-b626-37a3-b614-05b4e8649bce.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/20c1711e-6e1a-34df-86a3-92ae832d2f9f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/2a040a11-2e73-3076-950d-54036bd62bd7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/3e863622-2d77-3b8e-b124-c7923d3d13f8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/46c1b760-ca01-3b6f-9924-2c0867885238.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/531f93d1-831a-358c-9bf3-ee2b829257f5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/61902a9a-ee57-3dbe-9983-6580939e802a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/8b435ab7-751f-377f-8d6e-243e4ae9abf2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/af1e0784-3719-3271-9d4b-734c7d03d2c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/be5d3ae9-cfb8-3e0e-818b-c883ef6066be.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/c6ee12ed-7678-319d-87c9-a5de81832a4f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/d1587dea-b047-3ee8-b46a-f3d599824159.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/eed453d8-1b3a-3fa3-9fc5-1cf433d73521.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f4755d8e-161a-3abe-8338-935e4189097a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f8a1463c-07b2-3433-918f-386b8accf0f1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f8ecce46-2a8b-3dd7-b17c-715cc94801bb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/TESR/RenderIngotPile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Sounds/MythriaSounds.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/AI/EntityAIWolfHostileUnlessBone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/Tornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/monster/EntityRex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Monster/EntityRex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/ContainerSawhorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/Container/ContainerSawhorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiSawhorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/GuiSawhorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaMenuGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/GUI/MythriaProfileCreationGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemPlank.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/MythriaInventoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SmeltingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SmeltingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SoundManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SoundManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/VanillaEntityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/AttackEntityPacketCustomHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketAddExperienceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketConsumeConsumableHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketSetResistanceTicksHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdateFallDistanceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketUpdatePlayerVelocityHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ClientProfileDataCachePacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CommandPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CommandPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CommandPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/DPacketSoundEventHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/MessageBulkUpdateContainerCapability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/MessageUpdateContainerCapability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ProfileCreationPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketProfileCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ProfileCreationPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddAttributeHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketAddHealthConditionInstanceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttribute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateAttributeHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateConsumablesHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/SPacketUpdateExperienceHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/ThrowWeaponPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/WallJumpPacketHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/sounds.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/sounds.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/sounds/ability_activate.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/sounds/ability_deactivate.ogg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -429,90 +53,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EntityEarthQuake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2155#2156#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10370">
-              <caret line="666" column="22" selection-start-line="666" selection-start-column="22" selection-end-line="666" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MythriaUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
-              <caret line="425" column="10" selection-start-line="425" selection-start-column="10" selection-end-line="425" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityTornado.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1383">
-              <caret line="176" column="36" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
-              <folding>
-                <element signature="e#1785#1786#0" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#6140#6141#0" expanded="true" />
-                <element signature="e#6183#6184#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityThrowingWeapon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityThrowingWeapon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5032">
-              <caret line="403" selection-start-line="403" selection-end-line="403" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TornadoModule.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeatherManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1235,7 +776,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/AbilityManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TreeModule.java" />
@@ -1267,7 +807,6 @@
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Season.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/SpawnData.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF1.java" />
@@ -1286,6 +825,8 @@
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" />
       </list>
     </option>
   </component>
@@ -1300,9 +841,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1318,11 +857,6 @@
             <path>
               <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
               <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1345,45 +879,13 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Weather" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mythria" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1391,17 +893,13 @@
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_141/bin/jvisualvm.exe" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\sounds" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="me.Jonathon594.Mythria.Packets.SPacketUpdateConsumables" />
       <recent name="SPack" />
       <recent name="me.Jonathon594.Mythria.Util.MythriaUtil" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="me.Jonathon594.Mythria.DataTypes" />
-      <recent name="me.Jonathon594.Mythria.Enum" />
-      <recent name="me.Jonathon594.Mythria.Entity.Weather" />
-      <recent name="me.Jonathon594.Mythria.Module" />
-      <recent name="me.Jonathon594.Mythria.Entity.AI" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jonat\Documents\GitHub\Mythria\run\mods" />
@@ -1413,8 +911,12 @@
       <recent name="me.Jonathon594.Mythria.DataTypes" />
       <recent name="me.Jonathon594.Mythria.Items" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\sounds" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="me.Jonathon594.Mythria.DataTypes" />
+      <recent name="me.Jonathon594.Mythria.Enum" />
+      <recent name="me.Jonathon594.Mythria.Entity.Weather" />
+      <recent name="me.Jonathon594.Mythria.Module" />
+      <recent name="me.Jonathon594.Mythria.Entity.AI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1547,7 +1049,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32900432" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -1559,7 +1060,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Run with VisualVM" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29584223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3022388" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1568,13 +1070,13 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32142857" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32900432" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32900432" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1634,34 +1136,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/changelog/1.2.4.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="401" column="38" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/scenario/animation/SplineInterpolator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-212">
-          <caret line="93" column="11" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/world/storage/WorldInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="519" column="16" selection-start-line="519" selection-start-column="16" selection-end-line="519" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/world/WorldProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
@@ -1736,13 +1210,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="447" column="42" selection-start-line="447" selection-start-column="42" selection-end-line="447" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -1867,10 +1334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1899,13 +1362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6120">
           <caret line="425" column="10" selection-start-line="425" selection-start-column="10" selection-end-line="425" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -1953,25 +1409,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
+        <state relative-caret-position="884">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1383">
+        <state relative-caret-position="1921">
           <caret line="176" column="36" selection-start-line="176" selection-start-column="36" selection-end-line="176" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="142" column="4" selection-start-line="142" selection-start-column="4" selection-end-line="147" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3417">
+          <caret line="221" column="45" selection-start-line="221" selection-start-column="45" selection-end-line="221" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="450" column="44" lean-forward="true" selection-start-line="450" selection-start-column="44" selection-end-line="450" selection-end-column="44" />
           <folding>
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#6140#6141#0" expanded="true" />
-            <element signature="e#6183#6184#0" expanded="true" />
+            <element signature="e#4455#4456#0" expanded="true" />
+            <element signature="e#4503#4504#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
         </state>
       </provider>
     </entry>
