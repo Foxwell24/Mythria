@@ -6,13 +6,26 @@ import java.util.UUID;
 
 public class NPC implements INPC {
 
-    UUID profileUUID;
+    private UUID profileUUID;
+
+    @Override
+    public int getEntityID() {
+        return entityID;
+    }
+
+    @Override
+    public void setEntityID(int entityID) {
+        this.entityID = entityID;
+    }
+
+    private int entityID;
 
     @Override
     public void fromNBT(final NBTTagCompound comp) {
         if (comp == null)
             return;
         profileUUID = !comp.hasKey("ProfileUUID") ? null : UUID.fromString(comp.getString("ProfileUUID"));
+        entityID = comp.getInteger("entityID");
     }
 
     @Override
@@ -30,6 +43,7 @@ public class NPC implements INPC {
         final NBTTagCompound comp = new NBTTagCompound();
         if (profileUUID != null)
             comp.setString("ProfileUUID", profileUUID.toString());
+        comp.setInteger("entityID", entityID);
         return comp;
     }
 

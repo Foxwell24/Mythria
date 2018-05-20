@@ -448,7 +448,8 @@ public class EventListener {
             StatManager.onTick(event);
             TimeManager.onTick(event);
             HealManager.onTick(event);
-            //WeatherManager.onServerTick();
+            WeatherManager.onServerTick();
+            DeityManager.onServerTick();
         }
     }
 

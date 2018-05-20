@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "extreme_hills": "2018-05-20 12:27:03 -0500",
+      "stone_beach": "2018-05-20 12:30:18 -0500"
+    },
+    "done": false
+  }
+}

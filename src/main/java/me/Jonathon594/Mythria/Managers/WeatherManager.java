@@ -64,6 +64,7 @@ public class WeatherManager {
                 storm.rotationYaw = d;
                 storm.setPosition(pos.getX(), pos.getY(), pos.getZ());
                 player.world.spawnEntity(storm);
+                storm.onSpawn();
                 for(EntityPlayerMP p : players) {
                     p.sendMessage(new TextComponentString(type + " has spawned!"));
                 }

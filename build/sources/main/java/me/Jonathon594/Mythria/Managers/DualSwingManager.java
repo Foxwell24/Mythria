@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Entity.EntityNPCPlayer;
-import me.Jonathon594.Mythria.Items.ItemWand;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.AttackEntityPacketCustom;
 import net.minecraft.client.Minecraft;
@@ -18,16 +17,12 @@ import net.minecraft.stats.StatList;
 import net.minecraft.util.EntityDamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.EnumParticleTypes;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.WorldServer;
-import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
-import java.lang.reflect.Field;
 
 public class DualSwingManager {
 
@@ -271,11 +266,11 @@ public class DualSwingManager {
             Item o = mc.player.getHeldItem(EnumHand.OFF_HAND).getItem();
             Item m = mc.player.getHeldItem(EnumHand.MAIN_HAND).getItem();
             if((!(o instanceof ItemSword) && !(o instanceof ItemTool))
-                    && (m instanceof ItemSword || m instanceof ItemTool || m instanceof ItemWand)) {
+                    && (m instanceof ItemSword || m instanceof ItemTool)) {
                 hand = EnumHand.MAIN_HAND;
             }
             if((!(m instanceof ItemSword) && !(m instanceof ItemTool))
-                    && (o instanceof ItemSword || o instanceof ItemTool || o instanceof ItemWand)) {
+                    && (o instanceof ItemSword || o instanceof ItemTool)) {
                 hand = EnumHand.OFF_HAND;
             }
             lastHand = hand;

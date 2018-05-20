@@ -31,9 +31,12 @@ public class CapabilityHandler {
     public static void attachCapability(final AttachCapabilitiesEvent<Entity> event) {
         if (event.getObject() instanceof EntityPlayer) {
             event.addCapability(PROFILE_CAP, new ProfileProvider());
-        }
-        if (event.getObject() instanceof EntityNPCPlayer)
             event.addCapability(NPC_CAP, new NPCProvider());
+        }
+        if (event.getObject() instanceof EntityNPCPlayer) {
+            event.addCapability(NPC_CAP, new NPCProvider());
+            event.addCapability(PROFILE_CAP, new ProfileProvider());
+        }
     }
 
     @SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)

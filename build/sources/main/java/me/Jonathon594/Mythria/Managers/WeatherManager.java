@@ -28,8 +28,7 @@ public class WeatherManager {
     }
 
     private static void createSpawnData() {
-        //Tornadoes
-        stormSpawnData.put(StormType.TORNADOF1,
+        stormSpawnData.put(StormType.TORNADO,
                 new SpawnData(0.002)
                         .addBiomeModifier(Biomes.DESERT, 2)
                         .addBiomeModifier(Biomes.SAVANNA, 2)
@@ -37,38 +36,12 @@ public class WeatherManager {
                         .addBiomeModifier(Biomes.ICE_PLAINS, 2)
                         .addSeasonModifier(Season.SUMMER, 0.5)
                         .addSeasonModifier(Season.WINTER, 0.5));
-        stormSpawnData.put(StormType.TORNADOF2,
-                new SpawnData(0.0016)
-                        .addBiomeModifier(Biomes.DESERT, 2)
-                        .addBiomeModifier(Biomes.SAVANNA, 2)
-                        .addBiomeModifier(Biomes.PLAINS, 4)
-                        .addBiomeModifier(Biomes.ICE_PLAINS, 2)
-                        .addSeasonModifier(Season.SUMMER, 0.5)
-                        .addSeasonModifier(Season.WINTER, 0.5));
-        stormSpawnData.put(StormType.TORNADOF3,
-                new SpawnData(0.0012)
-                        .addBiomeModifier(Biomes.DESERT, 2)
-                        .addBiomeModifier(Biomes.SAVANNA, 2)
-                        .addBiomeModifier(Biomes.PLAINS, 4)
-                        .addBiomeModifier(Biomes.ICE_PLAINS, 2)
-                        .addSeasonModifier(Season.SUMMER, 0.5)
-                        .addSeasonModifier(Season.WINTER, 0.5));
-        stormSpawnData.put(StormType.TORNADOF4,
-                new SpawnData(0.0008)
-                        .addBiomeModifier(Biomes.DESERT, 2)
-                        .addBiomeModifier(Biomes.SAVANNA, 2)
-                        .addBiomeModifier(Biomes.PLAINS, 4)
-                        .addBiomeModifier(Biomes.ICE_PLAINS, 2)
-                        .addSeasonModifier(Season.SUMMER, 0.5)
-                        .addSeasonModifier(Season.WINTER, 0.5));
-        stormSpawnData.put(StormType.TORNADOF5,
-                new SpawnData(0.0004)
-                        .addBiomeModifier(Biomes.DESERT, 2)
-                        .addBiomeModifier(Biomes.SAVANNA, 2)
-                        .addBiomeModifier(Biomes.PLAINS, 4)
-                        .addBiomeModifier(Biomes.ICE_PLAINS, 2)
-                        .addSeasonModifier(Season.SUMMER, 0.5)
-                        .addSeasonModifier(Season.WINTER, 0.5));
+        stormSpawnData.put(StormType.EARTHQUAKE,
+                new SpawnData(0.002)
+                        .addBiomeModifier(Biomes.ICE_MOUNTAINS, 2)
+                        .addBiomeModifier(Biomes.EXTREME_HILLS, 8)
+                        .addBiomeModifier(Biomes.MESA, 4)
+                        .addBiomeModifier(Biomes.MESA_ROCK, 4));
     }
 
     public static void onServerTick() {
@@ -91,6 +64,7 @@ public class WeatherManager {
                 storm.rotationYaw = d;
                 storm.setPosition(pos.getX(), pos.getY(), pos.getZ());
                 player.world.spawnEntity(storm);
+                storm.onSpawn();
                 for(EntityPlayerMP p : players) {
                     p.sendMessage(new TextComponentString(type + " has spawned!"));
                 }
@@ -110,16 +84,14 @@ public class WeatherManager {
 
     private static EntityStorm getNewStormEntityFromType(StormType type, World world) {
         switch (type) {
-            case TORNADOF1:
-                return new EntityTornadoF1(world);
-            case TORNADOF2:
-                return new EntityTornadoF2(world);
-            case TORNADOF3:
-                return new EntityTornadoF3(world);
-            case TORNADOF4:
-                return new EntityTornadoF4(world);
-            case TORNADOF5:
-                return new EntityTornadoF5(world);
+            case TORNADO:
+                EntityTornado tornado = new EntityTornado(world);
+                tornado.applyRandomFactor();
+                return tornado;
+            case EARTHQUAKE:
+                EntityEarthQuake earthQuake = new EntityEarthQuake(world);
+                earthQuake.applyRandomMagnitude();
+                return earthQuake;
         }
         return null;
     }

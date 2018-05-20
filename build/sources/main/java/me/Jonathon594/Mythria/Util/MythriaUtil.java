@@ -423,6 +423,11 @@ public class MythriaUtil {
                 entity instanceof EntityWitherSkeleton || entity instanceof EntityPigZombie;
     }
 
+    public static double round (double value, int precision) {
+        int scale = (int) Math.pow(10, precision);
+        return (double) Math.round(value * scale) / scale;
+    }
+
     public static boolean isWaterMob(EntityLivingBase entity) {
         return entity instanceof EntityGuardian || entity instanceof EntityElderGuardian;
     }

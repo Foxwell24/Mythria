@@ -88,7 +88,7 @@ key_key.hotbar.9:10
 key_Open Menu:34
 key_Toggle Chat:21
 key_Throw Weapon:19
-soundCategory_master:1.0
+soundCategory_master:0.28145695
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0

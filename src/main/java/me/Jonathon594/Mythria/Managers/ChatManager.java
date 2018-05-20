@@ -29,6 +29,8 @@ public class ChatManager {
 
     private static Map<EntityPlayerMP, ChatChannel> selectedChannels = new HashMap<>();
 
+    private static HashMap<EntityPlayerMP, Long> lastOOCMap = new HashMap<>();
+
     @SideOnly(Side.SERVER)
     public static void initilizeDiscord() {
         try {
@@ -67,6 +69,14 @@ public class ChatManager {
                 .getPlayers();
         final ChatChannel channel = ChatManager.getChatChannel(sender);
         final int range = ChatManager.getRange(channel);
+        if(channel.equals(ChatChannel.OOC)) {
+            if(!canSendOOC(sender)) {
+                sender.sendMessage(new TextComponentString("You need to wait longer to send an OOC message."));
+                return;
+            } else {
+                lastOOCMap.put(sender, System.currentTimeMillis());
+            }
+        }
         final TextFormatting tf = ChatManager.getColor(channel);
         for (final EntityPlayerMP player : players) {
             if (!sender.getEntityWorld().equals(player.getEntityWorld()) && range > 0)
@@ -94,6 +104,12 @@ public class ChatManager {
             channels.get(0).sendMessage(p.getFirstName() + " " + p.getLastName() + " (" + sender.getName() + "): " +
                     event.getMessage() + " " + sender.getPosition().toString()).queue();
         }
+    }
+
+    private static boolean canSendOOC(EntityPlayerMP sender) {
+        if(!lastOOCMap.containsKey(sender)) return true;
+        if(lastOOCMap.get(sender) + 15000 < System.currentTimeMillis()) return true;
+        return false;
     }
 
     public static void sendMessage(ServerChatEvent event, EntityPlayerMP sender, IProfile p, EntityPlayerMP player, TextFormatting tf) {

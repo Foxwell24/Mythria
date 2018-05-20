@@ -1,37 +1,31 @@
 package me.Jonathon594.Mythria.Entity.Weather;
 
 
-import me.Jonathon594.Mythria.Enum.Season;
 import me.Jonathon594.Mythria.Managers.SoundManager;
 import me.Jonathon594.Mythria.Module.TornadoModule;
-import me.Jonathon594.Mythria.MythriaPacketHandler;
-import me.Jonathon594.Mythria.Packets.DPacketSoundEvent;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityFallingBlock;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.init.Biomes;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.SoundEvent;
+import net.minecraft.network.datasync.DataParameter;
+import net.minecraft.network.datasync.DataSerializers;
+import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.Biome;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 
-import java.util.HashMap;
+public class EntityTornado extends EntityStorm {
+    public static final DataParameter<Integer> TIER = EntityDataManager.createKey(EntityTornado.class, DataSerializers.VARINT);
 
-public abstract class EntityTornado extends EntityStorm {
-    protected float speed = 0.1f;
-
-    public EntityTornado(World worldIn, float speed) {
+    public EntityTornado(World worldIn) {
         super(worldIn);
-        this.speed = speed;
-        this.rotationYaw = (float) (Math.random() * Math.PI * 2);
+        if(!worldIn.isRemote) {
+            this.rotationYaw = (float) (Math.random() * Math.PI * 2);
+        }
     }
 
     public static int getWidth(int tier) {
@@ -42,9 +36,22 @@ public abstract class EntityTornado extends EntityStorm {
         return 82 + (tier * 4);
     }
 
+    public void applyRandomFactor() {
+        int f = 0;
+        double rand = Math.random();
+        if(rand == 0) f = 5;
+        else {
+            f = (int) Math.round(Math.min(1 / rand, 5));
+            f--;
+            f = Math.max(f, 0);
+        }
+        setTier(f);
+        System.out.println(f);
+    }
+
     @Override
     protected void entityInit() {
-
+        dataManager.register(TIER, 0);
     }
 
     @Override
@@ -57,22 +64,18 @@ public abstract class EntityTornado extends EntityStorm {
         return super.getRenderBoundingBox();
     }
 
-    public abstract int getTier();
-
     @Override
     public void onUpdate() {
         super.onUpdate();
 
         //Motion
-        posX += Math.cos(rotationYaw) * speed;
-        posZ += Math.sin(rotationYaw) * speed;
+        posX += Math.cos(rotationYaw) * getSpeed();
+        posZ += Math.sin(rotationYaw) * getSpeed();
 
         for (BlockPos pos = new BlockPos(posX, 256, posZ); TornadoModule.isEdible(world.getBlockState(pos.down()).getBlock(), getTier())
                 || world.getBlockState(pos.down()).getBlock().equals(Blocks.AIR); pos = pos.down()) {
             posY = pos.down(2).getY();
         }
-
-
 
         //Destruction
         if (world.isRemote) return;
@@ -162,10 +165,31 @@ public abstract class EntityTornado extends EntityStorm {
     }
 
     @Override
+    public void onSpawn() {
+        if(world.isRemote) return;
+        applyRandomFactor();
+    }
+
+    public int getTier() {
+        return dataManager.get(TIER);
+    }
+
+    private double getSpeed() {
+        return 0.1f;
+    }
+
+    public void setTier(int tier) {
+        dataManager.set(TIER, tier);
+    }
+
+    @Override
     protected void readEntityFromNBT(NBTTagCompound compound) {
+        dataManager.set(TIER, compound.getInteger("tier"));
+        setSize(getWidth(getTier()), getHeight(getTier()));
     }
 
     @Override
     protected void writeEntityToNBT(NBTTagCompound compound) {
+        compound.setInteger("tier", dataManager.get(TIER));
     }
 }

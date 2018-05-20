@@ -29,4 +29,6 @@ public abstract class EntityStorm extends Entity {
             }
         }
     }
+
+    public abstract void onSpawn();
 }

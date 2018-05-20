@@ -7,7 +7,7 @@ Etag download for http://files.minecraftforge.net/maven/net/minecraftforge/forge
 This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.
 
 #################################################
-         ForgeGradle 2.3-SNAPSHOT-4f2fe6a        
+         ForgeGradle 2.3-SNAPSHOT-4a7d623        
   https://github.com/MinecraftForge/ForgeGradle  
 #################################################
                  Powered by MCP                  
@@ -17,7 +17,7 @@ This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
+:sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
@@ -37,10 +37,10 @@ Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 3 warnings
 
-:processResources
+:processResources UP-TO-DATE
 :classes
 :jar
-:sourceTestJava
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
@@ -66,4 +66,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 50.054 secs
+Total time: 53.487 secs

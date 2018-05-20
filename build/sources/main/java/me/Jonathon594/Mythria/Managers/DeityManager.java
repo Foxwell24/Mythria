@@ -1,28 +1,40 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.Enum.Attribute;
+import me.Jonathon594.Mythria.DataTypes.DeityAbilities.*;
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.SPacketSetSelectedDeity;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.util.text.TextFormatting;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class DeityManager {
+    private static HashMap<Integer, Deity> selectedDeities = new HashMap<>();
+    private static HashMap<Deity, Integer> deityPower = new HashMap<>();
+
     public static HashMap<Integer, Deity> getSelectedDeities() {
         return selectedDeities;
     }
 
-    private static HashMap<Integer, Deity> selectedDeities = new HashMap<>();
+    public static void setDeityPower(Deity deity, int power) {
+        deityPower.put(deity, power);
+    }
+
+    public static int getDeityPower(Deity deity) {
+        return deityPower.get(deity);
+    }
 
     public static void setDeity(Integer entityID, Deity deity, boolean packet) {
-        if(deity == null) selectedDeities.remove(entityID);
+        if (deity == null) selectedDeities.remove(entityID);
         selectedDeities.put(entityID, deity);
 
-        if(packet) MythriaPacketHandler.INSTANCE.sendToAll(new SPacketSetSelectedDeity(entityID, deity == null ? -1: deity.ordinal()));
+        if (packet)
+            MythriaPacketHandler.INSTANCE.sendToAll(new SPacketSetSelectedDeity(entityID, deity == null ? -1 : deity.ordinal()));
     }
 
     public static String getDeityNameString(Deity d) {
@@ -32,7 +44,7 @@ public class DeityManager {
     }
 
     public static TextFormatting getDeityColor(Deity d) {
-        switch(d) {
+        switch (d) {
             case FELIXIA:
                 return TextFormatting.WHITE;
             case SELINA:
@@ -55,8 +67,8 @@ public class DeityManager {
 
     public static ArrayList<AttributeFlag> getFlagsGrantedByDeity(Deity deity) {
         ArrayList<AttributeFlag> grantedFlags = new ArrayList<>();
-        if(deity == null) return grantedFlags;
-        switch(deity) {
+        if (deity == null) return grantedFlags;
+        switch (deity) {
             case FELIXIA:
                 grantedFlags.add(AttributeFlag.FELIXIA_HEALING);
                 grantedFlags.add(AttributeFlag.FELIXIA_INTIMIDATION);
@@ -99,5 +111,50 @@ public class DeityManager {
                 break;
         }
         return grantedFlags;
+    }
+
+    public static void onServerTick() {
+        int tick = FMLCommonHandler.instance().getMinecraftServerInstance().getTickCounter();
+        if (tick % 200 == 0) {
+            ArrayList<Deity> deities = new ArrayList<>();
+            int totalPower = 0;
+            for (Deity deity : Deity.values()) {
+                deities.add(deity);
+                totalPower += DeityManager.getDeityPower(deity);
+            }
+            Collections.shuffle(deities);
+
+            for (Deity d : deities) {
+                if(totalPower < 8000) {
+                    DeityManager.setDeityPower(d, DeityManager.getDeityPower(d) + 1);
+                }
+            }
+        }
+    }
+
+    public static ArrayList<DeityAbility> getDeityAbilities() {
+        return deityAbilities;
+    }
+
+    private static ArrayList<DeityAbility> deityAbilities = new ArrayList<>();
+
+    public static DeityAbility getDeityAbility(String arg) {
+        for(DeityAbility da : deityAbilities) {
+            if(da.getName().equalsIgnoreCase(arg)) return da;
+        }
+        return null;
+    }
+
+    public static void Initialize() {
+        //Lilasia
+        deityAbilities.add(new DAZombie());
+        deityAbilities.add(new DASkeleton());
+        deityAbilities.add(new DASpider());
+
+        //Eliana
+        deityAbilities.add(new DATornado());
+
+        //Felixia
+        deityAbilities.add(new DAHeal());
     }
 }

@@ -6,6 +6,10 @@ import java.util.UUID;
 
 public interface INPC {
 
+    int getEntityID();
+
+    void setEntityID(int entityID);
+
     void fromNBT(NBTTagCompound comp);
 
     UUID getProfileUUID();

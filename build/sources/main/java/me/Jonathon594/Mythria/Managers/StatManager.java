@@ -8,13 +8,16 @@ import me.Jonathon594.Mythria.Enum.MythicSkills;
 import me.Jonathon594.Mythria.Enum.StatType;
 import me.Jonathon594.Mythria.Interface.IItemData;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.management.PlayerList;
 import net.minecraft.util.math.MathHelper;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent;
 import scala.collection.immutable.Stream;
@@ -213,5 +216,18 @@ public class StatManager {
         if (compare != oldSpeed)
              MythriaUtil.applyMythriaAttributeModifier(p, "Mythria.ProfileSpeed", value,
                     SharedMonsterAttributes.MOVEMENT_SPEED);
+    }
+
+    public static void handleConsume(LivingEntityUseItemEvent.Finish event) {
+        //Give thirst upon drinking a potion.
+        EntityLivingBase entity = event.getEntityLiving();
+        if (entity == null) return;
+        if (entity.world.isRemote) return;
+        if (entity instanceof EntityPlayer) {
+            if(event.getItem().equals(Items.POTIONITEM)) {
+                IProfile profile = entity.getCapability(ProfileProvider.PROFILE_CAP, null);
+                profile.setConsumable(Consumable.THIRST, profile.getConsumables().get(Consumable.THIRST) + 4);
+            }
+        }
     }
 }

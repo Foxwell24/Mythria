@@ -15,22 +15,18 @@ import net.minecraft.util.math.Vec3d;
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 
-public class RenderTornado<T extends Entity> extends Render<T> {
+public class RenderTornado<T extends EntityTornado> extends Render<T> {
 
-    private ArrayList<Vec3d> points;
-    private int tier = 0;
-
-    public RenderTornado(RenderManager renderManager, int tier) {
+    public RenderTornado(RenderManager renderManager) {
         super(renderManager);
-
-        points = TornadoModule.getTornadoVerticies(tier);
-        this.tier = tier;
     }
 
     int frame = 0;
 
     @Override
     public void doRender(T entity, double x, double y, double z, float entityYaw, float partialTicks) {
+        int tier = entity.getTier();
+        ArrayList<Vec3d> points = TornadoModule.getTornadoVerticies(tier);
         for(int i = 0; i < 251 + 17 * tier; i++) {
             int offset = points.size() / (256 + (32 * tier)) * i;
             Vec3d v = points.get(MythriaUtil.WrapInt(frame + offset, 0, points.size()-1));

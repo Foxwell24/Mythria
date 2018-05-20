@@ -25,6 +25,7 @@ import me.Jonathon594.Mythria.Storage.GlobalSaveData;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
 import net.minecraft.entity.ai.attributes.AttributeMap;
@@ -47,11 +48,8 @@ import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.ServerChatEvent;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.event.entity.item.ItemTossEvent;
-import net.minecraftforge.event.entity.living.LivingAttackEvent;
-import net.minecraftforge.event.entity.living.LivingDropsEvent;
+import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.event.entity.living.LivingEvent.LivingJumpEvent;
-import net.minecraftforge.event.entity.living.LivingHurtEvent;
-import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.event.entity.player.ItemFishedEvent;
 import net.minecraftforge.event.entity.player.PlayerContainerEvent;
@@ -86,6 +84,11 @@ public class EventListener {
         final IProfile p = sender.getCapability(ProfileProvider.PROFILE_CAP, null);
 
         ChatManager.handleForgeChat(event, sender, p);
+    }
+
+    @SubscribeEvent
+    public static void onPlayerConsume (LivingEntityUseItemEvent.Finish event) {
+        StatManager.handleConsume(event);
     }
 
 
@@ -446,6 +449,7 @@ public class EventListener {
             TimeManager.onTick(event);
             HealManager.onTick(event);
             WeatherManager.onServerTick();
+            DeityManager.onServerTick();
         }
     }
 

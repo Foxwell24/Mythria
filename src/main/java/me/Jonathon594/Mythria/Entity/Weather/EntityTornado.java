@@ -25,7 +25,6 @@ public class EntityTornado extends EntityStorm {
         super(worldIn);
         if(!worldIn.isRemote) {
             this.rotationYaw = (float) (Math.random() * Math.PI * 2);
-            applyRandomFactor();
         }
     }
 
@@ -163,6 +162,12 @@ public class EntityTornado extends EntityStorm {
             turn *= Math.random();
             this.rotationYaw += Math.toRadians(turn);
         }
+    }
+
+    @Override
+    public void onSpawn() {
+        if(world.isRemote) return;
+        applyRandomFactor();
     }
 
     public int getTier() {
