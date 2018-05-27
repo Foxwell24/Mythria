@@ -1,5 +1,6 @@
 package me.Jonathon594.Mythria.Blocks;
 
+import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -9,11 +10,8 @@ import net.minecraft.item.Item;
 import java.util.Random;
 
 public class MythriaOre extends MythriaBlock {
-    private Item itemDropped;
-
-    public MythriaOre(final Material materialIn, final String nameIn, double weight, int staminaCost, Item itemDropped) {
+    public MythriaOre(final Material materialIn, final String nameIn, double weight, int staminaCost) {
         super(Material.ROCK, nameIn, SoundType.STONE, weight, staminaCost,0 ,0);
-        this.itemDropped = itemDropped;
         setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         setHardness(3.0f);
         setResistance(5.0f);
@@ -21,7 +19,15 @@ public class MythriaOre extends MythriaBlock {
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return itemDropped;
+        if(this.equals(MythriaBlocks.TIN_ORE)) return MythriaItems.TIN_ORE;
+        else if(this.equals(MythriaBlocks.COPPER_ORE)) return MythriaItems.COPPER_ORE;
+        else if(this.equals(MythriaBlocks.IRON_ORE)) return MythriaItems.IRON_ORE;
+        else if(this.equals(MythriaBlocks.SILVER_ORE)) return MythriaItems.SILVER_ORE;
+        else if(this.equals(MythriaBlocks.GOLD_ORE)) return MythriaItems.GOLD_ORE;
+        else if(this.equals(MythriaBlocks.TITANIUM_ORE)) return MythriaItems.TITANIUM_ORE;
+        else if(this.equals(MythriaBlocks.TUNGSTEN_ORE)) return MythriaItems.TUNGSTEN_ORE;
+        else if(this.equals(MythriaBlocks.PLATINUM_ORE)) return MythriaItems.PLATINUM_ORE;
+        return null;
     }
 
     @Override

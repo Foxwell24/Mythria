@@ -34,7 +34,9 @@ public class Mythria {
         event.registerServerCommand(new BlessItemCommand());
         event.registerServerCommand(new PerkCommand());
         event.registerServerCommand(new DeityPowerCommand());
-        event.registerServerCommand(new DeityAbilityCommand());
+        event.registerServerCommand(new DeityPowerModCommand());
+        event.registerServerCommand(new CureCommand());
+        event.registerServerCommand(new LevelCommand());
     }
 
     @EventHandler

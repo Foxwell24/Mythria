@@ -86,4 +86,9 @@ public class TornadoModule {
             tornadoVerticies.put(i, points);
         }
     }
+
+    public static Block getReplaceBlock(Block b) {
+        if(b.equals(Blocks.GRASS)) return Blocks.DIRT;
+        return null;
+    }
 }

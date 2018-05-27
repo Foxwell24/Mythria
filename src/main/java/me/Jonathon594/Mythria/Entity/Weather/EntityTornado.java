@@ -83,12 +83,17 @@ public class EntityTornado extends EntityStorm {
             BlockPos pos1 = pos.add(posX, posY, posZ);
             Block b = world.getBlockState(pos1).getBlock();
             if (TornadoModule.isEdible(b, getTier())) {
-                if(Math.random()<0.5) {
-                    EntityFallingBlock efb = new EntityFallingBlock(world, pos1.getX()+0.5, pos1.getY()+0.5, pos1.getZ()+0.5, world.getBlockState(pos1));
-                    efb.fallTime = 1;
-                    world.spawnEntity(efb);
+                Block replace = TornadoModule.getReplaceBlock(b);
+                if(replace == null) {
+                    if (Math.random() < 0.5) {
+                        EntityFallingBlock efb = new EntityFallingBlock(world, pos1.getX() + 0.5, pos1.getY() + 0.5, pos1.getZ() + 0.5, world.getBlockState(pos1));
+                        efb.fallTime = 1;
+                        world.spawnEntity(efb);
+                    }
+                    world.setBlockState(pos1, Blocks.AIR.getDefaultState());
+                } else {
+                    world.setBlockState(pos1, replace.getDefaultState());
                 }
-                world.setBlockState(pos1, Blocks.AIR.getDefaultState());
             }
         }
 
@@ -104,7 +109,7 @@ public class EntityTornado extends EntityStorm {
 
         //Throwing
         for (double h = 0; h < height; h++) {
-            double r = (Math.pow(h / height, 2) + 0.04 + (getTier() * 0.02)) * getWidth(getTier());
+            double r = (Math.pow(h / height, 2) + 0.04 + (getTier() * 0.02)) * getWidth(getTier()) + 3;
             for (final Entity entity : world.getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(getPosition().add(-r, 0 + h, -r), getPosition().add(r, 1 + h, r)))) {
                 final double y = entity.posY;
                 double factor;

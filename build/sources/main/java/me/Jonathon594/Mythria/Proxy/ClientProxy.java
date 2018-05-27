@@ -24,6 +24,7 @@ public class ClientProxy extends CommonProxy {
 
         Keybindings.Init();
         MythriaBlocks.RegisterRenders();
+        MythriaBlocks.registerCustomStateMappers();
         MythriaTileEntities.registerSpecialRenderers();
     }
 

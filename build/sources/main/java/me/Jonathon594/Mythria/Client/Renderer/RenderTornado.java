@@ -27,12 +27,12 @@ public class RenderTornado<T extends EntityTornado> extends Render<T> {
     public void doRender(T entity, double x, double y, double z, float entityYaw, float partialTicks) {
         int tier = entity.getTier();
         ArrayList<Vec3d> points = TornadoModule.getTornadoVerticies(tier);
-        for(int i = 0; i < 251 + 17 * tier; i++) {
-            int offset = points.size() / (256 + (32 * tier)) * i;
+        for(int i = 0; i < 140 + 17 * tier; i++) {
+            int offset = points.size() / (32 + (12 * tier)) * i;
             Vec3d v = points.get(MythriaUtil.WrapInt(frame + offset, 0, points.size()-1));
-            EnumParticleTypes part = EnumParticleTypes.SMOKE_NORMAL;
-            if(Math.random() < 0.2) part = EnumParticleTypes.SMOKE_LARGE;
-            if(Math.random() < 0.5) part = EnumParticleTypes.SPELL;
+            EnumParticleTypes part = EnumParticleTypes.EXPLOSION_NORMAL;
+            if(Math.random() < 0.05) part = EnumParticleTypes.EXPLOSION_LARGE;
+            if(Math.random() < 0.01) part = EnumParticleTypes.EXPLOSION_HUGE;
             entity.world.spawnParticle(part, true, v.x + entity.posX, v.y + entity.posY, v.z + entity.posZ, 0, 0, 0);
         }
         frame++;

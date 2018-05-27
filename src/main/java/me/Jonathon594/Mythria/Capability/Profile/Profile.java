@@ -112,8 +112,9 @@ public class Profile implements IProfile {
                         String.format(MythriaConst.LEVE_UP_SKILL, type.name(), "(" + l + "->" + lb + ")")));
                 final int nl = getPlayerLevel();
                 if (nl > ol) {
+                    int amount = nl-ol;
                     p.sendMessage(new TextComponentString(String.format(MythriaConst.PLAYER_LEVEL_UP, nl + ".")));
-                    attributePoints++;
+                    attributePoints += amount;
                 }
             }
 

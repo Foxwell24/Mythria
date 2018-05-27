@@ -48,6 +48,7 @@ public class GlobalSaveData extends WorldSavedData {
         for(Deity deity : Deity.values()) {
             compound.setInteger("DeityPower." + MythriaUtil.Capitalize(deity.name()), DeityManager.getDeityPower(deity));
         }
+
         return compound;
     }
 

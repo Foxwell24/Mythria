@@ -75,7 +75,6 @@ public class CommonProxy {
         CarpentryManager.Initialize();
         MythriaVanillaBlocksModification.setAllDefaultStackSizes();
         WeatherManager.initialize();
-        DeityManager.Initialize();
 
         MinecraftForge.EVENT_BUS.register(CapabilityHandler.class);
         MinecraftForge.EVENT_BUS.register(EventListener.class);
@@ -132,6 +131,7 @@ public class CommonProxy {
 
         MythriaPacketHandler.INSTANCE.registerMessage(SPacketSetSelectedDeity.SPacketSetSelectedDeityHandler.class,
                 SPacketSetSelectedDeity.class, ID++, Side.CLIENT);
+
     }
 
     public IThreadListener getThreadListener(MessageContext ctx) {

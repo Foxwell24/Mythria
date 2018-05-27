@@ -1,6 +1,8 @@
 package me.Jonathon594.Mythria.Items;
 
+import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
+import me.Jonathon594.Mythria.Enum.LockType;
 import me.Jonathon594.Mythria.Enum.Wood;
 import me.Jonathon594.Mythria.Interface.IMetaLookup;
 import me.Jonathon594.Mythria.Interface.IVariantData;
@@ -169,6 +171,14 @@ public class MythriaItems {
     public static final Item MOLD_INGOT_SILVER = new ItemFilledMold("ceramic_mold_ingot_silver", 9, MOLD_INGOT, SILVER_INGOT);
     public static final Item MOLD_INGOT_GOLD = new ItemFilledMold("ceramic_mold_ingot_gold", 9, MOLD_INGOT, GOLD_INGOT);
 
+    //Doors
+    public static final ItemDoor OAK_DOOR = new ItemDoor("oak_door", 50, MythriaBlocks.OAK_DOOR);
+    public static final ItemDoor ACACIA_DOOR = new ItemDoor("acacia_door", 50, MythriaBlocks.ACACIA_DOOR);
+    public static final ItemDoor BIRCH_DOOR = new ItemDoor("birch_door", 50, MythriaBlocks.BIRCH_DOOR);
+    public static final ItemDoor DARK_OAK_DOOR = new ItemDoor("dark_oak_door", 50, MythriaBlocks.DARK_OAK_DOOR);
+    public static final ItemDoor SPRUCE_DOOR = new ItemDoor("spruce_door", 50, MythriaBlocks.SPRUCE_DOOR);
+    public static final ItemDoor JUNGLE_DOOR = new ItemDoor("jungle_door", 50, MythriaBlocks.JUNGLE_DOOR);
+
     public static final ArmorMaterial PRIMATIVE_AM = EnumHelper.addArmorMaterial("primative", "mythria:primative", 3,
             new int[]{0, 2, 1, 0}, 2, SoundEvents.BLOCK_CLOTH_PLACE, 0.0f)
             .setRepairItem(new ItemStack(MythriaItems.BRONZE_INGOT, 1));
@@ -236,6 +246,8 @@ public class MythriaItems {
     public static final Item TUNGSTEN_ORE = new ItemOre("tungsten_ore_item", 14);
 
     public static final MythriaItem THATCH = new MythriaItem("thatch", 16, 1);
+
+    public static final ItemWand OAK_WAND = new ItemWand("oak_wand", 0.2);
 
     @SubscribeEvent
     public static void Register(final RegistryEvent.Register<Item> event) {

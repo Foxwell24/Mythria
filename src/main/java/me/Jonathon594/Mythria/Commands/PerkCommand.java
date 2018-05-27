@@ -37,7 +37,7 @@ public class PerkCommand extends CommandBase implements ICommand {
         if(args.length == 3) {
             EntityPlayer entityplayer = getPlayer(server, sender, args[0]);
             if(entityplayer == null) {
-                throw new CommandException("commands.perk.playererror", new Object[] {});
+                throw new CommandException("commands.playererror", new Object[] {});
             }
             Perk perk = PerkManager.getAttribute(args[1]);
             boolean add = false;

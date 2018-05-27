@@ -471,7 +471,7 @@ public class PerkManager {
                 .addStartingAttributes(Attribute.ATTUNEMENT, 2)
                 .addStartingAttributes(Attribute.INTELLIGENCE, 16);
 
-        new PersonallityTrait("Arcanist", Items.ENDER_PEARL, 2, 4)
+        new PersonallityTrait("Mage", Items.ENDER_PEARL, 2, 4)
                 .addStartingAttributes(Attribute.STRENGTH, 4)
                 .addStartingAttributes(Attribute.DEXTERITY, 6)
                 .addStartingAttributes(Attribute.VIGOR, 6)
@@ -524,14 +524,13 @@ public class PerkManager {
         new TradeSkill("SophisticatedCrafting", Item.getItemFromBlock(Blocks.LOG), 1, 3, 1, 0, MythicSkills.CRAFTING,
                 50, Alignment.CRAFTMANSHIP, "AdvancedCrafting").addPlaceable(Blocks.BIRCH_STAIRS,
                 Blocks.DARK_OAK_STAIRS, Blocks.JUNGLE_STAIRS, Blocks.SPRUCE_STAIRS, Blocks.ACACIA_STAIRS,
-                Blocks.OAK_STAIRS, Blocks.DARK_OAK_DOOR, Blocks.DARK_OAK_FENCE_GATE, Blocks.OAK_DOOR,
-                Blocks.SPRUCE_DOOR, Blocks.SPRUCE_FENCE_GATE, Blocks.JUNGLE_DOOR, Blocks.JUNGLE_FENCE_GATE,
-                Blocks.DARK_OAK_DOOR, Blocks.DARK_OAK_FENCE_GATE, Blocks.JUNGLE_DOOR, Blocks.JUNGLE_FENCE_GATE,
-                Blocks.SPRUCE_DOOR, Blocks.SPRUCE_FENCE_GATE, Blocks.ACACIA_DOOR, Blocks.ACACIA_FENCE_GATE,
-                Blocks.BIRCH_DOOR, Blocks.BIRCH_FENCE_GATE, Blocks.OAK_DOOR, Blocks.PLANKS)
-                .addCraftable(Items.PAPER).addPlaceable(Blocks.BIRCH_STAIRS,
-                Blocks.DARK_OAK_STAIRS, Blocks.JUNGLE_STAIRS, Blocks.SPRUCE_STAIRS, Blocks.ACACIA_STAIRS,
-                Blocks.OAK_STAIRS)
+                Blocks.OAK_STAIRS, Blocks.DARK_OAK_DOOR, Blocks.DARK_OAK_FENCE_GATE, MythriaBlocks.OAK_DOOR,
+                MythriaBlocks.SPRUCE_DOOR, Blocks.SPRUCE_FENCE_GATE, MythriaBlocks.JUNGLE_DOOR, Blocks.JUNGLE_FENCE_GATE,
+                MythriaBlocks.DARK_OAK_DOOR, Blocks.DARK_OAK_FENCE_GATE, Blocks.JUNGLE_FENCE_GATE,
+                MythriaBlocks.SPRUCE_DOOR, Blocks.SPRUCE_FENCE_GATE, Blocks.ACACIA_DOOR, Blocks.ACACIA_FENCE_GATE,
+                Blocks.BIRCH_DOOR, Blocks.BIRCH_FENCE_GATE, Blocks.PLANKS)
+                .addCraftable(Items.PAPER, MythriaItems.OAK_DOOR, MythriaItems.ACACIA_DOOR, MythriaItems.BIRCH_DOOR, MythriaItems.DARK_OAK_DOOR,
+                        MythriaItems.JUNGLE_DOOR, MythriaItems.SPRUCE_DOOR)
                 .setLearnTime(1)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 17).addRequiredAttribute(Attribute.DEXTERITY, 12).addRequiredAttribute(Attribute.STRENGTH, 14);
         new TradeSkill("SuperiorCrafting", Item.getItemFromBlock(Blocks.LADDER), 1, 4, 1, 0, MythicSkills.CRAFTING, 75,
@@ -681,22 +680,23 @@ public class PerkManager {
                 "BasicAlchemy").addCraftable(Items.TNT_MINECART, Items.FIREWORKS, Items.FIREWORK_CHARGE, Blocks.TNT)
                 .addPlaceable(Blocks.TNT).setMinimumAge(18).setLearnTime(6)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 24).addRequiredAttribute(Attribute.ATTUNEMENT, 20);
-        new TradeSkill("BasicArcanery", Items.GOLDEN_APPLE, 7, 1, 1, 4, MythicSkills.ARCANERY, 0, Alignment.ARCANERY,
+        new TradeSkill("BasicMagic", Items.GOLDEN_APPLE, 7, 1, 1, 4, MythicSkills.MAGIC, 0, Alignment.ARCANERY,
                 "").addCraftable(Items.GOLDEN_CARROT, Items.MAGMA_CREAM, Items.SPECKLED_MELON).setMinimumAge(12)
                 .setLearnTime(1)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 30).addRequiredAttribute(Attribute.ATTUNEMENT, 12);
-        new TradeSkill("AdvancedArcanery", Items.EXPERIENCE_BOTTLE, 7, 2, 1, 0, MythicSkills.ARCANERY, 25,
-                Alignment.ARCANERY, "BasicArcanery").addCraftable(Items.EXPERIENCE_BOTTLE, Items.ENDER_EYE)
+        new TradeSkill("AdvancedMagic", Items.EXPERIENCE_BOTTLE, 7, 2, 1, 0, MythicSkills.MAGIC, 25,
+                Alignment.ARCANERY, "BasicMagic").addCraftable(Items.EXPERIENCE_BOTTLE, Items.ENDER_EYE)
                 .setLearnTime(6)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 42).addRequiredAttribute(Attribute.ATTUNEMENT, 18);
-        new TradeSkill("SophisticatedArcanery", Blocks.BEACON, 7, 3, 2, 0, MythicSkills.ARCANERY, 50,
-                Alignment.ARCANERY, "AdvancedArcanery").addCraftable(Blocks.BEACON).setLearnTime(18)
+        new TradeSkill("SophisticatedMagic", Blocks.BEACON, 7, 3, 2, 0, MythicSkills.MAGIC, 50,
+                Alignment.ARCANERY, "AdvancedMagic").addCraftable(Blocks.BEACON).setLearnTime(18)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 52).addRequiredAttribute(Attribute.ATTUNEMENT, 24);
-        new TradeSkill("SuperiorArcanery", Blocks.ENCHANTING_TABLE, 7, 4, 3, 0, MythicSkills.ARCANERY, 75,
-                Alignment.ARCANERY, "SophisticatedArcanery").setLearnTime(72)
+        new TradeSkill("SuperiorMagic", Blocks.ENCHANTING_TABLE, 7, 4, 3, 0, MythicSkills.MAGIC, 75,
+                Alignment.ARCANERY, "SophisticatedMagic").setLearnTime(72)
                 .addRequiredAttribute(Attribute.INTELLIGENCE, 60).addRequiredAttribute(Attribute.ATTUNEMENT, 30);
-        new TradeSkill("MasterlyArcanery", Blocks.GLOWSTONE, 7, 5, 5, 0, MythicSkills.ARCANERY, 100, Alignment.ARCANERY,
-                "SuperiorArcanery").addCraftable(Blocks.GLOWSTONE).addPlaceable(Blocks.GLOWSTONE).setLearnTime(120);
+        new TradeSkill("MasterlyMagic", Blocks.GLOWSTONE, 7, 5, 5, 0, MythicSkills.MAGIC, 100, Alignment.ARCANERY,
+                "SuperiorMagic").addCraftable(Blocks.GLOWSTONE).addPlaceable(Blocks.GLOWSTONE).setLearnTime(120)
+                .addRequiredAttribute(Attribute.INTELLIGENCE, 84).addRequiredAttribute(Attribute.ATTUNEMENT, 42);
         new TradeSkill("BasicMining", Blocks.COAL_ORE, 8, 1, 1, 3, MythicSkills.MINING, 0, Alignment.MINING, "")
                 .addBreakable(Blocks.DIRT, Blocks.GRAVEL, Blocks.COAL_ORE, MythriaBlocks.COPPER_ORE, MythriaBlocks.TIN_ORE, Blocks.STONE, Blocks.NETHERRACK, MythriaBlocks.COPPER_ORE)
                 .setMinimumAge(18)

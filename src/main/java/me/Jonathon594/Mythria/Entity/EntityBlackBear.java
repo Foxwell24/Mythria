@@ -36,16 +36,6 @@ public class EntityBlackBear extends EntityAnimal {
         this.setSize(1.3F, 1.4F);
     }
 
-    @Override
-    public boolean getAlwaysRenderNameTagForRender() {
-        return false;
-    }
-
-    @Override
-    public boolean getAlwaysRenderNameTag() {
-        return false;
-    }
-
     public EntityAgeable createChild(EntityAgeable ageable)
     {
         return new EntityBlackBear(this.world);

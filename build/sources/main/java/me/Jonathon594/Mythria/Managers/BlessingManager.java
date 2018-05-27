@@ -5,6 +5,7 @@ import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
+import net.minecraft.block.BlockOre;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.Minecraft;
@@ -13,10 +14,12 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.event.entity.living.LivingSetAttackTargetEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -36,7 +39,7 @@ public class BlessingManager {
             if(profile.hasFlag(AttributeFlag.ELIANA_NO_FALL)) event.setCanceled(true);
         }
         if(ds.equals(DamageSource.LIGHTNING_BOLT)) {
-            if(profile.hasFlag(AttributeFlag.RAIKA_SPEED)) event.setCanceled(true);
+            if(profile.hasFlag(AttributeFlag.RAIKA_SMITE)) event.setCanceled(true);
         }
         if(ds.equals(DamageSource.LAVA) || ds.equals(DamageSource.IN_FIRE) || ds.equals(DamageSource.ON_FIRE) || ds.equals(DamageSource.HOT_FLOOR)) {
             if(profile.hasFlag(AttributeFlag.KASAI_NO_FIRE)) event.setCanceled(true);
@@ -220,6 +223,20 @@ public class BlessingManager {
                         }
                     }
                 }
+            }
+        }
+    }
+
+    public static void onPunchBlock(PlayerInteractEvent.LeftClickBlock event) {
+        EntityPlayer player = event.getEntityPlayer();
+        IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
+
+        if(profile.hasFlag(AttributeFlag.ASANA_EARTH_CRUMPLE)) {
+            BlockPos pos = event.getPos();
+            IBlockState state = player.world.getBlockState(pos);
+            if(state.getMaterial().equals(Material.ROCK) || state.getMaterial().equals(Material.GROUND) ||
+                    state.getMaterial().equals(Material.SAND)) {
+                player.world.destroyBlock(pos, true);
             }
         }
     }

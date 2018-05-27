@@ -16,7 +16,7 @@ public class Mythria {
 
     public static final String MODID = "mythria";
     public static final String MODNAME = "Mythria";
-    public static final String VERSION = "1.3.0";
+    public static final String VERSION = "1.3.3.1";
 
     @SidedProxy(clientSide = "me.Jonathon594.Mythria.Proxy.ClientProxy", serverSide = "me.Jonathon594.Mythria.Proxy.ServerProxy")
     public static CommonProxy proxy;
@@ -34,7 +34,9 @@ public class Mythria {
         event.registerServerCommand(new BlessItemCommand());
         event.registerServerCommand(new PerkCommand());
         event.registerServerCommand(new DeityPowerCommand());
-        event.registerServerCommand(new DeityAbilityCommand());
+        event.registerServerCommand(new DeityPowerModCommand());
+        event.registerServerCommand(new CureCommand());
+        event.registerServerCommand(new LevelCommand());
     }
 
     @EventHandler

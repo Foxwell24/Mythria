@@ -2,47 +2,189 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockLockableDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/WandTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderEmpty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderKillingCurse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/CureCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/LevelCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Cooldown.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Lock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/LockType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemWand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CooldownManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityDoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/acacia_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/birch_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/dark_oak_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/jungle_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/oak_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/spruce_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/wand_table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/wand_table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/acacia_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/birch_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/bronze_lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/dark_oak_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/jungle_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/spruce_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/acacia_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/birch_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/dark_oak_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/jungle_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/oak_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/spruce_door.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/wand_table_side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/textures/blocks/wand_table_top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/taskArtifacts.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/gradle.log" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/gradle.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/CapabilityHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/CapabilityHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/NPC/INPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/NPC/INPC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/NPC/NPC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Capability/NPC/NPC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderEarthBlast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderLightningJolt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderRex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityEarthBlast.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityLightningJolt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityMagicBolt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityWaterBolt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityWindBlast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/BlockGroundCover.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/BlockGroundCover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/MythriaOre.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Blocks/MythriaOre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Commands/DeityPowerCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Commands/DeityPowerCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Commands/PerkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Commands/PerkCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIAttackPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIAttackPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIHurtByTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIHurtByTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIMeleeAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIMeleeAttack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIPanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIPanic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear$GroupData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/EntityBlackBear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/MythicSkills.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Enum/MythicSkills.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/MythriaItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Items/MythriaItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/EventListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/RecipeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Listener/RecipeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/BlessingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/BlessingManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/ChatManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/ChatManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/ChatManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/ChatManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/DeityManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/HealthManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/HealthManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/PerkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Managers/PerkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Module/TornadoModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Module/TornadoModule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Mythria.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Mythria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Storage/GlobalSaveData.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/me/Jonathon594/Mythria/Storage/GlobalSaveData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Mythria-1.3.0-sources.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Mythria-1.3.0-sources.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/lang/en_US.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/models/block/saw_horse.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/models/block/saw_horse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mythria/models/item/oak_wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mythria/models/item/oak_wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/replacedMain.rangemap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/retromapping/retromappedReplacedMain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/MythicSkills.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Enum/MythicSkills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Mythria.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Mythria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/sources/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/extractRangemapReplacedMain.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/taskLogs/retromapReplacedMain.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/extractAnnotationsJar/input4888350016697305438.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/reobfJar/reobf-default8269948213431073528.srg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/reobfJar/reobf-extraLines2451952800629162169.srg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/reobfShadowJar/reobf-default562673540159061976.srg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/reobfShadowJar/reobf-extraLines3117677314909882100.srg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/lang/en_US.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/models/block/saw_horse.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/models/block/saw_horse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/models/item/oak_wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/assets/mythria/models/item/oak_wand.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/BlockGroundCover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/BlockGroundCover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaOre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaOre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/DeityPowerCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/DeityPowerCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/PerkCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/PerkCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIAttackPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIAttackPlayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIHurtByTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIHurtByTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIMeleeAttack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIMeleeAttack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIPanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$AIPanic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$GroupData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear$GroupData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/EntityBlackBear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/MythriaEntities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Entity/monster/EntityRex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/ItemWand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Enum/AttributeFlag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Enum/MythicSkills.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Enum/MythicSkills.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/MythriaItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Items/MythriaItems.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/EventListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/EventListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/RecipeListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Listener/RecipeListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/BlessingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/BlessingManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/ChatManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/ChatManager$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/ChatManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/ChatManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DeityManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DeityManager$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DeityManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DeityManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DualSwingManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DualSwingManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DualSwingManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/DualSwingManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/WeatherManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/WeatherManager$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/WeatherManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/WeatherManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/HealthManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/HealthManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/PerkManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/PerkManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Module/TornadoModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Module/TornadoModule.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Mythria.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Mythria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/CommonProxy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Storage/GlobalSaveData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Storage/GlobalSaveData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-1.log" afterDir="false" />
@@ -51,51 +193,85 @@
       <change beforePath="$PROJECT_DIR$/run/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/options.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run/options.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/130bfefb-ac8d-3a05-b27c-6205f9d12a06.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/53335878-3f56-39c8-893b-77b74c9ca2e1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/3ca144f4-1ff8-3e11-b846-ee12cf77a543.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/55199b58-d04f-3d22-9ce2-5472509a024b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/577679a7-fd79-34ce-82ca-9e17c30582b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/618c707a-83d7-31ad-b075-bd98e2c75926.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/6c583257-c0f3-36ee-8f7b-120dd0b255f7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/c6c946a7-7334-3c2c-8670-50d9130a2dd5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/ca1bc45b-4820-318c-8fd3-5eba4f447561.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/advancements/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/Mineshaft.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/icon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/130bfefb-ac8d-3a05-b27c-6205f9d12a06.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/53335878-3f56-39c8-893b-77b74c9ca2e1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/3ca144f4-1ff8-3e11-b846-ee12cf77a543.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/55199b58-d04f-3d22-9ce2-5472509a024b.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/577679a7-fd79-34ce-82ca-9e17c30582b1.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/618c707a-83d7-31ad-b075-bd98e2c75926.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/6c583257-c0f3-36ee-8f7b-120dd0b255f7.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/c6c946a7-7334-3c2c-8670-50d9130a2dd5.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/ca1bc45b-4820-318c-8fd3-5eba4f447561.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/playerdata/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.-1.mca" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/130bfefb-ac8d-3a05-b27c-6205f9d12a06.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/53335878-3f56-39c8-893b-77b74c9ca2e1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/3ca144f4-1ff8-3e11-b846-ee12cf77a543.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/55199b58-d04f-3d22-9ce2-5472509a024b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/577679a7-fd79-34ce-82ca-9e17c30582b1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/618c707a-83d7-31ad-b075-bd98e2c75926.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/6c583257-c0f3-36ee-8f7b-120dd0b255f7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/c6c946a7-7334-3c2c-8670-50d9130a2dd5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/ca1bc45b-4820-318c-8fd3-5eba4f447561.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/saves/New World/stats/f0e019d1-5d03-339b-9d95-1c4fdeb69e95.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/INPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/INPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/NPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/NPC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderEarthBlast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderLightningJolt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityEarthBlast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityLightningJolt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicBolt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityWaterBolt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityWindBlast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Monster/EntityRex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerModCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityBlackBear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityKillingCurse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemWand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/MythicSkills.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/MythicSkills.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DualSwingManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DualSwingManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/saw_horse.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/saw_horse.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/oak_wand.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/oak_wand.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -145,53 +321,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DeityManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java">
+      <file leaf-file-name="Profile.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="822">
-              <caret line="157" column="40" selection-start-line="157" selection-start-column="40" selection-end-line="157" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DATornado.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DAHeal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeityAbilitySummonMob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeityAbilityPotionEffect.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="658">
+              <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -217,6 +351,16 @@
       <find>isInRange</find>
       <find>STAIRS</find>
       <find>speed</find>
+      <find>door</find>
+      <find>Arcanery</find>
+      <find>oak</find>
+      <find>minecraft:wood</find>
+      <find>minecraft:</find>
+      <find>wooden</find>
+      <find>birch</find>
+      <find>spruce</find>
+      <find>acacia</find>
+      <find>jungle</find>
     </findStrings>
     <replaceStrings>
       <replace>plank</replace>
@@ -225,6 +369,16 @@
       <replace>FENCE</replace>
       <replace>FENCE_GATE</replace>
       <replace>getSpeed()</replace>
+      <replace>Magic</replace>
+      <replace>oak</replace>
+      <replace>wooden</replace>
+      <replace>mythria:oak</replace>
+      <replace>minecraft:wooden</replace>
+      <replace>birch</replace>
+      <replace>spruce</replace>
+      <replace>acacia</replace>
+      <replace>jungle</replace>
+      <replace>dark_oak</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\jonat\Documents\GitHub\Mythria\src\main\java\me\Jonathon594\Mythria\Entity\Weather</dir>
@@ -687,10 +841,10 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6090908703921" />
+        <entry key="$PROJECT_DIR$" value="6097344822285" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/build.gradle" value="94749622" />
-        <entry key="$PROJECT_DIR$/gradle.properties" value="1381157856" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="1267605302" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="308634470" />
       </map>
     </option>
@@ -919,72 +1073,70 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/changelog/1.2.5.log" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/Season.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Time/Date.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/SpawnData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornadoF5.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Module/TornadoModule.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SoundManager.java" />
-        <option value="$PROJECT_DIR$/gradle.properties" />
-        <option value="$PROJECT_DIR$/run/eula.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/MythriaEntities.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/StormType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityMagicProjectile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Magic/EntityFireBolt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DualSwingManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/NPC.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/NPCManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityThrowingWeapon.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeitySubtractCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Interface/IDeityAbility.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/wand_table.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/wand_table.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/WandTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/lang/en_US.lang" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/Spider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/Skeleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/Zombie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java" />
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/LevelCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/oak_door_bottom_rh.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/oak_door_top.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/oak_door_bottom.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/oak_door_top_rh.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/ItemDoor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/door_oak.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/oak_door.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityDoor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockLockableDoor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/acacia_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/oak_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/spruce_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/birch_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/jungle_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/dark_oak_door.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/saw_horse.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/birch_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/spruce_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/acacia_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/jungle_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/dark_oak_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/spruce_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/jungle_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/dark_oak_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/acacia_door.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/birch_door.json" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundRock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundStickPile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundStick.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Cooldown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CooldownManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1023,12 +1175,107 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Mythria" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Capability" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Capability" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Managers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
+              <item name="Proxy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="minecraft" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="minecraft" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="forgeSrc-1.12.2-14.23.0.2515.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="minecraft" type="462c0819:PsiDirectoryNode" />
+              <item name="textures" type="462c0819:PsiDirectoryNode" />
+              <item name="items" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1036,31 +1283,36 @@
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_141/bin/jvisualvm.exe" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\sounds" />
-    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="me.Jonathon594.Mythria.Packets.SPacketUpdateConsumables" />
       <recent name="SPack" />
       <recent name="me.Jonathon594.Mythria.Util.MythriaUtil" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="me.Jonathon594.Mythria.DataTypes" />
+      <recent name="me.Jonathon594.Mythria.Blocks" />
+      <recent name="me.Jonathon594.Mythria.TileEntity" />
+      <recent name="me.Jonathon594.Mythria.Enum" />
+      <recent name="me.Jonathon594.Mythria.Commands" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\run\mods" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\models\item" />
       <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\blockstates" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\recipes" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\run\mods" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.Jonathon594.Mythria.DataTypes.DeityAbilities" />
+      <recent name="me.Jonathon594.Mythria.Blocks" />
       <recent name="me.Jonathon594.Mythria.Commands" />
-      <recent name="me.Jonathon594.Mythria.Entity.Weather" />
-      <recent name="me.Jonathon594.Mythria.DataTypes" />
+      <recent name="me.Jonathon594.Mythria.Client.Renderer" />
+      <recent name="me.Jonathon594.Mythria.Packets" />
       <recent name="me.Jonathon594.Mythria.Items" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="me.Jonathon594.Mythria.DataTypes.DeityAbilities" />
-      <recent name="me.Jonathon594.Mythria.Interface" />
-      <recent name="me.Jonathon594.Mythria.Managers" />
-      <recent name="me.Jonathon594.Mythria.DataTypes" />
-      <recent name="me.Jonathon594.Mythria.Enum" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\models\block" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\models" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\textures\blocks" />
+      <recent name="C:\Users\jonat\Documents\GitHub\Mythria\src\main\resources\assets\mythria\sounds" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1190,6 +1442,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1199,14 +1452,13 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32900432" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33116883" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32900432" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32900432" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Run with VisualVM" order="9" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31503198" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.39712155" />
       <window_info anchor="right" id="Gradle" order="6" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1221,6 +1473,7 @@
       <window_info anchor="bottom" id="Build" order="11" weight="0.32900432" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1254,7 +1507,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="125" />
+      <option name="time" value="151" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -1280,380 +1533,361 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/ChatManager.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/tileentity/TileEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="42" lean-forward="true" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
-          <folding>
-            <element signature="e#6203#6204#0" expanded="true" />
-            <element signature="e#6254#6255#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="199">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/CapabilityUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityCampfire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/block/BlockDoor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockLockableDoor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="889">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/RecipeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="53" column="27" lean-forward="true" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/acacia_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515.jar!/assets/minecraft/recipes/acacia_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/spruce_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/oak_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/birch_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/jungle_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/recipes/dark_oak_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="101" column="16" selection-start-line="101" selection-start-column="16" selection-end-line="101" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/birch_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/saw_horse.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/spruce_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/acacia_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/jungle_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/dark_oak_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/spruce_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/jungle_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/dark_oak_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/acacia_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/birch_door.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItems.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2567">
+          <caret line="174" column="80" selection-start-line="174" selection-start-column="80" selection-end-line="174" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/SmeltingManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/FoodManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="88" column="23" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/HealthManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundRock.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundStickPile.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundStick.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/block/BlockOre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="56" column="68" selection-start-line="56" selection-start-column="68" selection-end-line="56" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaOre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/BlockGroundCover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="99" column="20" selection-start-line="99" selection-start-column="20" selection-end-line="99" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/MythriaUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="425" column="10" selection-start-line="425" selection-start-column="10" selection-end-line="425" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Util/TrigUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntitySawHorse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-725">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/TileEntity/TileEntityPrimativeCrate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityNPCPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/CapabilityHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="33" column="60" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/player/EntityPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="2928" column="17" selection-start-line="2928" selection-start-column="17" selection-end-line="2928" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/NPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/NPCManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/NPC/INPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderRex.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/network/datasync/EntityDataManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="151" column="20" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderTornado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Client/Renderer/RenderThrowingWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="316" column="28" selection-start-line="316" selection-start-column="28" selection-end-line="316" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/projectile/EntityThrowable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/EntityThrowingWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityStorm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/WeatherManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityTornado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="3706">
+          <caret line="279" column="22" selection-start-line="279" selection-start-column="22" selection-end-line="279" selection-end-column="22" />
           <folding>
-            <element signature="e#1686#1687#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#5999#6000#0" expanded="true" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6140#6141#0" expanded="true" />
-            <element signature="e#6183#6184#0" expanded="true" />
+            <element signature="e#11451#11452#0" expanded="true" />
+            <element signature="e#11514#11515#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Enum/AttributeFlag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1226" selection-start-line="3" selection-start-column="1226" selection-end-line="3" selection-end-column="1226" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/PerkManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="128" column="64" selection-start-line="128" selection-start-column="64" selection-end-line="128" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="715" column="16" selection-start-line="715" selection-start-column="16" selection-end-line="715" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/world/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="2167" selection-start-line="2167" selection-end-line="2167" />
+        <state relative-caret-position="401">
+          <caret line="475" column="31" selection-start-line="475" selection-start-column="31" selection-end-line="475" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Entity/Weather/EntityEarthQuake.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+        <state relative-caret-position="1207">
+          <caret line="87" column="52" selection-start-line="87" selection-start-column="52" selection-end-line="87" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/entity/EntityLivingBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4046">
+          <caret line="319" column="62" selection-start-line="319" selection-start-column="62" selection-end-line="319" selection-end-column="62" />
+          <folding>
+            <element signature="e#12809#12810#0" expanded="true" />
+            <element signature="e#12837#12838#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradle.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Storage/GlobalSaveData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Cooldown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#151#152#0" expanded="true" />
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/DiscordListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6324">
-          <caret line="451" column="36" selection-start-line="451" selection-start-column="36" selection-end-line="451" selection-end-column="36" />
+        <state relative-caret-position="414">
+          <caret line="452" column="37" lean-forward="true" selection-start-line="452" selection-start-column="37" selection-end-line="452" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/server/MinecraftServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/CooldownManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="1394" column="15" selection-start-line="1394" selection-start-column="15" selection-end-line="1394" selection-end-column="15" />
-          <folding>
-            <element signature="e#45974#45975#0" expanded="true" />
-            <element signature="e#46013#46014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeitySubtractCommand.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/GameModeSurvival.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/HealCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/BlessItemCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityPowerCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="45" column="65" selection-start-line="45" selection-start-column="65" selection-end-line="45" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/DeityAbilityCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="89" column="37" selection-start-line="89" selection-start-column="37" selection-end-line="89" selection-end-column="37" />
-          <folding>
-            <element signature="e#2482#2483#0" expanded="true" />
-            <element signature="e#2519#2520#0" expanded="true" />
-            <element signature="e#2917#2918#0" expanded="true" />
-            <element signature="e#2954#2955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Mythria.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/BlessingManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
+        <state relative-caret-position="737">
+          <caret line="242" column="95" selection-start-line="242" selection-start-column="95" selection-end-line="242" selection-end-column="95" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/CommonProxy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASkeleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DASpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAZombie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/potion/PotionEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
-          <folding>
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/potion/PotionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-688">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/init/PotionTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/command/CommandEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="65" column="23" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/init/MobEffects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilityPotionEffect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DeityAbilitySummonMob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DAHeal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/DeityAbilities/DATornado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/DeityManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="822">
-          <caret line="157" column="40" selection-start-line="157" selection-start-column="40" selection-end-line="157" selection-end-column="40" />
+        <state relative-caret-position="658">
+          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
         </state>
       </provider>
     </entry>

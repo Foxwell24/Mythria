@@ -1,5 +1,6 @@
 package me.Jonathon594.Mythria.Blocks;
 
+import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
 import net.minecraft.block.SoundType;
@@ -8,6 +9,7 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockFaceShape;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.EnumFacing;
@@ -23,11 +25,9 @@ import java.util.Random;
 
 public class BlockGroundCover extends MythriaBlock {
     public static final PropertyDirection FACING = BlockHorizontal.FACING;
-    private Item itemDropped;
 
-    public BlockGroundCover(Material materialIn, String nameIn, SoundType soundType, double weight, int staminaCost, Item itemDropped) {
+    public BlockGroundCover(Material materialIn, String nameIn, SoundType soundType, double weight, int staminaCost) {
         super(materialIn, nameIn, soundType, weight, staminaCost, 0, 0);
-        this.itemDropped = itemDropped;
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 
         setResistance(0f);
@@ -66,11 +66,6 @@ public class BlockGroundCover extends MythriaBlock {
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return itemDropped;
-    }
-
-    @Override
     public int getMetaFromState(IBlockState state) {
         return ((EnumFacing)state.getValue(FACING)).getIndex();
     }
@@ -95,6 +90,14 @@ public class BlockGroundCover extends MythriaBlock {
     @Override
     public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {
         return BlockFaceShape.UNDEFINED;
+    }
+
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        if(this.equals(MythriaBlocks.GROUND_STICK)) return Items.STICK;
+        if(this.equals(MythriaBlocks.GROUND_STICK_PILE)) return MythriaItems.BUNDLE_OF_STICKS;
+        if(this.equals(MythriaBlocks.ROCK)) return MythriaItems.ROCK;
+        return null;
     }
 
     @Override

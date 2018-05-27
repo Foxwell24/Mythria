@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "mythria:items/magic/wand/oak_wand"
+    "layer0": "mythria:items/magic/wands/oak_wand"
   }
 }

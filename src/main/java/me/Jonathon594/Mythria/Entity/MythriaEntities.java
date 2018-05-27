@@ -1,6 +1,7 @@
 package me.Jonathon594.Mythria.Entity;
 
 import me.Jonathon594.Mythria.Client.Renderer.*;
+import me.Jonathon594.Mythria.Entity.Magic.EntityKillingCurse;
 import me.Jonathon594.Mythria.Entity.Weather.*;
 import me.Jonathon594.Mythria.Mythria;
 import net.minecraft.client.Minecraft;
@@ -34,6 +35,9 @@ public class MythriaEntities {
         EntityRegistry.registerModEntity(new ResourceLocation("mythria:earthquake"),
                 EntityEarthQuake.class, "EntityEarthQuake", id++, Mythria.instance, 80, 3, true);
 
+        EntityRegistry.registerModEntity(new ResourceLocation("mythria:killingcurse"),
+                EntityKillingCurse.class, "KillingCurse", id++, Mythria.instance, 64, 10, true);
+
         registerSpawns();
     }
 
@@ -52,5 +56,8 @@ public class MythriaEntities {
         RenderingRegistry.registerEntityRenderingHandler(EntityBrownBear.class, manager -> new RenderBrownBear<>(manager));
 
         RenderingRegistry.registerEntityRenderingHandler(EntityTornado.class, manager -> new RenderTornado<>(manager));
+        RenderingRegistry.registerEntityRenderingHandler(EntityEarthQuake.class, manager -> new RenderEmpty<>(manager));
+
+        RenderingRegistry.registerEntityRenderingHandler(EntityKillingCurse.class, manager -> new RenderKillingCurse<>(manager));
     }
 }

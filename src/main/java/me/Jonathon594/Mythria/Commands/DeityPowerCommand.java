@@ -41,7 +41,7 @@ public class DeityPowerCommand implements ICommand {
             int dp = DeityManager.getDeityPower(deity);
             double prop = totalPower > 0 ? (double) dp / totalPower : 0;
 
-            String message = color + MythriaUtil.Capitalize(deity.name()) + ": " + prop * 100 + "% (" + dp + ")";
+            String message = color + MythriaUtil.Capitalize(deity.name()) + ": " + prop * 800 + "% (" + dp + ")";
 
             sender.sendMessage(new TextComponentString(message));
         }

@@ -246,4 +246,9 @@ public class HealthManager {
         }
         tick++;
     }
+
+    public static void curePlayer(EntityPlayer player) {
+        IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
+        profile.getHealthConditions().clear();
+    }
 }

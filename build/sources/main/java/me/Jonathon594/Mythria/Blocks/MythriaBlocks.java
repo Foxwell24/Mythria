@@ -1,16 +1,20 @@
 package me.Jonathon594.Mythria.Blocks;
 
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
-import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.properties.IProperty;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.statemap.IStateMapper;
+import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class MythriaBlocks {
     public static final Block CAMPFIRE = new BlockCampfire(Material.WOOD, "campfire", AttributeFlag.COOKING1,
@@ -19,15 +23,15 @@ public class MythriaBlocks {
     public static final Block IMPROVED_CAMPFIRE = new BlockImprovedCampfire(Material.WOOD, "improved_campfire",
             AttributeFlag.COOKING1, 30, 50);
 
-    public static final MythriaOre TIN_ORE = new MythriaOre(Material.ROCK, "tin_ore", 10, 25, MythriaItems.TIN_ORE);
-    public static final MythriaOre COPPER_ORE = new MythriaOre(Material.ROCK, "copper_ore", 10, 25, MythriaItems.COPPER_ORE);
-    public static final MythriaOre SILVER_ORE = new MythriaOre(Material.ROCK, "silver_ore", 10, 25, MythriaItems.SILVER_ORE);
-    public static final MythriaOre PLATINUM_ORE = new MythriaOre(Material.ROCK, "platinum_ore", 10, 25, MythriaItems.PLATINUM_ORE);
-    public static final MythriaOre TITANIUM_ORE = new MythriaOre(Material.ROCK, "titanium_ore", 10, 25, MythriaItems.TITANIUM_ORE);
-    public static final MythriaOre TUNGSTEN_ORE = new MythriaOre(Material.ROCK, "tungsten_ore", 10, 25, MythriaItems.TUNGSTEN_ORE);
+    public static final MythriaOre TIN_ORE = new MythriaOre(Material.ROCK, "tin_ore", 10, 25);
+    public static final MythriaOre COPPER_ORE = new MythriaOre(Material.ROCK, "copper_ore", 10, 25);
+    public static final MythriaOre SILVER_ORE = new MythriaOre(Material.ROCK, "silver_ore", 10, 25);
+    public static final MythriaOre PLATINUM_ORE = new MythriaOre(Material.ROCK, "platinum_ore", 10, 25);
+    public static final MythriaOre TITANIUM_ORE = new MythriaOre(Material.ROCK, "titanium_ore", 10, 25);
+    public static final MythriaOre TUNGSTEN_ORE = new MythriaOre(Material.ROCK, "tungsten_ore", 10, 25);
 
-    public static final MythriaOre IRON_ORE = new MythriaOre(Material.ROCK, "iron_ore", 10, 25, MythriaItems.IRON_ORE);
-    public static final MythriaOre GOLD_ORE = new MythriaOre(Material.ROCK, "gold_ore", 10, 25, MythriaItems.GOLD_ORE);
+    public static final MythriaOre IRON_ORE = new MythriaOre(Material.ROCK, "iron_ore", 10, 25);
+    public static final MythriaOre GOLD_ORE = new MythriaOre(Material.ROCK, "gold_ore", 10, 25);
 
     public static final Block COPPER_BLOCK = new MythriaBlock(Material.IRON, "copper_block", SoundType.METAL, 75,
             50, 0, 0).setHardness(5.0F)
@@ -46,12 +50,12 @@ public class MythriaBlocks {
             "primative_crafting_table", 45, 50);
 
     public static final BlockGroundCover GROUND_STICK = new BlockGroundCover(Material.WOOD, "ground_stick", SoundType.WOOD,
-            2, 10, Items.STICK);
+            2, 10);
     public static final BlockGroundCover GROUND_STICK_PILE = new BlockGroundCover(Material.WOOD, "ground_stick_pile",
-            SoundType.WOOD, 8, 40, MythriaItems.BUNDLE_OF_STICKS);
+            SoundType.WOOD, 8, 40);
 
     public static final BlockGroundCover ROCK = new BlockGroundCover(Material.WOOD, "rock",
-            SoundType.STONE, 4, 25, MythriaItems.ROCK);
+            SoundType.STONE, 4, 25);
 
     public static final BlockPitKiln PIT_KILN = new BlockPitKiln(Material.WOOD, "pit_kiln", SoundType.STONE,
             50,25);
@@ -66,6 +70,13 @@ public class MythriaBlocks {
 
     public static final BlockIngotPile INGOT_PILE = new BlockIngotPile(Material.IRON, "ingot_pile", SoundType.METAL, 50, 50);
     public static final BlockBrickPile BRICK_PILE = new BlockBrickPile(Material.ROCK, "brick_pile", SoundType.STONE, 50, 50);
+
+    public static final BlockLockableDoor OAK_DOOR = new BlockLockableDoor(Material.WOOD, "oak_door", 50, 50);
+    public static final BlockLockableDoor ACACIA_DOOR = new BlockLockableDoor(Material.WOOD, "acacia_door", 50, 50);
+    public static final BlockLockableDoor DARK_OAK_DOOR = new BlockLockableDoor(Material.WOOD, "dark_oak_door", 50, 50);
+    public static final BlockLockableDoor SPRUCE_DOOR = new BlockLockableDoor(Material.WOOD, "spruce_door", 50, 50);
+    public static final BlockLockableDoor JUNGLE_DOOR = new BlockLockableDoor(Material.WOOD, "jungle_door", 50, 50);
+    public static final BlockLockableDoor BIRCH_DOOR = new BlockLockableDoor(Material.WOOD, "birch_door", 50, 50);
 
     @SubscribeEvent
     public static void RegisterBlocks(final RegistryEvent.Register<Block> event) {
@@ -100,6 +111,29 @@ public class MythriaBlocks {
         event.getRegistry().register(SAW_HORSE);
 
         event.getRegistry().register(INGOT_PILE);
+
+        event.getRegistry().register(OAK_DOOR);
+        event.getRegistry().register(DARK_OAK_DOOR);
+        event.getRegistry().register(ACACIA_DOOR);
+        event.getRegistry().register(JUNGLE_DOOR);
+        event.getRegistry().register(SPRUCE_DOOR);
+        event.getRegistry().register(BIRCH_DOOR);
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static void registerCustomStateMappers() {
+        registerCustomStateMapper(OAK_DOOR, BlockDoor.POWERED);
+        registerCustomStateMapper(DARK_OAK_DOOR, BlockDoor.POWERED);
+        registerCustomStateMapper(ACACIA_DOOR, BlockDoor.POWERED);
+        registerCustomStateMapper(JUNGLE_DOOR, BlockDoor.POWERED);
+        registerCustomStateMapper(SPRUCE_DOOR, BlockDoor.POWERED);
+        registerCustomStateMapper(BIRCH_DOOR, BlockDoor.POWERED);
+    }
+
+    @SideOnly(Side.CLIENT)
+    public static void registerCustomStateMapper(Block block, IProperty<?> property) {
+        IStateMapper custom_mapper = (new StateMap.Builder()).ignore(property).build();
+        ModelLoader.setCustomStateMapper(block, custom_mapper);
     }
 
     @SubscribeEvent

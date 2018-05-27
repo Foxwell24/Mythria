@@ -217,8 +217,13 @@ item.bundle_of_sticks.name=Bundle of Sticks
 item.plank.name=Plank
 
 # Commands
-commands.perk.playererror=That player cannot be found
+commands.playererror=That player cannot be found
 commands.perk.success=You %s perk %s for %s
+commands.level.success=You have given %s, %s experience in %s.
+
+commands.deitypowermod.nodeity=That is not a valid deity.
+
+commands.numberformat="That is not a valid number.
 
 #	<!!--NOT_ITEM_SHIT--!!>
 

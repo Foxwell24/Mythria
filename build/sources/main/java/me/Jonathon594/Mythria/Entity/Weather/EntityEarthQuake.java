@@ -3,12 +3,15 @@ package me.Jonathon594.Mythria.Entity.Weather;
 import me.Jonathon594.Mythria.Managers.SoundManager;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.world.World;
 
@@ -41,16 +44,21 @@ public class EntityEarthQuake extends EntityStorm {
 
         if(world.isRemote) return;
         if(world.getWorldTime() % 5 == 0) {
-            double range = 128 * (getMagnitude() * 128);
+            double range = 128 + (getMagnitude() * 128);
             for (Entity e : world.getEntitiesWithinAABB(Entity.class, new AxisAlignedBB(-range, -range, -range, range, range, range).offset(getPositionVector()))) {
                 double a = Math.random() * Math.PI * 2;
                 double x = Math.cos(a);
                 double z = Math.sin(a);
-                if(!e.isAirBorne) {
-                    e.addVelocity(x, 0, z);
+                if (e instanceof EntityPlayerMP) {
+                    SoundManager.playForPlayerOnly((EntityPlayerMP) e, SoundEvents.ENTITY_GENERIC_EXPLODE, 1f);
+                }
+                if(e.onGround) {
+                    e.addVelocity(x * 0.2 * getMagnitude(), 0, z * 0.2 * getMagnitude());
                     e.velocityChanged = true;
-                    if (e instanceof EntityPlayerMP) {
-                        SoundManager.playForPlayerOnly((EntityPlayerMP) e, SoundEvents.ENTITY_GENERIC_EXPLODE, 1f);
+
+                    if(e instanceof EntityLivingBase) {
+                        EntityLivingBase living = (EntityLivingBase) e;
+                        living.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 300, 5, false, false));
                     }
                 }
             }

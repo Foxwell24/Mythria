@@ -7,7 +7,6 @@ import me.Jonathon594.Mythria.Listener.DiscordListener;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
-import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.exceptions.RateLimitedException;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -15,7 +14,6 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.event.ServerChatEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
@@ -82,14 +80,16 @@ public class ChatManager {
             if (!sender.getEntityWorld().equals(player.getEntityWorld()) && range > 0)
                 continue;
             if (range == 0 || sender.getDistance(player) <= range) {
-                sendMessage(event, sender, p, player, tf);
+                sendMessage(event, sender, p, player, tf, true);
+            } else if(sender.getDistance(player) <= (range + 15)) {
+                sendMessage(event, sender, p, player, tf, false);
             }
         }
 
         if(channel.equals(ChatChannel.PRAY)) {
             for (final EntityPlayerMP player : players) {
                 if(player.canUseCommand(2, "")) {
-                    sendMessage(event, sender, p, player, tf);
+                    sendMessage(event, sender, p, player, tf, true);
                 }
             }
         }
@@ -112,7 +112,7 @@ public class ChatManager {
         return false;
     }
 
-    public static void sendMessage(ServerChatEvent event, EntityPlayerMP sender, IProfile p, EntityPlayerMP player, TextFormatting tf) {
+    public static void sendMessage(ServerChatEvent event, EntityPlayerMP sender, IProfile p, EntityPlayerMP player, TextFormatting tf, boolean isInRange) {
         String name = sender.getName();
         if (p.getCreated())
             name = TextFormatting.YELLOW + p.getFirstName() + " " + p.getLastName();
@@ -121,6 +121,9 @@ public class ChatManager {
             name = DeityManager.getDeityNameString(d);
         }
         String message = name + TextFormatting.WHITE + " -> " + tf + event.getMessage();
+        if(!isInRange) {
+            message = name + " says something off in the distance...";
+        }
         player.sendMessage(
                 new TextComponentString(message));
     }

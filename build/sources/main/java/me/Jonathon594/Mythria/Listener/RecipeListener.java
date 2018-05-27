@@ -41,7 +41,6 @@ public class RecipeListener {
         removeAllRecipesFor(MythriaUtil.getItemFromItemOrBlock(Items.WOODEN_HOE));
         removeAllRecipesFor(MythriaUtil.getItemFromItemOrBlock(Items.WOODEN_AXE));
 
-
         //Wood
         IForgeRegistryModifiable registryModifiable = (IForgeRegistryModifiable) event.getRegistry();
         registryModifiable.remove(new ResourceLocation("minecraft:oak_planks"));
@@ -56,6 +55,14 @@ public class RecipeListener {
         removeAllRecipesForIngredient(Items.IRON_INGOT);
         removeAllRecipesForIngredient(Items.GOLD_INGOT);
         removeAllRecipesForIngredient(Items.DIAMOND);
+
+        removeAllRecipesForIngredient(Items.OAK_DOOR);
+        removeAllRecipesForIngredient(Items.SPRUCE_DOOR);
+        removeAllRecipesForIngredient(Items.JUNGLE_DOOR);
+        removeAllRecipesForIngredient(Items.BIRCH_DOOR);
+        removeAllRecipesForIngredient(Items.DARK_OAK_DOOR);
+        removeAllRecipesForIngredient(Items.ACACIA_DOOR);
+
     }
 
     private static void removeAllRecipesForIngredient(Item item) {

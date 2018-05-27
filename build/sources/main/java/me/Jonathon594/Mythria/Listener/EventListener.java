@@ -247,6 +247,11 @@ public class EventListener {
     }
 
     @SubscribeEvent
+    public static void onEntityInteract(final PlayerInteractEvent.LeftClickBlock event) {
+        BlessingManager.onPunchBlock(event);
+    }
+
+    @SubscribeEvent
     public static void onEntityJoinWorld(final EntityJoinWorldEvent event) {
         if (event.getEntity() instanceof EntityPlayer) {
             final EntityPlayer player = (EntityPlayer) event.getEntity();
@@ -321,19 +326,14 @@ public class EventListener {
     public static void onLivingHurt(final LivingHurtEvent event) {
         AbilityManager.handleCombatSkills(event);
 
-        if (event.getEntityLiving() instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer) event.getEntityLiving();
-            final IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
-        } else {
-            if (event.getEntity().getEntityWorld().isRemote)
-                return;
-            final Entity trueSource = event.getSource().getTrueSource();
-            if (trueSource instanceof EntityPlayer) {
-                final EntityPlayer source = (EntityPlayer) trueSource;
-                final IProfile profile = source.getCapability(ProfileProvider.PROFILE_CAP, null);
-                AbilityManager.onLivingHurt(profile, event, source);
-                BlessingManager.onPlayerAttackEntity(profile, event, source);
-            }
+        if (event.getEntity().getEntityWorld().isRemote)
+            return;
+        final Entity trueSource = event.getSource().getTrueSource();
+        if (trueSource instanceof EntityPlayer) {
+            final EntityPlayer source = (EntityPlayer) trueSource;
+            final IProfile profile = source.getCapability(ProfileProvider.PROFILE_CAP, null);
+            AbilityManager.onLivingHurt(profile, event, source);
+            BlessingManager.onPlayerAttackEntity(profile, event, source);
         }
     }
 

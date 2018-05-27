@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.DataTypes.DeityAbilities.*;
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
@@ -130,31 +129,5 @@ public class DeityManager {
                 }
             }
         }
-    }
-
-    public static ArrayList<DeityAbility> getDeityAbilities() {
-        return deityAbilities;
-    }
-
-    private static ArrayList<DeityAbility> deityAbilities = new ArrayList<>();
-
-    public static DeityAbility getDeityAbility(String arg) {
-        for(DeityAbility da : deityAbilities) {
-            if(da.getName().equalsIgnoreCase(arg)) return da;
-        }
-        return null;
-    }
-
-    public static void Initialize() {
-        //Lilasia
-        deityAbilities.add(new DAZombie());
-        deityAbilities.add(new DASkeleton());
-        deityAbilities.add(new DASpider());
-
-        //Eliana
-        deityAbilities.add(new DATornado());
-
-        //Felixia
-        deityAbilities.add(new DAHeal());
     }
 }
