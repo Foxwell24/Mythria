@@ -1,4 +1,9 @@
-[21:38:58] [main/INFO]: Setting user: Player599
-[21:39:03] [main/WARN]: Skipping bad option: lastServer:
-[21:39:03] [main/INFO]: LWJGL Version: 2.9.4
-[21:39:08] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mythria
+[15:57:07] [main/INFO]: Setting user: Player26
+[15:57:13] [main/WARN]: Skipping bad option: lastServer:
+[15:57:13] [main/INFO]: LWJGL Version: 2.9.4
+[15:57:20] [main/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Mythria
+[15:57:33] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[15:57:33] [Thread-5/INFO]: Initializing LWJGL OpenAL
+[15:57:33] [Thread-5/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:57:33] [Thread-5/INFO]: OpenAL initialized.
+[15:57:33] [Sound Library Loader/INFO]: Sound engine started

@@ -2,6 +2,7 @@ package me.Jonathon594.Mythria.Listener;
 
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
+import me.Jonathon594.Mythria.Capability.Profile.ProfileStorage;
 import me.Jonathon594.Mythria.Client.Keybindings;
 import me.Jonathon594.Mythria.Client.Renderer.DeityRenderManager;
 import me.Jonathon594.Mythria.Client.Renderer.ReticleRenderer;
@@ -22,6 +23,7 @@ import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.CommandPacket;
 import me.Jonathon594.Mythria.Packets.SPacketSetSelectedDeity;
 import me.Jonathon594.Mythria.Storage.GlobalSaveData;
+import me.Jonathon594.Mythria.Storage.ProfileArchive;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
@@ -471,6 +473,16 @@ public class EventListener {
             return;
         GlobalSaveData.get(event.getWorld()).markDirty();
         event.getWorld().getGameRules().setOrCreateGameRule("naturalRegeneration", "false");
+    }
+
+    @SubscribeEvent
+    public static void onLivingDeath(LivingDeathEvent event) {
+        EntityLivingBase el = event.getEntityLiving();
+        if(el instanceof EntityPlayer) {
+            EntityPlayer player = (EntityPlayer) el;
+            IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
+            ProfileArchive.setLastProfile(player, profile);
+        }
     }
 
     @SubscribeEvent

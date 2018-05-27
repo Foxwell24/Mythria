@@ -40,6 +40,7 @@ public class GlobalSaveData extends WorldSavedData {
             int power = nbt.getInteger("DeityPower." + MythriaUtil.Capitalize(deity.name()));
             DeityManager.setDeityPower(deity, power);
         }
+        ProfileArchive.loadData(nbt);
     }
 
     @Override
@@ -48,6 +49,7 @@ public class GlobalSaveData extends WorldSavedData {
         for(Deity deity : Deity.values()) {
             compound.setInteger("DeityPower." + MythriaUtil.Capitalize(deity.name()), DeityManager.getDeityPower(deity));
         }
+        ProfileArchive.saveData(compound);
 
         return compound;
     }
