@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a083334-e70b-4efa-98da-e14bf5d2f5f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Blocks/MythriaBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/ReviveCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Commands/ReviveCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Managers/StatManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Mythria_main/me/Jonathon594/Mythria/Proxy/ClientProxy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/config/splash.properties" beforeDir="false" afterPath="$PROJECT_DIR$/run/config/splash.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-1.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-2.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-2.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-3.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-3.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-client-latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-client-latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/fml-junk-earlystartup.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM-1/data/villages_nether.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/DIM1/data/villages_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/mythria_global_data.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/data/villages.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/level.dat_old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.-1.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/region/r.0.0.mca" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/New World/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/New World/session.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/usernamecache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usernamecache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Blocks/MythriaBlocks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHammer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHammer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -77,75 +51,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClientProxy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Profile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="350" column="23" lean-forward="true" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
-              <folding>
-                <element signature="e#4664#4665#0" expanded="true" />
-                <element signature="e#4728#4729#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReviveCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IProfile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/IProfile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="78" column="9" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CPacketProfileCreation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketProfileCreation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="111" selection-start-line="111" selection-end-line="111" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Listener/EventListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="449" selection-start-line="449" selection-end-line="449" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,6 +82,7 @@
       <find>spruce</find>
       <find>acacia</find>
       <find>jungle</find>
+      <find>syn</find>
     </findStrings>
     <replaceStrings>
       <replace>plank</replace>
@@ -888,7 +795,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/PerkCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/DataTypes/Perk.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/LevelCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/mythria/models/block/oak_door_bottom_rh.json" />
@@ -939,6 +845,7 @@
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Proxy/ClientProxy.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Managers/StatManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHammer.java" />
       </list>
     </option>
   </component>
@@ -997,34 +904,7 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Managers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Packets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Mythria" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Mythria" type="462c0819:PsiDirectoryNode" />
-              <item name="Proxy" type="462c0819:PsiDirectoryNode" />
+              <item name="Items" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Mythria" type="b2602c69:ProjectViewProjectNode" />
@@ -1138,7 +1018,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Minecraft Client">
+  <component name="RunManager" selected="Gradle.Mythria [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -1253,7 +1133,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1344,34 +1223,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/jungle_door.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="71" selection-start-line="33" selection-start-column="71" selection-end-line="33" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/blockstates/dark_oak_door.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/spruce_door.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/jungle_door.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/mythria/models/item/dark_oak_door.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1684,7 +1535,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Packets/CPacketProfileCreation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
-          <caret line="58" column="23" lean-forward="true" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="69" />
+          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1692,13 +1543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1712,11 +1556,46 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Capability/Profile/Profile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="350" column="23" lean-forward="true" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
+          <caret line="350" column="23" selection-start-line="350" selection-start-column="23" selection-end-line="350" selection-end-column="23" />
           <folding>
             <element signature="e#4664#4665#0" expanded="true" />
             <element signature="e#4728#4729#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Commands/ReviveCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/item/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="1159" column="28" lean-forward="true" selection-start-line="1159" selection-start-column="28" selection-end-line="1159" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/enchantment/Enchantment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.0.2515/snapshot/20171003/forgeSrc-1.12.2-14.23.0.2515-sources.jar!/net/minecraft/enchantment/EnumEnchantmentType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/me/Jonathon594/Mythria/Items/MythriaItemHammer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
         </state>
       </provider>
     </entry>

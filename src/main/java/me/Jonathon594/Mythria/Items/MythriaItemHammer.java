@@ -4,6 +4,8 @@ import com.google.common.collect.Sets;
 import me.Jonathon594.Mythria.Interface.IItemData;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 
 import java.util.Set;
@@ -23,7 +25,6 @@ public class MythriaItemHammer extends ItemTool implements IItemData{
 
         MythriaItems.addItem(this);
     }
-
 
     @Override
     public double getWeight() {
