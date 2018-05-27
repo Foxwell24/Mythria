@@ -51,6 +51,8 @@ public class ReviveCommand extends CommandBase implements ICommand {
             throw new CommandException("commands.revive.noLastProfile", new Object[] {});
         }
         profile.fromNBT(compound);
+        profile.setPlayer(target);
+        profile.syncToClient();
     }
 
     @Override

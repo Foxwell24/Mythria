@@ -197,6 +197,7 @@ public class StatManager {
     }
 
     public static void UpdateSpeed(final IProfile profile, final EntityPlayer p, final double old) {
+        if(p == null) return;
         if (p.world.isRemote)
             return;
         double value = profile.getStat(StatType.MAX_SPEED);
