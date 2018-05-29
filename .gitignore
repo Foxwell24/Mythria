@@ -7,6 +7,7 @@ gradle
 resourcepacks
 mods
 gradle-app.setting
+out
 
 eula
 gradlew
