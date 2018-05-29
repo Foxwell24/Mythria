@@ -54,7 +54,7 @@ public class AbilityManager {
         if (df.hasBlessing(BlessingType.ELIANA_FLIGHT) || (d != null && d.equals(Deity.ELIANA))) {
             if (player.isSneaking()) {
                 if(DeityManager.hasPower(Deity.ELIANA, 1)) {
-                    DeityManager.consumePower(Deity.ELIANA, 1);
+                    DeityManager.consumePower(Deity.ELIANA, 1, player);
                     player.addVelocity(player.getLookVec().x, 1, player.getLookVec().z);
                 }
             }

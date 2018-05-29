@@ -38,6 +38,7 @@ public class Mythria {
         event.registerServerCommand(new LevelCommand());
         event.registerServerCommand(new ReviveCommand());
         event.registerServerCommand(new WorshipCommand());
+        event.registerServerCommand(new FavorCommand());
     }
 
     @EventHandler

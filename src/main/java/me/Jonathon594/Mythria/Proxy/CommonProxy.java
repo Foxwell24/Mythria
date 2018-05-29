@@ -22,6 +22,7 @@ import me.Jonathon594.Mythria.Capability.Vessel.Vessel;
 import me.Jonathon594.Mythria.Capability.Vessel.VesselStorage;
 import me.Jonathon594.Mythria.Enchantments.MythriaEnchantments;
 import me.Jonathon594.Mythria.Entity.MythriaEntities;
+import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.GUI.GuiHandler;
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import me.Jonathon594.Mythria.Listener.*;
@@ -79,6 +80,7 @@ public class CommonProxy {
         CarpentryManager.Initialize();
         MythriaVanillaBlocksModification.setAllDefaultStackSizes();
         WeatherManager.initialize();
+        DeityManager.initialize();
 
         MinecraftForge.EVENT_BUS.register(CapabilityHandler.class);
         MinecraftForge.EVENT_BUS.register(EventListener.class);

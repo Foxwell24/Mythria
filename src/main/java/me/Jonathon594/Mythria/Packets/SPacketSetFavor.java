@@ -24,8 +24,8 @@ public class SPacketSetFavor implements IMessage {
 
     private Integer deityIndex;
 
-    public SPacketSetFavor(Integer entityID, Integer deityIndex) {
-        this.amount = entityID;
+    public SPacketSetFavor(Integer amount, Integer deityIndex) {
+        this.amount = amount;
         this.deityIndex = deityIndex;
     }
 

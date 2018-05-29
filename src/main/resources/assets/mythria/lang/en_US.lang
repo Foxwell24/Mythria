@@ -167,6 +167,7 @@ commands.revive.noLastProfile="That player does not have and old profile to revi
 commands.error.nodeity=There is no deity with that name.
 commands.worship.start=You are now worshipping %s.
 commands.worship.end=You are no longer worshipping.
+commands.favor.success=You gave %s %s favor with %s.
 tile.campfire.name=Campfire
 tile.improved_campfire.name=Improved Campfire
 tile.primative_wooden_wall.name=Primative Wooden Wall

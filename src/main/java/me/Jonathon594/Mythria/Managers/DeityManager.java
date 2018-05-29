@@ -29,6 +29,59 @@ public class DeityManager {
         return selectedDeities;
     }
 
+    public static HashMap<Deity, HashMap<EntityPlayer, Integer>> worshipGains = new HashMap<>();
+    public static HashMap<Deity, HashMap<EntityPlayer, Integer>> blessingLosses = new HashMap<>();
+
+    public static void initialize() {
+        for (Deity d : Deity.values()) {
+            worshipGains.put(d, new HashMap<EntityPlayer, Integer>());
+            blessingLosses.put(d, new HashMap<EntityPlayer, Integer>());
+        }
+    }
+
+    public static void addWorshipGain(Deity d, EntityPlayer p, int i) {
+        HashMap<EntityPlayer, Integer> deityMap = worshipGains.get(d);
+        deityMap.put(p, deityMap.containsKey(p) ? deityMap.get(p) + i : i);
+        worshipGains.put(d, deityMap);
+    }
+
+    public static void addBlessingLoss(Deity d, EntityPlayer p, int i) {
+        HashMap<EntityPlayer, Integer> deityMap = blessingLosses.get(d);
+        deityMap.put(p, deityMap.containsKey(p) ? deityMap.get(p) + i : i);
+        blessingLosses.put(d, deityMap);
+    }
+
+    public static int getTotalWorshipGains(Deity d) {
+        int i = 0;
+        for(Map.Entry<EntityPlayer, Integer> e : worshipGains.get(d).entrySet()) {
+            i += e.getValue();
+        }
+        return i;
+    }
+
+    public static int getTotalBlessingLosses(Deity d) {
+        int i = 0;
+        for(Map.Entry<EntityPlayer, Integer> e : blessingLosses.get(d).entrySet()) {
+            i += e.getValue();
+        }
+        return i;
+    }
+
+    public static HashMap<EntityPlayer, Integer> getIndividualWorshipGains(Deity d) {
+        return worshipGains.get(d);
+    }
+
+    public static HashMap<EntityPlayer, Integer> getIndividualBlessingLosses(Deity d) {
+        return blessingLosses.get(d);
+    }
+
+    public static void clearCounters() {
+        for (Deity d : Deity.values()) {
+            worshipGains.put(d, new HashMap<EntityPlayer, Integer>());
+            blessingLosses.put(d, new HashMap<EntityPlayer, Integer>());
+        }
+    }
+
     public static void setDeityPower(Deity deity, int power) {
         deityPower.put(deity, power);
     }
@@ -85,7 +138,7 @@ public class DeityManager {
         favor.setFavor(deity, value);
 
         if(playerMP != null) {
-            MythriaPacketHandler.INSTANCE.sendTo(new SPacketSetFavor(deity.ordinal(), value), playerMP);
+            MythriaPacketHandler.INSTANCE.sendTo(new SPacketSetFavor(value, deity.ordinal()), playerMP);
         }
     }
 
@@ -110,10 +163,18 @@ public class DeityManager {
             Collections.shuffle(deities);
 
             for (Deity d : deities) {
-                int amount = getWorshippers(d) * 5;
-                int canGive = 8000000 - totalPower;
-                if(canGive > 0) {
-                    DeityManager.setDeityPower(d, DeityManager.getDeityPower(d) + Math.min(1 + amount, canGive));
+                if(totalPower < 8000000) {
+                    DeityManager.setDeityPower(d, DeityManager.getDeityPower(d) + 1);
+                }
+                for(Map.Entry<EntityPlayer, Deity> e : worshipers.entrySet()) {
+                    if(!e.getValue().equals(d)) continue;
+                    int max = 8000000 - totalPower;
+                    if(max == 0) return;
+
+                    int a = Math.min(5, max);
+
+                    setDeityPower(d, a);
+                    addWorshipGain(d, e.getKey(), a);
                 }
             }
         }
@@ -133,7 +194,8 @@ public class DeityManager {
         return getDeityPower(d) >= power;
     }
 
-    public static void consumePower(Deity d, int power) {
+    public static void consumePower(Deity d, int power, EntityPlayer player) {
         setDeityPower(d, getDeityPower(d) - power);
+        addBlessingLoss(d, player, power);
     }
 }
