@@ -217,7 +217,7 @@ public class MythriaItems {
     public static final Item TOOL_HANDLE = new MythriaItem("tool_handle", 4, 1);
 
     //Stone Tool Partss
-    public static final Item STONE_HAMMER = new MythriaItemHammer(5, 0.5f, ToolMaterial.STONE, "stone_hammer", 15);
+    public static final Item STONE_HAMMER = new MythriaItemHammer(5, -4.0f, ToolMaterial.STONE, "stone_hammer", 15);
     public static final Item STONE_SAW = new MythriaItemSaw(1, 0.5f, ToolMaterial.STONE, "stone_saw", 15);
 
     public static final Item STONE_SWORD_BLADE = new ItemToolHead("stone_sword_blade", 14, Items.STONE_SWORD);

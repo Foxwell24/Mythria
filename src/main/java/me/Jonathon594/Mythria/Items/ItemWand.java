@@ -1,6 +1,7 @@
 package me.Jonathon594.Mythria.Items;
 
 import me.Jonathon594.Mythria.Entity.Magic.EntityKillingCurse;
+import me.Jonathon594.Mythria.Entity.Magic.EntitySingularitySpell;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
@@ -13,7 +14,7 @@ public class ItemWand extends MythriaItem {
     @Override
     public boolean onEntitySwing(EntityLivingBase entityLiving, ItemStack stack) {
 
-        EntityKillingCurse curse = new EntityKillingCurse(entityLiving.world, entityLiving);
+        EntitySingularitySpell curse = new EntitySingularitySpell(entityLiving.world, entityLiving);
         curse.shoot(entityLiving, entityLiving.rotationPitch, entityLiving.rotationYaw, 0f, 2f, 0f);
         entityLiving.world.spawnEntity(curse);
 

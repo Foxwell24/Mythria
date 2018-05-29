@@ -17,6 +17,7 @@ import me.Jonathon594.Mythria.Capability.Profile.ProfileStorage;
 import me.Jonathon594.Mythria.Capability.Vessel.IVessel;
 import me.Jonathon594.Mythria.Capability.Vessel.Vessel;
 import me.Jonathon594.Mythria.Capability.Vessel.VesselStorage;
+import me.Jonathon594.Mythria.Enchantments.MythriaEnchantments;
 import me.Jonathon594.Mythria.Entity.MythriaEntities;
 import me.Jonathon594.Mythria.GUI.GuiHandler;
 import me.Jonathon594.Mythria.Items.MythriaItems;
@@ -83,6 +84,7 @@ public class CommonProxy {
         MinecraftForge.EVENT_BUS.register(RecipeListener.class);
         MinecraftForge.EVENT_BUS.register(HealthManager.class);
         MinecraftForge.EVENT_BUS.register(AbilityListener.class);
+        MinecraftForge.EVENT_BUS.register(MythriaEnchantments.class);
         MinecraftForge.TERRAIN_GEN_BUS.register(TerrainGenListener.class);
         MinecraftForge.ORE_GEN_BUS.register(OreGenListener.class);
         TimeManager.Initialize();

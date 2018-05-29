@@ -33,4 +33,8 @@ public class CombatMessages {
     public static final String PICKPOCKET = "Pickpocket!";
     public static final String PICKPOCKET_FAIL_OTHER = "Someone is trying to pick your pocket!";
     public static final String PICKPOCKET_FAIL = "Oh no they have noticed you!";
+    public static final String HAMMER_STAGGER = "Hammer Stagger! (Slowness IV)";
+    public static final String HAMMER_CONCUSSION = "Hammer Concussion! (Weakness IV + Torpidity)";
+    public static final String HAMMER_BREAK = "Hammer Break!";
+    public static final String SAVAGE_HAMMER = "Savage Hammer! (Instant Death)";
 }

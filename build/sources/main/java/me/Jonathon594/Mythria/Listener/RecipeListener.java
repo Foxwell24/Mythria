@@ -56,12 +56,12 @@ public class RecipeListener {
         removeAllRecipesForIngredient(Items.GOLD_INGOT);
         removeAllRecipesForIngredient(Items.DIAMOND);
 
-        removeAllRecipesForIngredient(Items.OAK_DOOR);
-        removeAllRecipesForIngredient(Items.SPRUCE_DOOR);
-        removeAllRecipesForIngredient(Items.JUNGLE_DOOR);
-        removeAllRecipesForIngredient(Items.BIRCH_DOOR);
-        removeAllRecipesForIngredient(Items.DARK_OAK_DOOR);
-        removeAllRecipesForIngredient(Items.ACACIA_DOOR);
+        removeAllRecipesFor(Items.OAK_DOOR);
+        removeAllRecipesFor(Items.SPRUCE_DOOR);
+        removeAllRecipesFor(Items.JUNGLE_DOOR);
+        removeAllRecipesFor(Items.BIRCH_DOOR);
+        removeAllRecipesFor(Items.DARK_OAK_DOOR);
+        removeAllRecipesFor(Items.ACACIA_DOOR);
 
     }
 

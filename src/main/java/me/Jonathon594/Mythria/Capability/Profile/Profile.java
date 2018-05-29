@@ -299,6 +299,10 @@ public class Profile implements IProfile {
                 v = MathHelper.clamp(v, 0, 20);
                 consumables.put(t, v);
                 break;
+            case TORPOR:
+                v = MathHelper.clamp(v, 0, 20);
+                consumables.put(t, v);
+                break;
         }
         if (player == null)
             return;

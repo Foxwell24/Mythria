@@ -51,6 +51,9 @@ public class StatManager {
                 case FATIGUE:
                     v = 0.0;
                     break;
+                case TORPOR:
+                    v = 0.0;
+                    break;
             }
             profile.getConsumables().put(c, v);
         }
@@ -150,6 +153,8 @@ public class StatManager {
             staminaRegen = 0.75;
         if (profile.getConsumables().get(Consumable.TEMPERATURE) < 8.5)
             staminaRegen = 0.5;
+
+        profile.setConsumable(Consumable.TORPOR, profile.getConsumables().get(Consumable.TORPOR) - 0.25);
 
         profile.setConsumable(Consumable.PAIN, profile.getConsumables().get(Consumable.PAIN) - 0.3);
 

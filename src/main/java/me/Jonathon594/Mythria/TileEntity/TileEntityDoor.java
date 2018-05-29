@@ -49,25 +49,21 @@ public class TileEntityDoor extends TileEntity {
 
     @Override
     public NBTTagCompound writeToNBT(NBTTagCompound compound) {
-        NBTTagCompound comp =  super.writeToNBT(compound);
-        if(comp == null) comp = new NBTTagCompound();
+        compound.setInteger("LockPattern", LockPattern);
+        compound.setBoolean("Locked", locked);
+        compound.setString("LockType", type.toString().toUpperCase());
+        compound.setBoolean("Barred", barred);
 
-        comp.setInteger("LockPattern", LockPattern);
-        comp.setBoolean("Locked", locked);
-        comp.setString("LockType", type.toString().toUpperCase());
-        comp.setBoolean("Barred", barred);
-
-        return comp;
+        return super.writeToNBT(compound);
     }
 
     @Override
     public void readFromNBT(NBTTagCompound compound) {
-        super.readFromNBT(compound);
-
         LockPattern = compound.getInteger("LockPattern");
         locked = compound.getBoolean("Locked");
         type = LockType.valueOf(compound.getString("LockType"));
         barred = compound.getBoolean("Barred");
+        super.readFromNBT(compound);
     }
 
     public void toggledBarred() {

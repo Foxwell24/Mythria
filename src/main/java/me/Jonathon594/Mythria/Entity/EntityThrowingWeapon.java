@@ -1,10 +1,17 @@
 package me.Jonathon594.Mythria.Entity;
 
+import me.Jonathon594.Mythria.Enchantments.MythriaEnchantments;
+import me.Jonathon594.Mythria.Managers.SoundManager;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.effect.EntityLightningBolt;
 import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.JsonToNBT;
 import net.minecraft.nbt.NBTException;
@@ -16,6 +23,8 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
+
+import java.util.Map;
 
 public class EntityThrowingWeapon extends EntityThrowable {
     private static final DataParameter<ItemStack> itemData = EntityDataManager.createKey(EntityThrowingWeapon.class,
@@ -61,15 +70,34 @@ public class EntityThrowingWeapon extends EntityThrowable {
     @Override
     protected void onImpact(final RayTraceResult result) {
         if (!world.isRemote) {
+            Map<Enchantment, Integer> ench = EnchantmentHelper.getEnchantments(getItem());
+
             if (result.entityHit != null) {
                 final int i = (int) (double) dataManager.get(damageData);
 
                 result.entityHit.attackEntityFrom(DamageSource.causeThrownDamage(this, getThrower()), i);
             }
 
-            final EntityItem item = new EntityItem(world, posX, posY, posZ, dataManager.get(itemData));
-            item.setPickupDelay(20);
-            world.spawnEntity(item);
+            if(ench.containsKey(MythriaEnchantments.STRIKING)) {
+                EntityLightningBolt l = new EntityLightningBolt(world, posX, posY, posZ,
+                        false);
+                world.spawnEntity(l);
+            }
+
+            if(ench.containsKey(MythriaEnchantments.EXPLODING)) {
+                world.createExplosion(null, posX, posY, posZ, 4, true);
+            }
+
+            if(ench.containsKey(MythriaEnchantments.RETURNING)) {
+                EntityItem item = new EntityItem(world, thrower.posX, thrower.posY, thrower.posZ, dataManager.get(itemData));
+                item.setPickupDelay(3);
+                world.spawnEntity(item);
+                SoundManager.playForAllNearby(thrower, SoundEvents.ENTITY_ENDERMEN_TELEPORT);
+            } else {
+                EntityItem item = new EntityItem(world, posX, posY, posZ, dataManager.get(itemData));
+                item.setPickupDelay(20);
+                world.spawnEntity(item);
+            }
             world.setEntityState(this, (byte) 3);
             setDead();
         }

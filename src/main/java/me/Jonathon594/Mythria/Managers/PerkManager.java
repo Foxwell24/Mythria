@@ -313,7 +313,25 @@ public class PerkManager {
                 Alignment.THIEVERY, "MasterlyArchery").addAttributeFlag(AttributeFlag.ARROW_EXECUTE)
                 .addRequiredAttribute(Attribute.DEXTERITY, 44).addRequiredAttribute(Attribute.STRENGTH, 46);
 
-        // Heavy Weaponry
+        // Hammers
+        new CombatSkill("BasicHammers", MythriaItems.STONE_HAMMER, 8, 1, 1, 0, MythicSkills.HAMMERS, 0,
+                Alignment.THIEVERY, "").addAttributeFlag(AttributeFlag.HAMMER_MASTERY)
+                .addRequiredAttribute(Attribute.ENDURANCE, 12).addRequiredAttribute(Attribute.STRENGTH, 18);
+        new CombatSkill("AdvancedHammers", MythriaItems.BRONZE_HAMMER, 8, 2, 1, 0, MythicSkills.HAMMERS, 25,
+                Alignment.THIEVERY, "BasicHammers").addAttributeFlag(AttributeFlag.HAMMER_STAGGER)
+                .addRequiredAttribute(Attribute.ENDURANCE, 18).addRequiredAttribute(Attribute.STRENGTH, 24);
+        new CombatSkill("SophisticatedHammers", MythriaItems.IRON_HAMMER, 8, 3, 1, 0, MythicSkills.HAMMERS, 50,
+                Alignment.THIEVERY, "AdvancedHammers").addAttributeFlag(AttributeFlag.HAMMER_CONCUSSION)
+                .addRequiredAttribute(Attribute.ENDURANCE, 24).addRequiredAttribute(Attribute.STRENGTH, 32);
+        new CombatSkill("SuperiorHammers", MythriaItems.STEEL_HAMMER, 8, 4, 1, 0, MythicSkills.HAMMERS, 75,
+                Alignment.THIEVERY, "SophisticatedHammers").addAttributeFlag(AttributeFlag.HAMMER_MASTERY_2)
+                .addRequiredAttribute(Attribute.ENDURANCE, 30).addRequiredAttribute(Attribute.STRENGTH, 48);
+        new CombatSkill("MasterlyHammers", MythriaItems.STEEL_HAMMER, 8, 5, 1, 0, MythicSkills.HAMMERS, 100,
+                Alignment.THIEVERY, "SuperiorHammers").addAttributeFlag(AttributeFlag.HAMMER_BREAK)
+                .addRequiredAttribute(Attribute.ENDURANCE, 36).addRequiredAttribute(Attribute.STRENGTH, 68);
+        new CombatSkill("LegendaryHammers", MythriaItems.STEEL_HAMMER, 8, 6, 1, 0, MythicSkills.HAMMERS, 125,
+                Alignment.THIEVERY, "MasterlyHammers").addAttributeFlag(AttributeFlag.SAVAGE_HAMMER)
+                .addRequiredAttribute(Attribute.ENDURANCE, 44).addRequiredAttribute(Attribute.STRENGTH, 82);
     }
 
     public static void CreateLifes() {

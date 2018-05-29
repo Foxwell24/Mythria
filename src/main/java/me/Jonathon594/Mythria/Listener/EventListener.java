@@ -367,8 +367,6 @@ public class EventListener {
 
     @SubscribeEvent
     public static void onPlayerTick(final TickEvent.PlayerTickEvent event) {
-
-
         final EntityPlayer player = event.player;
         if (event.phase.equals(Phase.END)) {
             VesselModule.onPlayerTick(event);
@@ -376,8 +374,10 @@ public class EventListener {
             WallJumpManager.onPlayerTick(event);
         }
 
-        if (player.world.isRemote)
+        if (player.world.isRemote) {
+            TorpidityManager.onPlayerTickClient();
             return;
+        }
 
         if (event.phase.equals(Phase.END)) {
             MythriaInventoryManager.onPlayerTickEvent(event);

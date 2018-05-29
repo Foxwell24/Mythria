@@ -1,11 +1,11 @@
 ## Based on GitHub's Eclipse .gitignore
 
-run/
-.gradle/
-build/
-gradle/
-resourcepacks/
-mods/
+run
+.gradle
+build
+gradle
+resourcepacks
+mods
 gradle-app.setting
 
 ## IntelliJ IDEA

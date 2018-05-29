@@ -1,5 +1,6 @@
 package me.Jonathon594.Mythria.Managers;
 
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.play.server.SPacketSoundEffect;
 import net.minecraft.util.SoundCategory;
@@ -7,8 +8,8 @@ import net.minecraft.util.SoundEvent;
 
 public class SoundManager {
 
-    public static void playForAllNearby(final EntityPlayerMP player, final SoundEvent blockFireExtinguish) {
-        player.world.playSound(null, player.posX, player.posY, player.posZ, blockFireExtinguish, SoundCategory.MASTER,
+    public static void playForAllNearby(final EntityLivingBase livingBase, final SoundEvent blockFireExtinguish) {
+        livingBase.world.playSound(null, livingBase.posX, livingBase.posY, livingBase.posZ, blockFireExtinguish, SoundCategory.MASTER,
                 1.0f, 1.0f);
     }
 

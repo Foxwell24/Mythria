@@ -2,6 +2,7 @@ package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
+import me.Jonathon594.Mythria.DataTypes.Cooldown;
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
@@ -229,6 +230,8 @@ public class BlessingManager {
 
     public static void onPunchBlock(PlayerInteractEvent.LeftClickBlock event) {
         EntityPlayer player = event.getEntityPlayer();
+        if(!player.isSneaking()) return;
+        if(CooldownManager.hasCooldown(Cooldown.CooldownType.EARTH_CRUMPLE, player)) return;
         IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
 
         if(profile.hasFlag(AttributeFlag.ASANA_EARTH_CRUMPLE)) {
@@ -237,6 +240,7 @@ public class BlessingManager {
             if(state.getMaterial().equals(Material.ROCK) || state.getMaterial().equals(Material.GROUND) ||
                     state.getMaterial().equals(Material.SAND)) {
                 player.world.destroyBlock(pos, true);
+                CooldownManager.addCooldown(player, Cooldown.CooldownType.EARTH_CRUMPLE, 1000);
             }
         }
     }

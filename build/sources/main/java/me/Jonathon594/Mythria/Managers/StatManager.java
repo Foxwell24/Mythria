@@ -51,6 +51,9 @@ public class StatManager {
                 case FATIGUE:
                     v = 0.0;
                     break;
+                case TORPOR:
+                    v = 0.0;
+                    break;
             }
             profile.getConsumables().put(c, v);
         }
@@ -151,6 +154,8 @@ public class StatManager {
         if (profile.getConsumables().get(Consumable.TEMPERATURE) < 8.5)
             staminaRegen = 0.5;
 
+        profile.setConsumable(Consumable.TORPOR, profile.getConsumables().get(Consumable.TORPOR) - 0.25);
+
         profile.setConsumable(Consumable.PAIN, profile.getConsumables().get(Consumable.PAIN) - 0.3);
 
         if (p.getFoodStats().getFoodLevel() >= 18)
@@ -197,6 +202,7 @@ public class StatManager {
     }
 
     public static void UpdateSpeed(final IProfile profile, final EntityPlayer p, final double old) {
+        if(p == null) return;
         if (p.world.isRemote)
             return;
         double value = profile.getStat(StatType.MAX_SPEED);

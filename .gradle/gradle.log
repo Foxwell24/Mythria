@@ -6,15 +6,6 @@ Etag download for http://files.minecraftforge.net/maven/net/minecraftforge/forge
 
 This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril.
 
-#################################################
-         ForgeGradle 2.3-SNAPSHOT-4a7d623        
-  https://github.com/MinecraftForge/ForgeGradle  
-#################################################
-                 Powered by MCP                  
-             http://modcoderpack.com             
-     by: Searge, ProfMobius, R4wk, ZeuX          
-     Fesh0r, IngisKahn, bspkrs, LexManos         
-#################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
 :sourceApiJava
@@ -22,16 +13,13 @@ This mapping 'snapshot_20171003' was designed for MC 1.12! Use at your own peril
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
 :sourceMainJava
-:compileJava
-Download https://libraries.minecraft.net/com/mojang/realms/1.10.21/realms-1.10.21.pom
-Download https://libraries.minecraft.net/com/mojang/realms/1.10.21/realms-1.10.21.jar
-C:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:47: warning: SunFontManager is internal proprietary API and may be removed in a future release
+:compileJavaC:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:48: warning: SunFontManager is internal proprietary API and may be removed in a future release
 import sun.font.SunFontManager;
                ^
-C:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:47: warning: SunFontManager is internal proprietary API and may be removed in a future release
+C:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:48: warning: SunFontManager is internal proprietary API and may be removed in a future release
 import sun.font.SunFontManager;
                ^
-C:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:47: warning: SunFontManager is internal proprietary API and may be removed in a future release
+C:\Users\jonat\Documents\GitHub\Mythria\build\sources\main\java\me\Jonathon594\Mythria\Util\MythriaUtil.java:48: warning: SunFontManager is internal proprietary API and may be removed in a future release
 import sun.font.SunFontManager;
                ^
 Note: Some input files use or override a deprecated API.
@@ -39,6 +27,7 @@ Note: Recompile with -Xlint:deprecation for details.
 Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 3 warnings
+
 :processResources
 :classes
 :jar
@@ -68,4 +57,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 1 mins 0.573 secs
+Total time: 44.048 secs

@@ -1,5 +1,5 @@
 Symbol range map extraction starting
-Processing 340 files
+Processing 351 files
 startProcessing "me\Jonathon594\Mythria\Blocks\BlockAnvil.java" md5: dc5c14e4e767fe6026c048ca37619e72
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Blocks\BlockAnvil.java"
@@ -56,7 +56,7 @@ startProcessing "me\Jonathon594\Mythria\Blocks\MythriaBlock.java" md5: a50d95920
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Blocks\MythriaBlock.java"
 
-startProcessing "me\Jonathon594\Mythria\Blocks\MythriaBlocks.java" md5: 114271e4ed918456ca1d1613ba7f2c45
+startProcessing "me\Jonathon594\Mythria\Blocks\MythriaBlocks.java" md5: c026d662b507805d0028ffa61c6c0873
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Blocks\MythriaBlocks.java"
 
@@ -140,7 +140,7 @@ startProcessing "me\Jonathon594\Mythria\Capability\Profile\IProfile.java" md5: 8
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Capability\Profile\IProfile.java"
 
-startProcessing "me\Jonathon594\Mythria\Capability\Profile\Profile.java" md5: 650af3f4d342fe8cf092f3a63d14ae3d
+startProcessing "me\Jonathon594\Mythria\Capability\Profile\Profile.java" md5: 820daa154b322415889cb27885290215
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Capability\Profile\Profile.java"
 
@@ -264,6 +264,10 @@ startProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderNPC.java" md5: cbc
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderNPC.java"
 
+startProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderSingularitySpell.java" md5: 2bbea1b442acd39bd4031b1e01b432c5
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderSingularitySpell.java"
+
 startProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderThrowingWeapon.java" md5: bc69dd52d70349114a7f7825823cdb3e
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Client\Renderer\RenderThrowingWeapon.java"
@@ -348,11 +352,15 @@ startProcessing "me\Jonathon594\Mythria\Commands\PerkCommand.java" md5: 2cd658c4
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Commands\PerkCommand.java"
 
+startProcessing "me\Jonathon594\Mythria\Commands\ReviveCommand.java" md5: f5478951d48dfa67362100479e8882a1
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Commands\ReviveCommand.java"
+
 startProcessing "me\Jonathon594\Mythria\Const\Blacklist.java" md5: 851f666ff7bc4595fc5b3685cd96aa5b
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Const\Blacklist.java"
 
-startProcessing "me\Jonathon594\Mythria\Const\CombatMessages.java" md5: 672b5afcc8908518cd9c2bf4961155c7
+startProcessing "me\Jonathon594\Mythria\Const\CombatMessages.java" md5: 9a2fc8ff576eda5dac49749c27c961be
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Const\CombatMessages.java"
 
@@ -371,6 +379,10 @@ endProcessing "me\Jonathon594\Mythria\DataTypes\BlessingPerk.java"
 startProcessing "me\Jonathon594\Mythria\DataTypes\CombatSkill.java" md5: 06b27c7eeac4023c1c5c8c9712d42add
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\DataTypes\CombatSkill.java"
+
+startProcessing "me\Jonathon594\Mythria\DataTypes\Cooldown.java" md5: da056c5d941fe99af73cc6c139b27e90
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\DataTypes\Cooldown.java"
 
 startProcessing "me\Jonathon594\Mythria\DataTypes\CureCondition.java" md5: c193dd3cb3fc394f50eac512d5bb45d0
 Cache Hit!
@@ -440,6 +452,22 @@ startProcessing "me\Jonathon594\Mythria\DataTypes\TradeSkill.java" md5: 2a69e82e
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\DataTypes\TradeSkill.java"
 
+startProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentExploding.java" md5: 45e3992df1acdcd76c49841fea7f356d
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentExploding.java"
+
+startProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentReturning.java" md5: 319bc20bb0aaed4d3664390eef7986d5
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentReturning.java"
+
+startProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentStriking.java" md5: e884198cad57ea53fcfcc4ba09b1c8c3
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Enchantments\EnchantmentStriking.java"
+
+startProcessing "me\Jonathon594\Mythria\Enchantments\MythriaEnchantments.java" md5: bee19bbbf5bbc86e31f258f78b6b6af0
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Enchantments\MythriaEnchantments.java"
+
 startProcessing "me\Jonathon594\Mythria\Entity\AI\EntityAIAvoidProfileWithFlag.java" md5: 076fcb52fedb4afc18025d8ff8ccf2b4
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Entity\AI\EntityAIAvoidProfileWithFlag.java"
@@ -476,7 +504,7 @@ startProcessing "me\Jonathon594\Mythria\Entity\EntityNPCPlayer.java" md5: 26f6ea
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Entity\EntityNPCPlayer.java"
 
-startProcessing "me\Jonathon594\Mythria\Entity\EntityThrowingWeapon.java" md5: 8d3ad92e082cd12263a8170cbea13a00
+startProcessing "me\Jonathon594\Mythria\Entity\EntityThrowingWeapon.java" md5: 43026595618c8320c26cd1e44bbec4da
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Entity\EntityThrowingWeapon.java"
 
@@ -488,7 +516,11 @@ startProcessing "me\Jonathon594\Mythria\Entity\Magic\EntityMagicProjectile.java"
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Entity\Magic\EntityMagicProjectile.java"
 
-startProcessing "me\Jonathon594\Mythria\Entity\MythriaEntities.java" md5: 960a3b23a6b5b10d66ae8ab827d76d35
+startProcessing "me\Jonathon594\Mythria\Entity\Magic\EntitySingularitySpell.java" md5: d9d2fb9ff860c65013fc0006c1c00fc3
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Entity\Magic\EntitySingularitySpell.java"
+
+startProcessing "me\Jonathon594\Mythria\Entity\MythriaEntities.java" md5: 22d7b96616e29106b8e1c19c107d4d93
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Entity\MythriaEntities.java"
 
@@ -524,7 +556,7 @@ startProcessing "me\Jonathon594\Mythria\Enum\Attribute.java" md5: 2cbdbd0a25ff89
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\Attribute.java"
 
-startProcessing "me\Jonathon594\Mythria\Enum\AttributeFlag.java" md5: fbb274f87040b1f530bcd54135428765
+startProcessing "me\Jonathon594\Mythria\Enum\AttributeFlag.java" md5: c7604fbd43ecf0ee3adb78899a3b8cc9
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\AttributeFlag.java"
 
@@ -544,7 +576,7 @@ startProcessing "me\Jonathon594\Mythria\Enum\ClientHud.java" md5: be4931d73dab89
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\ClientHud.java"
 
-startProcessing "me\Jonathon594\Mythria\Enum\Consumable.java" md5: 20204b3855880ade200f584d5d7201b5
+startProcessing "me\Jonathon594\Mythria\Enum\Consumable.java" md5: 63ce4183ff39e3000ade2a5bb68e2123
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\Consumable.java"
 
@@ -580,7 +612,7 @@ startProcessing "me\Jonathon594\Mythria\Enum\MaterialHandleType.java" md5: f4a0d
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\MaterialHandleType.java"
 
-startProcessing "me\Jonathon594\Mythria\Enum\MythicSkills.java" md5: eed6adcc74b3049fdaff5ad78ed050b4
+startProcessing "me\Jonathon594\Mythria\Enum\MythicSkills.java" md5: a57076089a7821b96096903fd599ddbb
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Enum\MythicSkills.java"
 
@@ -940,7 +972,7 @@ startProcessing "me\Jonathon594\Mythria\Items\ItemToolHead.java" md5: 154d2ad278
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\ItemToolHead.java"
 
-startProcessing "me\Jonathon594\Mythria\Items\ItemWand.java" md5: ca433114fbc74f1cea8b011263427188
+startProcessing "me\Jonathon594\Mythria\Items\ItemWand.java" md5: 402b5623299a0cd83647303acb2987ab
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\ItemWand.java"
 
@@ -968,7 +1000,7 @@ startProcessing "me\Jonathon594\Mythria\Items\MythriaItemChisel.java" md5: c669c
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\MythriaItemChisel.java"
 
-startProcessing "me\Jonathon594\Mythria\Items\MythriaItemHammer.java" md5: 40f3862d9f9628b3405fda6eb7884d55
+startProcessing "me\Jonathon594\Mythria\Items\MythriaItemHammer.java" md5: 6f2af9ceb361ce05b674c88026cee08d
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\MythriaItemHammer.java"
 
@@ -996,7 +1028,7 @@ startProcessing "me\Jonathon594\Mythria\Items\MythriaItemSword.java" md5: 9b89b1
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\MythriaItemSword.java"
 
-startProcessing "me\Jonathon594\Mythria\Items\MythriaItems.java" md5: 5f21262a51604f97f0c4819bffa95fe5
+startProcessing "me\Jonathon594\Mythria\Items\MythriaItems.java" md5: 9442030834f42f2f3b91eded4145c43e
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Items\MythriaItems.java"
 
@@ -1012,14 +1044,15 @@ startProcessing "me\Jonathon594\Mythria\Listener\DiscordListener.java" md5: a40c
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Listener\DiscordListener.java"
 
-startProcessing "me\Jonathon594\Mythria\Listener\EventListener.java" md5: c4db2df9b686d5f3f9cd732ab0413999
+startProcessing "me\Jonathon594\Mythria\Listener\EventListener.java" md5: f0e2a91002197dad487ed9876fb1f0e4
+Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Listener\EventListener.java"
 
 startProcessing "me\Jonathon594\Mythria\Listener\OreGenListener.java" md5: b705aacc47334cbbe67f5da0e5bc135f
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Listener\OreGenListener.java"
 
-startProcessing "me\Jonathon594\Mythria\Listener\RecipeListener.java" md5: b3c237b563146a96f996e6968468033c
+startProcessing "me\Jonathon594\Mythria\Listener\RecipeListener.java" md5: 5b4ae66c8643b9e8cafe84eea4dd4dbd
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Listener\RecipeListener.java"
 
@@ -1027,7 +1060,7 @@ startProcessing "me\Jonathon594\Mythria\Listener\TerrainGenListener.java" md5: e
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Listener\TerrainGenListener.java"
 
-startProcessing "me\Jonathon594\Mythria\Managers\AbilityManager.java" md5: b9d67d3045be32abdf55d583ba22557a
+startProcessing "me\Jonathon594\Mythria\Managers\AbilityManager.java" md5: 255456b5138e807ceedcafed7be57b9a
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\AbilityManager.java"
 
@@ -1035,7 +1068,8 @@ startProcessing "me\Jonathon594\Mythria\Managers\AttributeManager.java" md5: 0dc
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\AttributeManager.java"
 
-startProcessing "me\Jonathon594\Mythria\Managers\BlessingManager.java" md5: 296561f85bab27170d265945b99b5123
+startProcessing "me\Jonathon594\Mythria\Managers\BlessingManager.java" md5: 04030fa3df84b1571a567ccd8ab7364e
+Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\BlessingManager.java"
 
 startProcessing "me\Jonathon594\Mythria\Managers\CarpentryManager.java" md5: b70429511bf5637023e0d0141c168139
@@ -1049,6 +1083,10 @@ endProcessing "me\Jonathon594\Mythria\Managers\CastingManager.java"
 startProcessing "me\Jonathon594\Mythria\Managers\ChatManager.java" md5: 5260dbf8336bae01e9ee46b9c5f85411
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\ChatManager.java"
+
+startProcessing "me\Jonathon594\Mythria\Managers\CooldownManager.java" md5: e8629ff1612a538773d9fb4c2f081dfd
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Managers\CooldownManager.java"
 
 startProcessing "me\Jonathon594\Mythria\Managers\DeityManager.java" md5: d6bdcf868347bf93907a003925ffc44f
 Cache Hit!
@@ -1090,7 +1128,7 @@ startProcessing "me\Jonathon594\Mythria\Managers\PainManager.java" md5: 4ec67438
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\PainManager.java"
 
-startProcessing "me\Jonathon594\Mythria\Managers\PerkManager.java" md5: 0592bc25a36a3ec2a881ef3ccb529d7b
+startProcessing "me\Jonathon594\Mythria\Managers\PerkManager.java" md5: b8f0d471b48437087a989cc47ab9b50d
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\PerkManager.java"
 
@@ -1110,17 +1148,21 @@ startProcessing "me\Jonathon594\Mythria\Managers\SmithingManager.java" md5: f027
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\SmithingManager.java"
 
-startProcessing "me\Jonathon594\Mythria\Managers\SoundManager.java" md5: 08fa592c696d4d1139adafe1538271b5
+startProcessing "me\Jonathon594\Mythria\Managers\SoundManager.java" md5: c8dba1e54c07053cd16e7bb21adde424
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\SoundManager.java"
 
-startProcessing "me\Jonathon594\Mythria\Managers\StatManager.java" md5: 1180fb5a092423f09b350d715da819d0
+startProcessing "me\Jonathon594\Mythria\Managers\StatManager.java" md5: d05454b9ab878a35e60637247f0ae295
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\StatManager.java"
 
 startProcessing "me\Jonathon594\Mythria\Managers\TimeManager.java" md5: f80aeb0d260f7c25a49836f99c9a9d9c
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Managers\TimeManager.java"
+
+startProcessing "me\Jonathon594\Mythria\Managers\TorpidityManager.java" md5: f7991bd20cce85615fa1bd7ec92984dc
+Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Managers\TorpidityManager.java"
 
 startProcessing "me\Jonathon594\Mythria\Managers\TreeManager.java" md5: 5448f0911abc42d1430eb72ee39947c7
 Cache Hit!
@@ -1186,7 +1228,7 @@ startProcessing "me\Jonathon594\Mythria\Module\VesselModule.java" md5: 552e6d908
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Module\VesselModule.java"
 
-startProcessing "me\Jonathon594\Mythria\Mythria.java" md5: 00e8932f7615c84d2ee59b47d630ef2e
+startProcessing "me\Jonathon594\Mythria\Mythria.java" md5: d96d4dcc64b6d5e475ef82f972f6aa47
 endProcessing "me\Jonathon594\Mythria\Mythria.java"
 
 startProcessing "me\Jonathon594\Mythria\MythriaPacketHandler.java" md5: 3556fe3f33ccc9ac337dc40daefc7b3f
@@ -1277,11 +1319,11 @@ startProcessing "me\Jonathon594\Mythria\Packets\WallJumpPacket.java" md5: 0509ec
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Packets\WallJumpPacket.java"
 
-startProcessing "me\Jonathon594\Mythria\Proxy\ClientProxy.java" md5: c27838b3bdd09f1bb6da3dd732cb4fb4
+startProcessing "me\Jonathon594\Mythria\Proxy\ClientProxy.java" md5: c7cad3a6ad9b3930eeafe2218df4dac4
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Proxy\ClientProxy.java"
 
-startProcessing "me\Jonathon594\Mythria\Proxy\CommonProxy.java" md5: fa656384df6b2f658e20bc64cc2732d7
+startProcessing "me\Jonathon594\Mythria\Proxy\CommonProxy.java" md5: 3c40827583605f90e842d51871985403
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Proxy\CommonProxy.java"
 
@@ -1289,12 +1331,15 @@ startProcessing "me\Jonathon594\Mythria\Proxy\ServerProxy.java" md5: b27f7615b79
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Proxy\ServerProxy.java"
 
-startProcessing "me\Jonathon594\Mythria\Storage\GlobalSaveData.java" md5: 01a368f387a90241d4eb6ff9246a8e7c
+startProcessing "me\Jonathon594\Mythria\Storage\GlobalSaveData.java" md5: 055c42f5a85c3ec043ec7d246e49ca09
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Storage\GlobalSaveData.java"
 
-startProcessing "me\Jonathon594\Mythria\TileEntity\MythriaTileEntities.java" md5: 1a0ebf39cc041f6fccb3553c0d95bbff
+startProcessing "me\Jonathon594\Mythria\Storage\ProfileArchive.java" md5: c00932eccafff29bf2cfefbbfbebffee
 Cache Hit!
+endProcessing "me\Jonathon594\Mythria\Storage\ProfileArchive.java"
+
+startProcessing "me\Jonathon594\Mythria\TileEntity\MythriaTileEntities.java" md5: e09d69496c41604f46bcb27c5dd46c7f
 endProcessing "me\Jonathon594\Mythria\TileEntity\MythriaTileEntities.java"
 
 startProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityAnvil.java" md5: bdbc1f288fc64f8647a8b4be960e5c34
@@ -1317,7 +1362,7 @@ startProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityCookingFireBasic.ja
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityCookingFireBasic.java"
 
-startProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityDoor.java" md5: febb5530b114ef63e3bd4b7ce79efed2
+startProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityDoor.java" md5: ab58838150be603bd5ab081138833a21
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\TileEntity\TileEntityDoor.java"
 
@@ -1349,7 +1394,7 @@ startProcessing "me\Jonathon594\Mythria\Util\CapabilityUtils.java" md5: 9137a665
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Util\CapabilityUtils.java"
 
-startProcessing "me\Jonathon594\Mythria\Util\MythriaUtil.java" md5: 5a479f7a7c42e68cb26c967596c9fc80
+startProcessing "me\Jonathon594\Mythria\Util\MythriaUtil.java" md5: 8f4c487ec0d929654ec0914f2d10897b
 Cache Hit!
 endProcessing "me\Jonathon594\Mythria\Util\MythriaUtil.java"
 

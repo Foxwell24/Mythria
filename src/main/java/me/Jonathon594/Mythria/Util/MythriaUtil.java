@@ -14,6 +14,7 @@ import me.Jonathon594.Mythria.GUI.GuiAnvil;
 import me.Jonathon594.Mythria.GUI.GuiAttribute;
 import me.Jonathon594.Mythria.GUI.PerkMenuGui;
 import me.Jonathon594.Mythria.Items.ItemDagger;
+import me.Jonathon594.Mythria.Items.MythriaItemHammer;
 import me.Jonathon594.Mythria.Managers.PerkManager;
 import me.Jonathon594.Mythria.Managers.TimeManager;
 import net.minecraft.block.Block;
@@ -451,5 +452,9 @@ public class MythriaUtil {
         }
         BlockPos pos = worldIn.getTopSolidOrLiquidBlock(new BlockPos(v));
         return pos;
+    }
+
+    public static boolean isHammer(Item item) {
+        return item instanceof MythriaItemHammer;
     }
 }

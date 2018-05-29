@@ -2,9 +2,11 @@ package me.Jonathon594.Mythria.Entity;
 
 import me.Jonathon594.Mythria.Client.Renderer.*;
 import me.Jonathon594.Mythria.Entity.Magic.EntityKillingCurse;
+import me.Jonathon594.Mythria.Entity.Magic.EntitySingularitySpell;
 import me.Jonathon594.Mythria.Entity.Weather.*;
 import me.Jonathon594.Mythria.Mythria;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.RenderEntityItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.util.ResourceLocation;
@@ -38,6 +40,9 @@ public class MythriaEntities {
         EntityRegistry.registerModEntity(new ResourceLocation("mythria:killingcurse"),
                 EntityKillingCurse.class, "KillingCurse", id++, Mythria.instance, 64, 10, true);
 
+        EntityRegistry.registerModEntity(new ResourceLocation("mythria:singularityspell"),
+                EntityKillingCurse.class, "SingularitySpell", id++, Mythria.instance, 64, 10, true);
+
         registerSpawns();
     }
 
@@ -59,5 +64,6 @@ public class MythriaEntities {
         RenderingRegistry.registerEntityRenderingHandler(EntityEarthQuake.class, manager -> new RenderEmpty<>(manager));
 
         RenderingRegistry.registerEntityRenderingHandler(EntityKillingCurse.class, manager -> new RenderKillingCurse<>(manager));
+        RenderingRegistry.registerEntityRenderingHandler(EntitySingularitySpell.class, manager -> new RenderSingularitySpell<>(manager));
     }
 }

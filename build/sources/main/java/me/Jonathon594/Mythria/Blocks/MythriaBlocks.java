@@ -12,6 +12,7 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -121,7 +122,8 @@ public class MythriaBlocks {
     }
 
     @SideOnly(Side.CLIENT)
-    public static void registerCustomStateMappers() {
+    @SubscribeEvent(priority = EventPriority.LOWEST)
+    public static void RegisterBlocksClient(final RegistryEvent.Register<Block> event) {
         registerCustomStateMapper(OAK_DOOR, BlockDoor.POWERED);
         registerCustomStateMapper(DARK_OAK_DOOR, BlockDoor.POWERED);
         registerCustomStateMapper(ACACIA_DOOR, BlockDoor.POWERED);

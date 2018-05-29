@@ -185,3 +185,6 @@ tile.bronze_anvil.name=Bronze Anvil
 tile.iron_anvil.name=Iron Anvil
 tile.saw_horse.name=Sawhorse
 container.primative_crate=Primative Crate
+enchantment.returning=Returning
+enchantment.striking=Striking
+enchantment.exploding=Exploding
