@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " B ",
+    "BBB"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "mythria:stone_brick_item"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:stone_brick_anvil",
+    "data": 0
+  }
+}

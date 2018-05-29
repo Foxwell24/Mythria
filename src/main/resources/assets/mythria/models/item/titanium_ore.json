@@ -1,0 +1,6 @@
+{
+  "parent": "mythria:block/titanium_ore",
+  "textures": {
+    "all": "mythria:blocks/ore/titanium_ore"
+  }
+}

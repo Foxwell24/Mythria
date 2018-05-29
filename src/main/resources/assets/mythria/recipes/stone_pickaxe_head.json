@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "mythria:rock"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:stone_pickaxe_head",
+    "data": 0
+  }
+}

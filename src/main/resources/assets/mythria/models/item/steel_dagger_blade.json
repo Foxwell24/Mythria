@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "mythria:items/toolheads/steel_dagger_blade"
+  }
+}
