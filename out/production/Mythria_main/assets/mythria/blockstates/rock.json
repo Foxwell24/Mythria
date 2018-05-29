@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "mythria:rock" },
-        "facing=south": { "model": "mythria:rock", "y": 180 },
-        "facing=west":  { "model": "mythria:rock", "y": 270 },
-        "facing=east":  { "model": "mythria:rock", "y": 90 }
-    }
-}

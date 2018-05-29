@@ -1,6 +1,0 @@
-{
-  "parent": "mythria:block/thatch_stairs",
-  "textures": {
-    "all": "mythria:blocks/thatch_block"
-  }
-}

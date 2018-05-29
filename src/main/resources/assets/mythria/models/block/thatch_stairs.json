@@ -1,8 +1,0 @@
-{
-  "parent": "block/stairs",
-  "textures": {
-    "bottom": "mythria:blocks/thatch_block_top",
-    "top": "mythria:blocks/thatch_block_side",
-    "side": "mythria:blocks/thatch_block_top"
-  }
-}
