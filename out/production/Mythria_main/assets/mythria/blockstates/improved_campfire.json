@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "burning=true,full=true": { "model": "mythria:improved_campfire_full" },
+    "burning=true,full=false": { "model": "mythria:improved_campfire_empty" },
+    "burning=false,full=true": { "model": "mythria:improved_campfire_full" },
+    "burning=false,full=false": { "model": "mythria:improved_campfire_empty" }
+  }
+}

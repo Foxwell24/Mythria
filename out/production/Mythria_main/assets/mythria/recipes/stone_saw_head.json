@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC ",
+    " CC"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "mythria:rock"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:stone_saw_blade",
+    "data": 0
+  }
+}

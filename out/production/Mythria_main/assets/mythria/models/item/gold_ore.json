@@ -1,0 +1,6 @@
+{
+  "parent": "mythria:block/gold_ore",
+  "textures": {
+    "all": "mythria:blocks/ore/gold_ore"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S"
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "mythria:bundle_of_sticks"
+      }
+    ]
+  },
+  "result": {
+    "item": "minecraft:stick",
+    "count": 4,
+    "data": 0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BBB",
+    " B ",
+    "BBB"
+  ],
+  "key": {
+    "B": [
+      {
+        "item": "mythria:bronze_double_ingot"
+      }
+    ]
+  },
+  "result": {
+    "item": "mythria:bronze_anvil",
+    "data": 0
+  }
+}
