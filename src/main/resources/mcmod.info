@@ -1,0 +1,11 @@
+[{
+  "modid": "mythria",
+  "name": "Mythria",
+  "description": "Complete overhaul for Minecraft to create a realistic and challenging environment.",
+  "version": "${version}",
+  "mcversion": "1.12.2",
+  "logoFile": "assets/mythria/textures/logo.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["Jonathon Owens"]
+}]

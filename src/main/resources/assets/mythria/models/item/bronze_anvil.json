@@ -1,0 +1,13 @@
+{
+  "parent": "mythria:block/bronze_anvil",
+  "display": {
+    "fixed": {
+      "rotation": [ 0, 90, 0 ],
+      "translation": [ 0, 0, 0 ],
+      "scale": [ 0.5, 0.5, 0.5 ]
+    }
+  },
+  "textures": {
+    "all": "mythria:blocks/bronze_anvil_base"
+  }
+}

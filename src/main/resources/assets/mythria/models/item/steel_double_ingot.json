@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "mythria:items/ingots/steel_double_ingot"
+  }
+}

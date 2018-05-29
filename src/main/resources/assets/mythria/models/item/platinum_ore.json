@@ -1,0 +1,6 @@
+{
+  "parent": "mythria:block/platinum_ore",
+  "textures": {
+    "all": "mythria:blocks/ore/platinum_ore"
+  }
+}
