@@ -8,6 +8,10 @@ resourcepacks
 mods
 gradle-app.setting
 
+eula
+gradlew
+
+
 ## IntelliJ IDEA
 
 .idea/
