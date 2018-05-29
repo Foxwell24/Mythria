@@ -6,7 +6,11 @@ build
 gradle
 resourcepacks
 mods
+out
 gradle-app.setting
+
+server.properties
+eula.txt
 
 ## IntelliJ IDEA
 
