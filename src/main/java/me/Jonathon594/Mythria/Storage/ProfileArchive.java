@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Storage;
 
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
-import me.Jonathon594.Mythria.Entity.Weather.EntityEarthQuake;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.nbt.NBTTagCompound;
 

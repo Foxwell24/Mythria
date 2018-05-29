@@ -7,7 +7,6 @@ import me.Jonathon594.Mythria.Enum.AttributeFlag;
 import me.Jonathon594.Mythria.GUI.MythriaConst;
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;

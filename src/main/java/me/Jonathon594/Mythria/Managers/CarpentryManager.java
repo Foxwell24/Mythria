@@ -2,7 +2,6 @@ package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 

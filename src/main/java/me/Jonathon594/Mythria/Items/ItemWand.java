@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Items;
 
-import me.Jonathon594.Mythria.Entity.Magic.EntityKillingCurse;
 import me.Jonathon594.Mythria.Entity.Magic.EntitySingularitySpell;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;

@@ -1,13 +1,10 @@
 package me.Jonathon594.Mythria.Client.Renderer;
 
-import me.Jonathon594.Mythria.Enum.RenderState;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraftforge.client.event.RenderPlayerEvent.Pre;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
-import java.util.HashMap;
 
 public class DeityRenderManager {
 

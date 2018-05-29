@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Items;
 
-import me.Jonathon594.Mythria.Interface.IItemData;
 import net.minecraft.creativetab.CreativeTabs;
 
 public class MythriaCoin extends MythriaItem {

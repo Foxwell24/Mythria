@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.Items.MythriaItemHammer;
 import me.Jonathon594.Mythria.Items.MythriaItemSaw;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

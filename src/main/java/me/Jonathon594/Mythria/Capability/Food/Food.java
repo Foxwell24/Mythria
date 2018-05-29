@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Capability.Food;
 
-import me.Jonathon594.Mythria.Managers.FoodManager;
 import net.minecraft.nbt.NBTTagCompound;
 
 public class Food implements IFood {

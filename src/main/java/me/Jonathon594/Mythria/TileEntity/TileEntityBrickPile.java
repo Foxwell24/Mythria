@@ -1,7 +1,5 @@
 package me.Jonathon594.Mythria.TileEntity;
 
-import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
-import me.Jonathon594.Mythria.Interface.IWorkable;
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;

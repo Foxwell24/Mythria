@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Client.Model;
 
-import me.Jonathon594.Mythria.Entity.EntityBlackBear;
 import me.Jonathon594.Mythria.Entity.EntityBrownBear;
 import net.minecraft.client.model.ModelQuadruped;
 import net.minecraft.client.model.ModelRenderer;

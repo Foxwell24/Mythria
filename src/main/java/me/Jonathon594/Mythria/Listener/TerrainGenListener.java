@@ -3,12 +3,9 @@ package me.Jonathon594.Mythria.Listener;
 import me.Jonathon594.Mythria.Managers.TreeManager;
 import me.Jonathon594.Mythria.Managers.WorldGenGroundRock;
 import me.Jonathon594.Mythria.Managers.WorldGenGroundStick;
-import net.minecraftforge.event.terraingen.BiomeEvent;
 import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.event.terraingen.SaplingGrowTreeEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-
-import java.util.Random;
 
 public class TerrainGenListener {
     @SubscribeEvent

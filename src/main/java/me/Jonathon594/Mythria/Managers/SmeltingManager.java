@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Capability.Vessel.IVessel;
-import me.Jonathon594.Mythria.Capability.Vessel.Vessel;
 import me.Jonathon594.Mythria.Capability.Vessel.VesselProvider;
 import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
 import me.Jonathon594.Mythria.GUI.Container.ContainerAttribute;

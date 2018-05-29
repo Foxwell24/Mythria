@@ -1,7 +1,9 @@
 package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.DataTypes.SpawnData;
-import me.Jonathon594.Mythria.Entity.Weather.*;
+import me.Jonathon594.Mythria.Entity.Weather.EntityEarthQuake;
+import me.Jonathon594.Mythria.Entity.Weather.EntityStorm;
+import me.Jonathon594.Mythria.Entity.Weather.EntityTornado;
 import me.Jonathon594.Mythria.Enum.Season;
 import me.Jonathon594.Mythria.Enum.StormType;
 import me.Jonathon594.Mythria.Module.TornadoModule;

@@ -1,7 +1,5 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
-import me.Jonathon594.Mythria.Items.MythriaItems;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;

@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Module;
 
-import me.Jonathon594.Mythria.Blocks.MythriaBlock;
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.block.Block;
@@ -11,7 +10,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.BlockFluidBase;
-import net.minecraftforge.fml.common.FMLCommonHandler;
 
 import java.util.ArrayList;
 import java.util.Arrays;

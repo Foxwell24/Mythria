@@ -2,13 +2,10 @@ package me.Jonathon594.Mythria.Entity.Magic;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-
-import java.util.ArrayList;
 
 public class EntitySingularitySpell extends EntityMagicProjectile {
 

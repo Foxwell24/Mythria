@@ -3,9 +3,7 @@ package me.Jonathon594.Mythria.Client.Renderer;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.Vec3d;
 
 public class RenderEmpty<T extends Entity> extends Render<T> {
 

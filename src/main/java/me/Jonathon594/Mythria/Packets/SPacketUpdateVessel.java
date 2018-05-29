@@ -1,8 +1,6 @@
 package me.Jonathon594.Mythria.Packets;
 
-import ibxm.Player;
 import io.netty.buffer.ByteBuf;
-import me.Jonathon594.Mythria.Capability.Vessel.Vessel;
 import me.Jonathon594.Mythria.Capability.Vessel.VesselProvider;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;

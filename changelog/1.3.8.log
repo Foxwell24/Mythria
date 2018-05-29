@@ -1,0 +1,7 @@
+Optimized all imports.
+Increased deity natural power to 8 million.
+Removed blessings as perks.
+Created deity favor capability.
+Converted blessing to be applied on favor.
+Made blessings passive effects charge deity power.
+Added worship command.

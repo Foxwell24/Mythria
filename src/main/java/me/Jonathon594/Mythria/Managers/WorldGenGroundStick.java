@@ -1,7 +1,7 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.Blocks.BlockGroundCover;
+import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.EnumFacing;

@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Entity.Magic;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.projectile.EntityThrowable;
 import net.minecraft.world.World;

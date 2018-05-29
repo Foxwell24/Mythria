@@ -8,10 +8,8 @@ import me.Jonathon594.Mythria.Enum.Consumable;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.nbt.NBTTagCompound;
 
 import java.util.HashMap;
-import java.util.UUID;
 
 public interface IAbility {
     AbilityActivateType getActivationType();

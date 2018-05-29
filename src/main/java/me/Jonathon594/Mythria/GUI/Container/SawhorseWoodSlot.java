@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.Interface.IWorkable;
 import me.Jonathon594.Mythria.Items.ItemLog;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemBlock;

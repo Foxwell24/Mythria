@@ -2,9 +2,7 @@ package me.Jonathon594.Mythria.Commands;
 
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
-import me.Jonathon594.Mythria.DataTypes.Perk;
 import me.Jonathon594.Mythria.Enum.MythicSkills;
-import me.Jonathon594.Mythria.Managers.PerkManager;
 import net.minecraft.command.CommandBase;
 import net.minecraft.command.CommandException;
 import net.minecraft.command.ICommand;

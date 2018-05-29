@@ -20,7 +20,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.gameevent.TickEvent.ServerTickEvent;
-import scala.collection.immutable.Stream;
 
 public class StatManager {
 

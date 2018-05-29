@@ -56,7 +56,7 @@ public class MythriaMenuGui extends GuiScreen {
     @Override
     public void initGui() {
         if (!Minecraft.getMinecraft().player.getCapability(ProfileProvider.PROFILE_CAP, null).getCreated()) {
-            buttonList.add(buttonNewProfile = new GuiButton(0, width / 2 - 100, height / 2 - 100, "New Profile"));
+            buttonList.add(buttonNewProfile = new GuiButton(0, width / 2 - 100, height / 2 - 100, "New DeityFavor"));
             return;
         }
         int pos = 100;
@@ -64,7 +64,7 @@ public class MythriaMenuGui extends GuiScreen {
             pos = 99;
         if (Math.random() < 0.1)
             pos = 101;
-        buttonList.add(buttonShowProfile = new GuiButton(1, width / 2 - pos, height / 2 - 125, "Show Profile"));
+        buttonList.add(buttonShowProfile = new GuiButton(1, width / 2 - pos, height / 2 - 125, "Show DeityFavor"));
         buttonList.add(buttonShowPersonalities = new GuiButton(1, width / 2 - pos, height / 2 - 100, "Show Personalities"));
         buttonList.add(buttonShowTradeSkills = new GuiButton(2, width / 2 - 100, height / 2 - 75, "Show Trade Skills"));
         buttonList

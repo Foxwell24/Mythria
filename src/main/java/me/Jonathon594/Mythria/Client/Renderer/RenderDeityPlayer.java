@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Client.Renderer;
 
 import me.Jonathon594.Mythria.Enum.Deity;
-import me.Jonathon594.Mythria.Enum.RenderState;
 import me.Jonathon594.Mythria.Managers.DeityManager;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.model.ModelBiped;

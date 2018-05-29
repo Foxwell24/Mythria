@@ -1,11 +1,8 @@
 package me.Jonathon594.Mythria.Packets;
 
 import io.netty.buffer.ByteBuf;
-import me.Jonathon594.Mythria.GUI.Container.ContainerAnvil;
 import me.Jonathon594.Mythria.GUI.Container.ContainerSawhorse;
-import me.Jonathon594.Mythria.TileEntity.TileEntityAnvil;
 import me.Jonathon594.Mythria.TileEntity.TileEntitySawHorse;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.inventory.Container;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;

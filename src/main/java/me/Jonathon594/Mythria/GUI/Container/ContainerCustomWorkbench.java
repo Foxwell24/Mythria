@@ -3,7 +3,6 @@ package me.Jonathon594.Mythria.GUI.Container;
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.inventory.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;

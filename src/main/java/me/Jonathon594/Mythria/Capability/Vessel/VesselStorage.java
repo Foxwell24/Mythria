@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.Capability.Vessel;
 
-import me.Jonathon594.Mythria.Capability.Food.IFood;
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;

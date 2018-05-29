@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Client;
 
 import me.Jonathon594.Mythria.GUI.MythriaConst;
-import me.Jonathon594.Mythria.Mythria;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.TextComponentString;
 

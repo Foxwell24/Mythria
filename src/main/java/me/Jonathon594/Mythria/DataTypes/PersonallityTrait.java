@@ -1,12 +1,9 @@
 package me.Jonathon594.Mythria.DataTypes;
 
-import me.Jonathon594.Mythria.Enum.AbilityType;
 import me.Jonathon594.Mythria.Enum.Attribute;
 import me.Jonathon594.Mythria.Managers.PerkManager;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import org.w3c.dom.Attr;
-import scala.Int;
 
 import java.util.HashMap;
 

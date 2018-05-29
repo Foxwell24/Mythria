@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.DataTypes;
 
 import me.Jonathon594.Mythria.Enum.Season;
-import me.Jonathon594.Mythria.Enum.StormType;
 import net.minecraft.world.biome.Biome;
 
 import java.util.HashMap;

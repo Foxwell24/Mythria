@@ -1,7 +1,5 @@
 package me.Jonathon594.Mythria.Items;
 
-import javafx.beans.value.WritableListValue;
-import me.Jonathon594.Mythria.Blocks.MythriaBlock;
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
 import me.Jonathon594.Mythria.Interface.IWorkable;
@@ -9,7 +7,6 @@ import me.Jonathon594.Mythria.Managers.SmithingManager;
 import me.Jonathon594.Mythria.TileEntity.TileEntityIngotPile;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;

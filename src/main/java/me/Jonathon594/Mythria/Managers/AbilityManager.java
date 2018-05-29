@@ -1,5 +1,7 @@
 package me.Jonathon594.Mythria.Managers;
 
+import me.Jonathon594.Mythria.Capability.DeityFavor.DeityFavorProvider;
+import me.Jonathon594.Mythria.Capability.DeityFavor.IDeityFavor;
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Const.CombatMessages;
@@ -48,9 +50,13 @@ public class AbilityManager {
         IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
         if (profile == null) return;
         Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
-        if (profile.hasFlag(AttributeFlag.ELIANA_FLIGHT) || (d != null && d.equals(Deity.ELIANA))) {
+        IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
+        if (df.hasBlessing(BlessingType.ELIANA_FLIGHT) || (d != null && d.equals(Deity.ELIANA))) {
             if (player.isSneaking()) {
-                player.addVelocity(player.getLookVec().x, 1, player.getLookVec().z);
+                if(DeityManager.hasPower(Deity.ELIANA, 1)) {
+                    DeityManager.consumePower(Deity.ELIANA, 1);
+                    player.addVelocity(player.getLookVec().x, 1, player.getLookVec().z);
+                }
             }
         }
     }

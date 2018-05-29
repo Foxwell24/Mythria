@@ -5,15 +5,10 @@ import me.Jonathon594.Mythria.Managers.DeityManager;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.command.ICommand;
 import net.minecraft.command.ICommandSender;
-import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.init.Items;
-import net.minecraft.item.ItemStack;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextFormatting;
-import net.minecraft.world.World;
-import scala.actors.threadpool.Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,11 +18,12 @@ public class DeityPowerCommand implements ICommand {
     @Override
     public int compareTo(final ICommand arg0) {
         return 0;
-    }    @Override
+    }
+
+    @Override
     public boolean checkPermission(final MinecraftServer server, final ICommandSender sender) {
         return sender.canUseCommand(3, getName());
     }
-
 
 
     @Override
@@ -36,12 +32,12 @@ public class DeityPowerCommand implements ICommand {
         for (Deity deity : Deity.values()) {
             totalPower += DeityManager.getDeityPower(deity);
         }
-        for(Deity deity : Deity.values()) {
+        for (Deity deity : Deity.values()) {
             TextFormatting color = DeityManager.getDeityColor(deity);
             int dp = DeityManager.getDeityPower(deity);
             double prop = totalPower > 0 ? (double) dp / totalPower : 0;
 
-            String message = color + MythriaUtil.Capitalize(deity.name()) + ": " + prop * 800 + "% (" + dp + ")";
+            String message = color + MythriaUtil.Capitalize(deity.name()) + ": " + (int) Math.round(prop * 800) + "% (" + dp + ")";
 
             sender.sendMessage(new TextComponentString(message));
         }
@@ -64,7 +60,7 @@ public class DeityPowerCommand implements ICommand {
     @Override
     public List<String> getTabCompletions(final MinecraftServer server, final ICommandSender sender,
                                           final String[] args, final BlockPos targetPos) {
-        return Arrays.asList(server.getPlayerList().getOnlinePlayerNames());
+        return new ArrayList<String>();
     }
 
     @Override

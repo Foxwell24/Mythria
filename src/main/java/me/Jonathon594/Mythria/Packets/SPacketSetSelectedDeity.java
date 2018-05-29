@@ -1,12 +1,8 @@
 package me.Jonathon594.Mythria.Packets;
 
 import io.netty.buffer.ByteBuf;
-import me.Jonathon594.Mythria.DataTypes.Perk;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.Managers.DeityManager;
-import me.Jonathon594.Mythria.Managers.PerkManager;
-import net.minecraft.nbt.NBTTagCompound;
-import net.minecraftforge.fml.common.network.ByteBufUtils;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
 import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;

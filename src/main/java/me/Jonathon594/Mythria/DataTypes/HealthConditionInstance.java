@@ -2,8 +2,6 @@ package me.Jonathon594.Mythria.DataTypes;
 
 import me.Jonathon594.Mythria.Managers.HealthManager;
 
-import java.awt.*;
-
 public class HealthConditionInstance {
     private HealthCondition condition;
     private int age = 0;

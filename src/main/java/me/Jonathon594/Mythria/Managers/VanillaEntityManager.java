@@ -1,9 +1,10 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.Entity.AI.EntityAIAvoidProfileWithFlag;
-import me.Jonathon594.Mythria.Entity.AI.EntityAIReinforceThoseWithFlag;
+import me.Jonathon594.Mythria.Entity.AI.EntityAIAvoidProfileWithBlessing;
+import me.Jonathon594.Mythria.Entity.AI.EntityAIReinforceThoseWithBlessing;
 import me.Jonathon594.Mythria.Entity.AI.EntityAIWolfHostileUnlessBone;
 import me.Jonathon594.Mythria.Enum.AttributeFlag;
+import me.Jonathon594.Mythria.Enum.BlessingType;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
@@ -32,8 +33,8 @@ public class VanillaEntityManager {
     }
 
     private static void handleLilasiaMob(EntityCreature entity) {
-        entity.tasks.addTask(0, new EntityAIAvoidProfileWithFlag<>(entity, EntityPlayer.class, 6.0f, 1.0D, 1.2D, AttributeFlag.FELIXIA_INTIMIDATION));
-        entity.targetTasks.addTask(0, new EntityAIReinforceThoseWithFlag(entity, AttributeFlag.LILASIA_REINFORCEMENTS));
+        entity.tasks.addTask(0, new EntityAIAvoidProfileWithBlessing(entity, EntityPlayer.class, 6.0f, 1.0D, 1.2D, BlessingType.FELIXIA_INTIMIDATION));
+        entity.targetTasks.addTask(0, new EntityAIReinforceThoseWithBlessing(entity, BlessingType.LILASIA_REINFORCEMENTS));
     }
 
     private static void handleWolf(final EntityWolf entity) {

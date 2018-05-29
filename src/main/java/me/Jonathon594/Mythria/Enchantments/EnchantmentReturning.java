@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Enchantments;
 
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.EnumEnchantmentType;
 import net.minecraft.inventory.EntityEquipmentSlot;
 
 public class EnchantmentReturning extends Enchantment {

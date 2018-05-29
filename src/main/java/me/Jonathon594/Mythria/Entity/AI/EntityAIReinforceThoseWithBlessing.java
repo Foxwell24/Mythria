@@ -1,8 +1,8 @@
 package me.Jonathon594.Mythria.Entity.AI;
 
-import ibxm.Player;
+import me.Jonathon594.Mythria.Capability.DeityFavor.DeityFavorProvider;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
-import me.Jonathon594.Mythria.Enum.AttributeFlag;
+import me.Jonathon594.Mythria.Enum.BlessingType;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.ai.EntityAITarget;
@@ -11,17 +11,17 @@ import net.minecraft.util.math.AxisAlignedBB;
 
 import java.util.List;
 
-public class EntityAIReinforceThoseWithFlag extends EntityAITarget {
-    private final AttributeFlag flag;
+public class EntityAIReinforceThoseWithBlessing extends EntityAITarget {
+    private final BlessingType blessingType;
     EntityCreature creature;
     EntityLivingBase attacker;
     EntityLivingBase defending;
     private int timestamp;
 
-    public EntityAIReinforceThoseWithFlag(EntityCreature entityIn, AttributeFlag flagIn) {
+    public EntityAIReinforceThoseWithBlessing(EntityCreature entityIn, BlessingType flagIn) {
         super(entityIn, false);
         this.creature = entityIn;
-        this.flag = flagIn;
+        this.blessingType = flagIn;
         this.setMutexBits(1);
     }
 
@@ -32,7 +32,7 @@ public class EntityAIReinforceThoseWithFlag extends EntityAITarget {
         List<EntityPlayer> nearby = creature.world.getEntitiesWithinAABB(EntityPlayer.class, new AxisAlignedBB(-10,-10,-10,10,10,10).offset(creature.getPosition()));
         for(EntityPlayer player : nearby) {
             EntityLivingBase entitylivingbase = player;
-            if(!player.getCapability(ProfileProvider.PROFILE_CAP, null).hasFlag(flag)) continue;
+            if(!player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null).hasBlessing(blessingType)) continue;
 
             if (entitylivingbase == null) {
                 return false;

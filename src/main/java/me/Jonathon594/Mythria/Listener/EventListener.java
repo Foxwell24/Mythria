@@ -2,7 +2,6 @@ package me.Jonathon594.Mythria.Listener;
 
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
-import me.Jonathon594.Mythria.Capability.Profile.ProfileStorage;
 import me.Jonathon594.Mythria.Client.Keybindings;
 import me.Jonathon594.Mythria.Client.Renderer.DeityRenderManager;
 import me.Jonathon594.Mythria.Client.Renderer.ReticleRenderer;
@@ -250,6 +249,7 @@ public class EventListener {
 
     @SubscribeEvent
     public static void onEntityInteract(final PlayerInteractEvent.LeftClickBlock event) {
+        if(event.getWorld().isRemote) return;
         BlessingManager.onPunchBlock(event);
     }
 

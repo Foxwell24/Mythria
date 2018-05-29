@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Client.Model;
 
 import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelGhast;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.entity.Entity;

@@ -9,7 +9,10 @@ import me.Jonathon594.Mythria.GUI.MythriaConst;
 import me.Jonathon594.Mythria.Managers.DeityManager;
 import me.Jonathon594.Mythria.Managers.StatManager;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
-import me.Jonathon594.Mythria.Packets.*;
+import me.Jonathon594.Mythria.Packets.ClientProfileDataCachePacket;
+import me.Jonathon594.Mythria.Packets.SPacketAddHealthConditionInstance;
+import me.Jonathon594.Mythria.Packets.SPacketUpdateConsumables;
+import me.Jonathon594.Mythria.Packets.SPacketUpdateExperience;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
@@ -253,7 +256,6 @@ public class Profile implements IProfile {
     @Override
     public boolean hasFlag(final AttributeFlag flag) {
         if(player == null) return false;
-        if(DeityManager.getFlagsGrantedByDeity(DeityManager.getSelectedDeities().get(player.getEntityId())).contains(flag)) return true;
         for (final Perk pa : attributes) {
             if (pa == null)
                 continue;

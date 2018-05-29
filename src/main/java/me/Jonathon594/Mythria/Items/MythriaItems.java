@@ -2,12 +2,9 @@ package me.Jonathon594.Mythria.Items;
 
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.DataTypes.SmeltingRecipe;
-import me.Jonathon594.Mythria.Enum.LockType;
-import me.Jonathon594.Mythria.Enum.Wood;
 import me.Jonathon594.Mythria.Interface.IMetaLookup;
 import me.Jonathon594.Mythria.Interface.IVariantData;
 import me.Jonathon594.Mythria.Managers.SmithingManager;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;

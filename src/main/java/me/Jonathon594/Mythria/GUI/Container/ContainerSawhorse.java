@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.TileEntity.TileEntityAnvil;
 import me.Jonathon594.Mythria.TileEntity.TileEntitySawHorse;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;

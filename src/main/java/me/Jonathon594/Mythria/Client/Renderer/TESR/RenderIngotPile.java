@@ -1,17 +1,12 @@
 package me.Jonathon594.Mythria.Client.Renderer.TESR;
 
-import me.Jonathon594.Mythria.Blocks.BlockIngotPile;
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.Client.Model.ModelIngotPile;
 import me.Jonathon594.Mythria.TileEntity.TileEntityIngotPile;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.OpenGlHelper;
-import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
-import net.minecraft.entity.item.EntityPainting;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;

@@ -1,12 +1,9 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.Items.ItemCeramicVessel;
 import me.Jonathon594.Mythria.Items.ItemFilledMold;
 import me.Jonathon594.Mythria.Items.ItemMoldEmpty;
-import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class SlotMold extends SlotItemHandler {

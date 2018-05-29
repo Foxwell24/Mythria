@@ -1,5 +1,6 @@
 package me.Jonathon594.Mythria.Capability;
 
+import me.Jonathon594.Mythria.Capability.DeityFavor.DeityFavorProvider;
 import me.Jonathon594.Mythria.Capability.Food.FoodProvider;
 import me.Jonathon594.Mythria.Capability.Metal.MetalProvider;
 import me.Jonathon594.Mythria.Capability.NPC.NPCProvider;
@@ -14,11 +15,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.items.CapabilityItemHandler;
 
 public class CapabilityHandler {
     public static final ResourceLocation PROFILE_CAP = new ResourceLocation(Mythria.MODID + ":" + "profile_capability");
@@ -26,16 +25,19 @@ public class CapabilityHandler {
     public static final ResourceLocation NPC_CAP = new ResourceLocation(Mythria.MODID + ":" + "npc_capability");
     public static final ResourceLocation VESSEL_CAP = new ResourceLocation(Mythria.MODID + ":" + "vessel_capability");
     public static final ResourceLocation METAL_CAP = new ResourceLocation(Mythria.MODID + ":" + "metal_capability");
+    public static final ResourceLocation DEITY_FAVOR_CAP = new ResourceLocation(Mythria.MODID + ":" + "deity_favor_capability");
 
     @SubscribeEvent(priority = EventPriority.NORMAL, receiveCanceled = true)
     public static void attachCapability(final AttachCapabilitiesEvent<Entity> event) {
         if (event.getObject() instanceof EntityPlayer) {
             event.addCapability(PROFILE_CAP, new ProfileProvider());
             event.addCapability(NPC_CAP, new NPCProvider());
+            event.addCapability(DEITY_FAVOR_CAP, new DeityFavorProvider());
         }
         if (event.getObject() instanceof EntityNPCPlayer) {
             event.addCapability(NPC_CAP, new NPCProvider());
             event.addCapability(PROFILE_CAP, new ProfileProvider());
+            event.addCapability(DEITY_FAVOR_CAP, new DeityFavorProvider());
         }
     }
 

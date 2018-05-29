@@ -1,6 +1,5 @@
 package me.Jonathon594.Mythria.GUI.Container;
 
-import me.Jonathon594.Mythria.Capability.Metal.MetalProvider;
 import me.Jonathon594.Mythria.Interface.IWorkable;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandler;

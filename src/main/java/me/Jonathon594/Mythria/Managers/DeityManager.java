@@ -1,20 +1,29 @@
 package me.Jonathon594.Mythria.Managers;
 
-import me.Jonathon594.Mythria.Enum.AttributeFlag;
+import me.Jonathon594.Mythria.Capability.DeityFavor.IDeityFavor;
 import me.Jonathon594.Mythria.Enum.Deity;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
+import me.Jonathon594.Mythria.Packets.SPacketSetFavor;
 import me.Jonathon594.Mythria.Packets.SPacketSetSelectedDeity;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.MobEffects;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 
+import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.Map;
 
 public class DeityManager {
     private static HashMap<Integer, Deity> selectedDeities = new HashMap<>();
     private static HashMap<Deity, Integer> deityPower = new HashMap<>();
+
+    private static HashMap<EntityPlayer, Deity> worshipers = new HashMap<>();
 
     public static HashMap<Integer, Deity> getSelectedDeities() {
         return selectedDeities;
@@ -25,7 +34,7 @@ public class DeityManager {
     }
 
     public static int getDeityPower(Deity deity) {
-        return deityPower.get(deity);
+        return deityPower.containsKey(deity) ? deityPower.get(deity) : 0;
     }
 
     public static void setDeity(Integer entityID, Deity deity, boolean packet) {
@@ -34,6 +43,14 @@ public class DeityManager {
 
         if (packet)
             MythriaPacketHandler.INSTANCE.sendToAll(new SPacketSetSelectedDeity(entityID, deity == null ? -1 : deity.ordinal()));
+    }
+
+    public static void addWorshiper(EntityPlayer player, Deity deity) {
+        worshipers.put(player, deity);
+    }
+
+    public static void clearWorshiper(EntityPlayer player) {
+        if(worshipers.containsKey(player)) worshipers.remove(player);
     }
 
     public static String getDeityNameString(Deity d) {
@@ -64,57 +81,26 @@ public class DeityManager {
         return TextFormatting.WHITE;
     }
 
-    public static ArrayList<AttributeFlag> getFlagsGrantedByDeity(Deity deity) {
-        ArrayList<AttributeFlag> grantedFlags = new ArrayList<>();
-        if (deity == null) return grantedFlags;
-        switch (deity) {
-            case FELIXIA:
-                grantedFlags.add(AttributeFlag.FELIXIA_HEALING);
-                grantedFlags.add(AttributeFlag.FELIXIA_INTIMIDATION);
-                grantedFlags.add(AttributeFlag.FELIXIA_NO_WITHER);
-                break;
-            case SELINA:
-                grantedFlags.add(AttributeFlag.SELINA_NO_NATURE_MOBS);
-                grantedFlags.add(AttributeFlag.SELINA_IMMORTALITY);
-                grantedFlags.add(AttributeFlag.SELINA_PROSPERITY);
-                break;
-            case RAIKA:
-                grantedFlags.add(AttributeFlag.RAIKA_ELECTROCUTE);
-                grantedFlags.add(AttributeFlag.RAIKA_SMITE);
-                grantedFlags.add(AttributeFlag.RAIKA_SPEED);
-                break;
-            case ELIANA:
-                grantedFlags.add(AttributeFlag.ELIANA_FLIGHT);
-                grantedFlags.add(AttributeFlag.ELIANA_BREATHING);
-                grantedFlags.add(AttributeFlag.ELIANA_NO_FALL);
-                break;
-            case MELINIAS:
-                grantedFlags.add(AttributeFlag.MELINIAS_NO_MOBS);
-                grantedFlags.add(AttributeFlag.MELINIAS_WATER_BREATHING);
-                grantedFlags.add(AttributeFlag.MELINIAS_WATER_JET);
-                break;
-            case KASAI:
-                grantedFlags.add(AttributeFlag.KASAI_LAVA_JET);
-                grantedFlags.add(AttributeFlag.KASAI_NO_FIRE);
-                grantedFlags.add(AttributeFlag.KASAI_NO_MOBS);
-                break;
-            case ASANA:
-                grantedFlags.add(AttributeFlag.ASANA_NO_EXLODE);
-                grantedFlags.add(AttributeFlag.ASANA_NO_MOBS);
-                grantedFlags.add(AttributeFlag.ASANA_EARTH_CRUMPLE);
-                break;
-            case LILASIA:
-                grantedFlags.add(AttributeFlag.LILASIA_SHADOW_HEALING);
-                grantedFlags.add(AttributeFlag.LILASIA_NO_MOBS);
-                grantedFlags.add(AttributeFlag.LILASIA_REINFORCEMENTS);
-                break;
+    public static void setFavor(IDeityFavor favor, @Nullable EntityPlayerMP playerMP, Deity deity, int value) {
+        favor.setFavor(deity, value);
+
+        if(playerMP != null) {
+            MythriaPacketHandler.INSTANCE.sendTo(new SPacketSetFavor(deity.ordinal(), value), playerMP);
         }
-        return grantedFlags;
+    }
+
+    public static void setFavor(IDeityFavor favor, Deity deity, int value) {
+        setFavor(favor, null, deity, value);
     }
 
     public static void onServerTick() {
         int tick = FMLCommonHandler.instance().getMinecraftServerInstance().getTickCounter();
         if (tick % 200 == 0) {
+            for(EntityPlayer player : worshipers.keySet()) {
+                player.addPotionEffect(new PotionEffect(MobEffects.SLOWNESS, 220, 4, false, false));
+                player.addPotionEffect(new PotionEffect(MobEffects.WEAKNESS, 1200, 4, false, false));
+            }
+
             ArrayList<Deity> deities = new ArrayList<>();
             int totalPower = 0;
             for (Deity deity : Deity.values()) {
@@ -124,10 +110,30 @@ public class DeityManager {
             Collections.shuffle(deities);
 
             for (Deity d : deities) {
-                if(totalPower < 8000) {
-                    DeityManager.setDeityPower(d, DeityManager.getDeityPower(d) + 1);
+                int amount = getWorshippers(d) * 5;
+                int canGive = 8000000 - totalPower;
+                if(canGive > 0) {
+                    DeityManager.setDeityPower(d, DeityManager.getDeityPower(d) + Math.min(1 + amount, canGive));
                 }
             }
         }
+    }
+
+    private static int getWorshippers(Deity d) {
+        int c = 0;
+        for(Map.Entry<EntityPlayer, Deity> e : worshipers.entrySet()) {
+            if(e.getValue().equals(d)) {
+                c++;
+            }
+        }
+        return c;
+    }
+
+    public static boolean hasPower(Deity d, int power) {
+        return getDeityPower(d) >= power;
+    }
+
+    public static void consumePower(Deity d, int power) {
+        setDeityPower(d, getDeityPower(d) - power);
     }
 }

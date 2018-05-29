@@ -1,7 +1,6 @@
 package me.Jonathon594.Mythria.Managers;
 
 import me.Jonathon594.Mythria.Capability.Food.FoodProvider;
-import me.Jonathon594.Mythria.Capability.Food.IFood;
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.DataTypes.CureCondition;

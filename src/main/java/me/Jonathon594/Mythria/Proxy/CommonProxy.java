@@ -2,6 +2,9 @@ package me.Jonathon594.Mythria.Proxy;
 
 import me.Jonathon594.Mythria.Blocks.MythriaBlocks;
 import me.Jonathon594.Mythria.Capability.CapabilityHandler;
+import me.Jonathon594.Mythria.Capability.DeityFavor.DeityFavor;
+import me.Jonathon594.Mythria.Capability.DeityFavor.DeityFavorStorage;
+import me.Jonathon594.Mythria.Capability.DeityFavor.IDeityFavor;
 import me.Jonathon594.Mythria.Capability.Food.Food;
 import me.Jonathon594.Mythria.Capability.Food.FoodStorage;
 import me.Jonathon594.Mythria.Capability.Food.IFood;
@@ -48,7 +51,6 @@ public class CommonProxy {
         PerkManager.CreateLifes();
         PerkManager.CreateCombats();
         PerkManager.CreatePersonalities();
-        PerkManager.CreateBlessings();
         MaterialRequirementsManager.Initialize();
         RecipeManager.Initialize();
         WeightManager.Initialize();
@@ -65,6 +67,7 @@ public class CommonProxy {
         CapabilityManager.INSTANCE.register(INPC.class, new NPCStorage(), NPC.class);
         CapabilityManager.INSTANCE.register(IVessel.class, new VesselStorage(), Vessel.class);
         CapabilityManager.INSTANCE.register(IMetal.class, new MetalStorage(), Metal.class);
+        CapabilityManager.INSTANCE.register(IDeityFavor.class, new DeityFavorStorage(), DeityFavor.class);
         MythriaEntities.Initialize();
         MythriaTileEntities.RegisterTileEntities();
 
@@ -133,6 +136,9 @@ public class CommonProxy {
 
         MythriaPacketHandler.INSTANCE.registerMessage(SPacketSetSelectedDeity.SPacketSetSelectedDeityHandler.class,
                 SPacketSetSelectedDeity.class, ID++, Side.CLIENT);
+
+        MythriaPacketHandler.INSTANCE.registerMessage(SPacketSetFavor.SPacketSetFavorHandler.class,
+                SPacketSetFavor.class, ID++, Side.CLIENT);
 
     }
 

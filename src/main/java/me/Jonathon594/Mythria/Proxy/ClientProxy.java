@@ -6,7 +6,6 @@ import me.Jonathon594.Mythria.Client.Renderer.DeityRenderManager;
 import me.Jonathon594.Mythria.Client.Renderer.ReticleRenderer;
 import me.Jonathon594.Mythria.Entity.MythriaEntities;
 import me.Jonathon594.Mythria.GUI.GuiListener;
-import me.Jonathon594.Mythria.Items.MythriaItems;
 import me.Jonathon594.Mythria.TileEntity.MythriaTileEntities;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;

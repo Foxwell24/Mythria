@@ -6,8 +6,6 @@ import me.Jonathon594.Mythria.Managers.TimeManager;
 import me.Jonathon594.Mythria.Util.MythriaUtil;
 import net.minecraft.util.text.TextFormatting;
 
-import java.sql.Time;
-
 public class Date {
     private int MGD = 1;
 

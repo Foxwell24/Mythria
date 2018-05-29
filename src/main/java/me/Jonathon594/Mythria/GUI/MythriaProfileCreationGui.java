@@ -134,7 +134,7 @@ public class MythriaProfileCreationGui extends GuiScreen {
         buttonList.add(sldGender);
         buttonList.add(sldAge);
 
-        buttonList.add(btnCreate = new GuiButton(7, width / 2 - 100, height / 2 + 75, 200, 20, "Create Profile"));
+        buttonList.add(btnCreate = new GuiButton(7, width / 2 - 100, height / 2 + 75, 200, 20, "Create DeityFavor"));
     }
 
     @Override

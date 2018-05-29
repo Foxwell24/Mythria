@@ -2,7 +2,6 @@ package me.Jonathon594.Mythria.Items;
 
 import me.Jonathon594.Mythria.Interface.IItemData;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemShield;
 
 public class MythriaItemShield extends ItemShield implements IItemData {

@@ -2,7 +2,6 @@ package me.Jonathon594.Mythria.Client.Renderer;
 
 import me.Jonathon594.Mythria.Client.Model.ModelBlackBear;
 import me.Jonathon594.Mythria.Entity.EntityBlackBear;
-import net.minecraft.client.model.ModelPolarBear;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
 import net.minecraft.client.renderer.entity.RenderManager;

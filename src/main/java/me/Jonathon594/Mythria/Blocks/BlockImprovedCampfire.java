@@ -10,7 +10,6 @@ import me.Jonathon594.Mythria.Mythria;
 import me.Jonathon594.Mythria.TileEntity.TileEntityCookingFireAdvanced;
 import me.Jonathon594.Mythria.TileEntity.TileEntityImprovedCampfire;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFlowerPot;
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

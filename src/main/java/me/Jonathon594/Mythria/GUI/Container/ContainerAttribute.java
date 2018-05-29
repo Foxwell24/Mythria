@@ -3,7 +3,6 @@ package me.Jonathon594.Mythria.GUI.Container;
 import me.Jonathon594.Mythria.Capability.Profile.IProfile;
 import me.Jonathon594.Mythria.Capability.Profile.ProfileProvider;
 import me.Jonathon594.Mythria.Enum.Attribute;
-import me.Jonathon594.Mythria.Enum.AttributeType;
 import me.Jonathon594.Mythria.GUI.MythriaConst;
 import me.Jonathon594.Mythria.Items.MythriaItems;
 import me.Jonathon594.Mythria.Managers.AttributeManager;

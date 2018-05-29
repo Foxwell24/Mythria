@@ -1,17 +1,10 @@
 package me.Jonathon594.Mythria.GUI;
 
-import me.Jonathon594.Mythria.GUI.Container.ContainerAnvil;
 import me.Jonathon594.Mythria.GUI.Container.ContainerSawhorse;
-import me.Jonathon594.Mythria.Managers.SmithingManager;
 import me.Jonathon594.Mythria.MythriaPacketHandler;
 import me.Jonathon594.Mythria.Packets.CPacketSawhorseButton;
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
-import net.minecraft.client.renderer.BufferBuilder;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.Tessellator;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.util.ResourceLocation;
 
 import java.io.IOException;
