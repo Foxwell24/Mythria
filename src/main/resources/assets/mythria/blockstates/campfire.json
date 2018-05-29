@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "burning=true": { "model": "mythria:campfire"},
-    "burning=false": { "model": "mythria:campfire"}
-  }
-}

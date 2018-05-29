@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "mythria:blocks/thatch_block_top",
-        "side": "mythria:blocks/thatch_block_side"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "facing=north": { "model": "mythria:ground_stick" },
-        "facing=south": { "model": "mythria:ground_stick", "y": 180 },
-        "facing=west":  { "model": "mythria:ground_stick", "y": 270 },
-        "facing=east":  { "model": "mythria:ground_stick", "y": 90 }
-    }
-}

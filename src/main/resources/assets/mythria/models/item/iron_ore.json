@@ -1,6 +1,0 @@
-{
-  "parent": "mythria:block/copper_ore",
-  "textures": {
-    "all": "mythria:blocks/ore/iron_ore"
-  }
-}

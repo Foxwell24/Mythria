@@ -1,5 +1,0 @@
-package me.Jonathon594.Mythria.Enum;
-
-public enum BindingSlot {
-    ABILITY1, ABILITY2, ABILITY3, ABILITY4, ABILITY5, ABILITY6, ABILITY7, ABILITY8, ABILITY9
-}

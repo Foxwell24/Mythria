@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mythria:blocks/primative_wooden_wall"
-  }
-}

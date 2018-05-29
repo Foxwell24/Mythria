@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "mythria:items/pottery/ceramic_mold_axe"
-  }
-}

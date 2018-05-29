@@ -1,6 +1,0 @@
-{
-  "parent": "mythria:block/copper_block",
-  "textures": {
-    "all": "mythria:blocks/copper_block"
-  }
-}
