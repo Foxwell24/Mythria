@@ -121,7 +121,7 @@ public class MythriaProfileCreationGui extends GuiScreen {
                 new DayFormatHelper());
         sldGender = new GuiSlider(new GenderSliderGuiResponder(), 5, width / 2 - 100, height / 2 + 25, "Gender", 0, 1,
                 0, new GuiFormatHelper());
-        sldAge = new GuiSlider(new AgeSliderGuiResponder(), 6, width / 2 - 100, height / 2 + 50, "Gender", 12, 38, 38,
+        sldAge = new GuiSlider(new AgeSliderGuiResponder(), 6, width / 2 - 100, height / 2 + 50, "Age", 12, 38, 12,
                 new AgeFormatHelper());
 
         sldMonth.setWidth(200);
@@ -134,7 +134,7 @@ public class MythriaProfileCreationGui extends GuiScreen {
         buttonList.add(sldGender);
         buttonList.add(sldAge);
 
-        buttonList.add(btnCreate = new GuiButton(7, width / 2 - 100, height / 2 + 75, 200, 20, "Create DeityFavor"));
+        buttonList.add(btnCreate = new GuiButton(7, width / 2 - 100, height / 2 + 75, 200, 20, "Create Profile"));
     }
 
     @Override

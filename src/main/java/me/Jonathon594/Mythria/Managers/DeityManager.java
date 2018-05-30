@@ -169,11 +169,11 @@ public class DeityManager {
                 for(Map.Entry<EntityPlayer, Deity> e : worshipers.entrySet()) {
                     if(!e.getValue().equals(d)) continue;
                     int max = 8000000 - totalPower;
-                    if(max == 0) return;
+                    if(max == 0) continue;
 
                     int a = Math.min(5, max);
 
-                    setDeityPower(d, a);
+                    setDeityPower(d, getDeityPower(d) + a);
                     addWorshipGain(d, e.getKey(), a);
                 }
             }
