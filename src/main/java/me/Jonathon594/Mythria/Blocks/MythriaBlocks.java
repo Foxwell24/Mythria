@@ -82,6 +82,15 @@ public class MythriaBlocks {
     public static final BlockLockableDoor JUNGLE_DOOR = new BlockLockableDoor(Material.WOOD, "jungle_door", 50, 50);
     public static final BlockLockableDoor BIRCH_DOOR = new BlockLockableDoor(Material.WOOD, "birch_door", 50, 50);
 
+    public static final BlockAlter ALTER_FELIXIA = new BlockAlter(Material.WOOD, "alter_felixia", SoundType.WOOD, 50, 50, 20, 60);
+    public static final BlockAlter ALTER_ELIANA = new BlockAlter(Material.WOOD, "alter_eliana", SoundType.WOOD, 50, 50, 20, 60);
+    public static final BlockAlter ALTER_RAIKA = new BlockAlter(Material.IRON, "alter_raika", SoundType.METAL, 50, 50, 0, 0);
+    public static final BlockAlter ALTER_SELINA = new BlockAlter(Material.WOOD, "alter_selina", SoundType.WOOD, 50, 50, 20, 60);
+    public static final BlockAlter ALTER_MELINIAS = new BlockAlter(Material.ROCK, "alter_melinias", SoundType.STONE, 50, 50, 0, 0);
+    public static final BlockAlter ALTER_ASANA = new BlockAlter(Material.IRON, "alter_asana", SoundType.METAL, 50, 50, 0, 0);
+    public static final BlockAlter ALTER_KASAI = new BlockAlter(Material.ROCK, "alter_kasai", SoundType.STONE, 50, 50, 0, 0);
+    public static final BlockAlter ALTER_LILASIA = new BlockAlter(Material.ROCK, "alter_lilasia", SoundType.STONE, 50, 50, 0, 0);
+
     @SubscribeEvent
     public static void RegisterBlocks(final RegistryEvent.Register<Block> event) {
         event.getRegistry().register(CAMPFIRE);
@@ -122,6 +131,15 @@ public class MythriaBlocks {
         event.getRegistry().register(JUNGLE_DOOR);
         event.getRegistry().register(SPRUCE_DOOR);
         event.getRegistry().register(BIRCH_DOOR);
+
+        event.getRegistry().register(ALTER_FELIXIA);
+        event.getRegistry().register(ALTER_ELIANA);
+        event.getRegistry().register(ALTER_SELINA);
+        event.getRegistry().register(ALTER_RAIKA);
+        event.getRegistry().register(ALTER_MELINIAS);
+        event.getRegistry().register(ALTER_KASAI);
+        event.getRegistry().register(ALTER_ASANA);
+        event.getRegistry().register(ALTER_LILASIA);
     }
 
     @SideOnly(Side.CLIENT)
@@ -168,6 +186,15 @@ public class MythriaBlocks {
         event.getRegistry().register(new MythriaItemBlock(IRON_ANVIL));
 
         event.getRegistry().register(new MythriaItemBlock(SAW_HORSE));
+
+        event.getRegistry().register(new MythriaItemBlock(ALTER_FELIXIA));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_ELIANA));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_SELINA));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_RAIKA));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_MELINIAS));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_KASAI));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_ASANA));
+        event.getRegistry().register(new MythriaItemBlock(ALTER_LILASIA));
     }
 
     public static void RegisterRenders() {
@@ -196,6 +223,16 @@ public class MythriaBlocks {
         RegisterRender(IRON_ANVIL);
 
         RegisterRender(SAW_HORSE);
+
+        RegisterRender(ALTER_FELIXIA);
+        RegisterRender(ALTER_ELIANA);
+        RegisterRender(ALTER_SELINA);
+        RegisterRender(ALTER_RAIKA);
+        RegisterRender(ALTER_MELINIAS);
+        RegisterRender(ALTER_KASAI);
+        RegisterRender(ALTER_ASANA);
+        RegisterRender(ALTER_LILASIA);
+
     }
 
     public static void RegisterRender(final Block b) {

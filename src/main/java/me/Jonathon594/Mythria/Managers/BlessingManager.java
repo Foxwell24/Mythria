@@ -32,13 +32,15 @@ public class BlessingManager {
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
 
         if(ds.equals(DamageSource.DROWN)) {
-            if(player.isInWater() && df.hasBlessing(BlessingType.MELINIAS_WATER_BREATHING)) {
-                if(DeityManager.hasPower(Deity.MELINIAS, 1)) {
-                    DeityManager.consumePower(Deity.MELINIAS, 1, player);
-                    event.setCanceled(true);
+            if(player.isInWater()) {
+                if(df.hasBlessing(BlessingType.MELINIAS_WATER_BREATHING) || DeityManager.isDeity(Deity.ELIANA, player)) {
+                    if (DeityManager.hasPower(Deity.MELINIAS, 1)) {
+                        DeityManager.consumePower(Deity.MELINIAS, 1, player);
+                        event.setCanceled(true);
+                    }
                 }
             }
-            else if(df.hasBlessing(BlessingType.ELIANA_BREATHING)) {
+            else if(df.hasBlessing(BlessingType.ELIANA_BREATHING) || DeityManager.isDeity(Deity.ELIANA, player)) {
                 if(DeityManager.hasPower(Deity.ELIANA, 1)) {
                     DeityManager.consumePower(Deity.ELIANA, 1, player);
                     event.setCanceled(true);
@@ -48,31 +50,31 @@ public class BlessingManager {
         if(ds.equals(DamageSource.WITHER)) {
             if(DeityManager.hasPower(Deity.FELIXIA, 1)) {
                 DeityManager.consumePower(Deity.FELIXIA, 1, player);
-                if (df.hasBlessing(BlessingType.FELIXIA_NO_WITHER)) event.setCanceled(true);
+                if (df.hasBlessing(BlessingType.FELIXIA_NO_WITHER) || DeityManager.isDeity(Deity.FELIXIA, player)) event.setCanceled(true);
             }
         }
         if(ds.equals(DamageSource.FALL)) {
             if(DeityManager.hasPower(Deity.ELIANA, 1)) {
                 DeityManager.consumePower(Deity.ELIANA, 1, player);
-                if (df.hasBlessing(BlessingType.ELIANA_NO_FALL)) event.setCanceled(true);
+                if (df.hasBlessing(BlessingType.ELIANA_NO_FALL) || DeityManager.isDeity(Deity.ELIANA, player)) event.setCanceled(true);
             }
         }
         if(ds.equals(DamageSource.LIGHTNING_BOLT)) {
             if(DeityManager.hasPower(Deity.RAIKA, 1)) {
                 DeityManager.consumePower(Deity.RAIKA, 1, player);
-                if (df.hasBlessing(BlessingType.RAIKA_SMITE)) event.setCanceled(true);
+                if (df.hasBlessing(BlessingType.RAIKA_SMITE) || DeityManager.isDeity(Deity.RAIKA, player)) event.setCanceled(true);
             }
         }
         if(ds.equals(DamageSource.LAVA) || ds.equals(DamageSource.IN_FIRE) || ds.equals(DamageSource.ON_FIRE) || ds.equals(DamageSource.HOT_FLOOR)) {
             if(DeityManager.hasPower(Deity.KASAI, 1)) {
                 DeityManager.consumePower(Deity.KASAI, 1, player);
-                if (df.hasBlessing(BlessingType.KASAI_NO_FIRE)) event.setCanceled(true);
+                if (df.hasBlessing(BlessingType.KASAI_NO_FIRE) || DeityManager.isDeity(Deity.KASAI, player)) event.setCanceled(true);
             }
         }
         if(ds.damageType.contains("explosion")) {
             if(DeityManager.hasPower(Deity.ASANA, 1)) {
                 DeityManager.consumePower(Deity.ASANA, 1, player);
-                if (df.hasBlessing(BlessingType.ASANA_NO_EXLODE)) event.setCanceled(true);
+                if (df.hasBlessing(BlessingType.ASANA_NO_EXLODE) || DeityManager.isDeity(Deity.ASANA, player)) event.setCanceled(true);
             }
         }
     }
@@ -84,7 +86,7 @@ public class BlessingManager {
         if(tick % 20 == 0) { //Every Second
             IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
 
-            if(df.hasBlessing(BlessingType.FELIXIA_HEALING)) {
+            if(df.hasBlessing(BlessingType.FELIXIA_HEALING) || DeityManager.isDeity(Deity.FELIXIA, player)) {
                 if(player.world.getLight(player.getPosition()) > 13 && player.world.canSeeSky(player.getPosition())) {
                     if(DeityManager.hasPower(Deity.FELIXIA, 1)) {
                         DeityManager.consumePower(Deity.FELIXIA, 1, player);
@@ -144,7 +146,7 @@ public class BlessingManager {
                 }
             }
 
-            if(df.hasBlessing(BlessingType.LILASIA_SHADOW_HEALING)) {
+            if(df.hasBlessing(BlessingType.LILASIA_SHADOW_HEALING) || DeityManager.isDeity(Deity.LILASIA, player)) {
                 if(player.world.getLight(player.getPosition()) == 0 && !player.world.canSeeSky(player.getPosition())) {
                     if(DeityManager.hasPower(Deity.LILASIA, 1)) {
                         DeityManager.consumePower(Deity.LILASIA, 1, player);
@@ -167,8 +169,7 @@ public class BlessingManager {
     @SideOnly(Side.CLIENT)
     private static void handleWaterJet(EntityPlayer player, IProfile profile) {
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
-        Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
-        if(df.hasBlessing(BlessingType.MELINIAS_WATER_JET) || (d != null && d.equals(Deity.MELINIAS))) {
+        if(df.hasBlessing(BlessingType.MELINIAS_WATER_JET) || DeityManager.isDeity(Deity.MELINIAS, player)) {
             if(player.isInWater() && player.isSprinting()) {
                 if(DeityManager.hasPower(Deity.MELINIAS, 1)) {
                     if(System.currentTimeMillis() % 1000 < 50) DeityManager.consumePower(Deity.MELINIAS, 1, player);
@@ -192,31 +193,31 @@ public class BlessingManager {
             IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
 
             if(MythriaUtil.isLilasiaMob(e)) {
-                if(df.hasBlessing(BlessingType.LILASIA_NO_MOBS)) {
+                if(df.hasBlessing(BlessingType.LILASIA_NO_MOBS) || DeityManager.isDeity(Deity.LILASIA, player)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
 
             if(MythriaUtil.isFireMob(e)) {
-                if(df.hasBlessing(BlessingType.KASAI_NO_MOBS)) {
+                if(df.hasBlessing(BlessingType.KASAI_NO_MOBS) || DeityManager.isDeity(Deity.KASAI, player)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
 
             if(MythriaUtil.isWaterMob(e)) {
-                if(df.hasBlessing(BlessingType.MELINIAS_NO_MOBS)) {
+                if(df.hasBlessing(BlessingType.MELINIAS_NO_MOBS) || DeityManager.isDeity(Deity.MELINIAS, player)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
 
             if(MythriaUtil.isEarthMob(e)) {
-                if(df.hasBlessing(BlessingType.ASANA_NO_MOBS)) {
+                if(df.hasBlessing(BlessingType.ASANA_NO_MOBS) || DeityManager.isDeity(Deity.ASANA, player)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
 
             if(MythriaUtil.isNatureMob(e)) {
-                if(df.hasBlessing(BlessingType.SELINA_NO_NATURE_MOBS)) {
+                if(df.hasBlessing(BlessingType.SELINA_NO_NATURE_MOBS) || DeityManager.isDeity(Deity.SELINA, player)) {
                     ((EntityLiving) e).setAttackTarget(null);
                 }
             }
@@ -226,7 +227,7 @@ public class BlessingManager {
     public static void onPlayerAttackEntity(IProfile profile, LivingHurtEvent event, EntityPlayer player) {
         EntityLivingBase target = event.getEntityLiving();
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
-        if(df.hasBlessing(BlessingType.RAIKA_SMITE)) {
+        if(df.hasBlessing(BlessingType.RAIKA_SMITE) || DeityManager.isDeity(Deity.RAIKA, player)) {
             if(DeityManager.hasPower(Deity.RAIKA, 1)) {
                 DeityManager.consumePower(Deity.RAIKA, 1, player);
                 EntityLightningBolt bolt = new EntityLightningBolt(player.world, target.posX, target.posY, target.posZ, false);
@@ -246,9 +247,8 @@ public class BlessingManager {
     }
 
     private static void handleLavaJet(EntityPlayer player, IProfile profile) {
-        Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
-        if(df.hasBlessing(BlessingType.KASAI_LAVA_JET) || (d != null && d.equals(Deity.KASAI))) {
+        if(df.hasBlessing(BlessingType.KASAI_LAVA_JET) || DeityManager.isDeity(Deity.KASAI, player)) {
             if(player.isInLava() && player.isSprinting()) {
                 if(DeityManager.hasPower(Deity.KASAI, 1)) {
                     if (System.currentTimeMillis() % 1000 < 50) DeityManager.consumePower(Deity.KASAI, 1, player);
@@ -262,9 +262,8 @@ public class BlessingManager {
     @SideOnly(Side.CLIENT)
     private static void handleElytra(EntityPlayer player, IProfile profile) {
         if(player.world.getWorldTime() % 20 != 0) return;
-        Deity d = DeityManager.getSelectedDeities().get(player.getEntityId());
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
-        if(df.hasBlessing(BlessingType.ELIANA_FLIGHT) || (d != null && d.equals(Deity.ELIANA))) {
+        if(df.hasBlessing(BlessingType.ELIANA_FLIGHT) || DeityManager.isDeity(Deity.ELIANA, player)) {
             if(player.isElytraFlying()) {
                 if(player.getFoodStats().getFoodLevel() > 6) {
                     if(player.posY < 345) {
@@ -293,7 +292,7 @@ public class BlessingManager {
         if(CooldownManager.hasCooldown(Cooldown.CooldownType.EARTH_CRUMPLE, player)) return;
         IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
         IDeityFavor df = player.getCapability(DeityFavorProvider.DEITY_FAVOR_CAP, null);
-        if(df.hasBlessing(BlessingType.ASANA_EARTH_CRUMPLE)) {
+        if(df.hasBlessing(BlessingType.ASANA_EARTH_CRUMPLE) || DeityManager.isDeity(Deity.ASANA, player)) {
             BlockPos pos = event.getPos();
             IBlockState state = player.world.getBlockState(pos);
             if(state.getMaterial().equals(Material.ROCK) || state.getMaterial().equals(Material.GROUND) ||

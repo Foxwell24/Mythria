@@ -81,6 +81,7 @@ public class CommonProxy {
         MythriaVanillaBlocksModification.setAllDefaultStackSizes();
         WeatherManager.initialize();
         DeityManager.initialize();
+        AlterManager.initialize();
 
         MinecraftForge.EVENT_BUS.register(CapabilityHandler.class);
         MinecraftForge.EVENT_BUS.register(EventListener.class);

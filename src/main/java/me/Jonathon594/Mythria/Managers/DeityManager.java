@@ -32,6 +32,11 @@ public class DeityManager {
     public static HashMap<Deity, HashMap<EntityPlayer, Integer>> worshipGains = new HashMap<>();
     public static HashMap<Deity, HashMap<EntityPlayer, Integer>> blessingLosses = new HashMap<>();
 
+    public static boolean isDeity(Deity d, EntityPlayer p) {
+        if(!selectedDeities.containsKey(p.getEntityId())) return false;
+        return selectedDeities.get(p.getEntityId()) == d;
+    }
+
     public static void initialize() {
         for (Deity d : Deity.values()) {
             worshipGains.put(d, new HashMap<EntityPlayer, Integer>());

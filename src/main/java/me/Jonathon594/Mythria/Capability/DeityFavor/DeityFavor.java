@@ -1,6 +1,7 @@
 package me.Jonathon594.Mythria.Capability.DeityFavor;
 
 import me.Jonathon594.Mythria.Enum.*;
+import me.Jonathon594.Mythria.Managers.DeityManager;
 import net.minecraft.nbt.NBTTagCompound;
 
 import java.util.*;

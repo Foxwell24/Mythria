@@ -245,12 +245,14 @@ public class EventListener {
 //         }
 
         InteractModule.placePitKiln(event);
+        DeityManager.clearWorshiper(event.getEntityPlayer());
     }
 
     @SubscribeEvent
     public static void onEntityInteract(final PlayerInteractEvent.LeftClickBlock event) {
         if(event.getWorld().isRemote) return;
         BlessingManager.onPunchBlock(event);
+        DeityManager.clearWorshiper(event.getEntityPlayer());
     }
 
     @SubscribeEvent
@@ -336,6 +338,7 @@ public class EventListener {
             final IProfile profile = source.getCapability(ProfileProvider.PROFILE_CAP, null);
             AbilityManager.onLivingHurt(profile, event, source);
             BlessingManager.onPlayerAttackEntity(profile, event, source);
+            DeityManager.clearWorshiper(source);
         }
     }
 
@@ -357,6 +360,7 @@ public class EventListener {
             return;
         FoodManager.UpdateFoodItems(event);
         SmeltingManager.updateVessels(event);
+        DeityManager.clearWorshiper(event.getEntityPlayer());
     }
 
     @SideOnly(Side.CLIENT)
@@ -482,6 +486,7 @@ public class EventListener {
             EntityPlayer player = (EntityPlayer) el;
             IProfile profile = player.getCapability(ProfileProvider.PROFILE_CAP, null);
             ProfileArchive.setLastProfile(player, profile);
+            DeityManager.clearWorshiper(player);
         }
     }
 
@@ -514,6 +519,7 @@ public class EventListener {
             return;
         final EntityPlayerMP player = (EntityPlayerMP) event.player;
         player.getCapability(ProfileProvider.PROFILE_CAP, null);
+        DeityManager.clearWorshiper(player);
     }
 
     @SubscribeEvent

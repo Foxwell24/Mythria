@@ -18,6 +18,8 @@ public class MythriaTileEntities {
         GameRegistry.registerTileEntity(TileEntitySawHorse.class, "tileentity_sawhorse");
         GameRegistry.registerTileEntity(TileEntityIngotPile.class, "tileentity_ingotpile");
         GameRegistry.registerTileEntity(TileEntityDoor.class, "tileentity_door");
+
+        GameRegistry.registerTileEntity(TileEntityAlter.class, "tileentity_alter");
     }
 
     @SideOnly(Side.CLIENT)

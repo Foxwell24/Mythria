@@ -66,6 +66,12 @@ public class GuiHandler implements IGuiHandler {
 
         if (ID == MythriaGui.MYTHRIA_SHOW_ATTRIBUTE_GUI.ordinal())
             return new ContainerAttribute(new InventoryBasic(null, false, 6), player);
+
+        if(ID == MythriaGui.ALTER_GUI.ordinal()) {
+            final TileEntityAlter alter = (TileEntityAlter) world
+                    .getTileEntity(new BlockPos(x, y, z));
+            return new ContainerAlter(alter, player.inventory);
+        }
         return null;
     }
 
@@ -132,6 +138,13 @@ public class GuiHandler implements IGuiHandler {
 
         if (ID == MythriaGui.MYTHRIA_SHOW_ATTRIBUTE_GUI.ordinal())
             return new GuiAttribute(new ContainerAttribute(new InventoryBasic(null, false, 6), player));
+
+        if(ID == MythriaGui.ALTER_GUI.ordinal()) {
+            final TileEntityAlter alter = (TileEntityAlter) world
+                    .getTileEntity(new BlockPos(x, y, z));
+            return new GuiAlter(new ContainerAlter(alter, player.inventory));
+        }
+
         return null;
     }
 
